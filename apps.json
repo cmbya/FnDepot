@@ -1,0 +1,94 @@
+{
+  "source_info": {
+    "name": "cmby 的 fnOS 应用源",
+    "author": "cmbya",
+    "homepage": "https://github.com/cmbya/FnDepot",
+    "description": "自动收录自建 fnOS 原生应用的 Release（包含 Pre-release）。"
+  },
+  "repositories": [
+    {
+      "repo": "cmbya/StreamCap-fnOS",
+      "display_name": "StreamCap",
+      "desc": "多平台直播录制工具的 fnOS x86 原生版。",
+      "categories": [
+        "影音娱乐"
+      ],
+      "labels": "原生,影音娱乐,直播录制",
+      "maintainer": "ihmily",
+      "maintainer_url": "https://github.com/ihmily/StreamCap",
+      "distributor": "cmbya",
+      "bug_report_url": "https://github.com/cmbya/StreamCap-fnOS/issues",
+      "run_as": "package"
+    },
+    {
+      "repo": "cmbya/biliLive-tools-fnOS",
+      "display_name": "biliLive-tools",
+      "desc": "直播录制、弹幕与视频处理工具的 fnOS x86 原生版。",
+      "categories": [
+        "影音娱乐"
+      ],
+      "labels": "原生,影音娱乐,直播录制",
+      "maintainer": "renmu123",
+      "maintainer_url": "https://github.com/renmu123/biliLive-tools",
+      "distributor": "cmbya",
+      "bug_report_url": "https://github.com/cmbya/biliLive-tools-fnOS/issues",
+      "run_as": "package"
+    },
+    {
+      "repo": "cmbya/TaoSync-fnOS",
+      "display_name": "TaoSync",
+      "desc": "文件同步工具的 fnOS x86 原生版。",
+      "categories": [
+        "系统工具"
+      ],
+      "labels": "原生,系统工具,同步",
+      "maintainer": "dr34m-cn",
+      "maintainer_url": "https://github.com/dr34m-cn/taosync",
+      "distributor": "cmbya",
+      "bug_report_url": "https://github.com/cmbya/TaoSync-fnOS/issues",
+      "run_as": "package"
+    },
+    {
+      "repo": "cmbya/OpenList-fnOS",
+      "display_name": "OpenList",
+      "desc": "多存储聚合管理工具的 fnOS x86 原生版。",
+      "categories": [
+        "系统工具"
+      ],
+      "labels": "原生,系统工具,网盘",
+      "maintainer": "OpenListTeam",
+      "maintainer_url": "https://github.com/OpenListTeam/OpenList",
+      "distributor": "cmbya",
+      "bug_report_url": "https://github.com/cmbya/OpenList-fnOS/issues",
+      "run_as": "package"
+    },
+    {
+      "repo": "cmbya/MeTube-fnOS",
+      "display_name": "MeTube",
+      "desc": "在线视频下载工具的 fnOS x86 原生版，FPK 内置 FFmpeg。",
+      "categories": [
+        "影音娱乐"
+      ],
+      "labels": "原生,影音娱乐,下载",
+      "maintainer": "alexta69",
+      "maintainer_url": "https://github.com/alexta69/metube",
+      "distributor": "cmbya",
+      "bug_report_url": "https://github.com/cmbya/MeTube-fnOS/issues",
+      "run_as": "package"
+    },
+    {
+      "repo": "cmbya/LitePan-fnOS",
+      "display_name": "LitePan",
+      "desc": "网盘管理、WebDAV、STRM 与媒体整理工具的 fnOS x86 原生版。",
+      "categories": [
+        "系统工具"
+      ],
+      "labels": "原生,系统工具,网盘",
+      "maintainer": "Ponphil",
+      "maintainer_url": "https://github.com/Ponphil/LitePan",
+      "distributor": "cmbya",
+      "bug_report_url": "https://github.com/cmbya/LitePan-fnOS/issues",
+      "run_as": "root"
+    }
+  ]
+}
