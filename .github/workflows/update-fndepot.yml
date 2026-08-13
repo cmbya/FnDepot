@@ -1,0 +1,58 @@
+name: Update FnDepot Source
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "33 1 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: 生成 V1 + V2 FnDepot 索引
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python3 scripts/update_fndepot.py
+
+      - name: 校验 JSON
+        run: |
+          python3 -m json.tool fnpack.json >/dev/null
+          python3 -m json.tool fnpack-v2.json >/dev/null
+
+          python3 - <<'PY'
+          import json
+          v1 = json.load(open("fnpack.json", encoding="utf-8"))
+          v2 = json.load(open("fnpack-v2.json", encoding="utf-8"))
+
+          assert "schema_version" not in v1, "V1 根节点不能有 schema_version"
+          assert v2.get("schema_version") == "2"
+          assert isinstance(v2.get("apps"), dict)
+
+          print("V1/V2 JSON 校验通过")
+          print("V1 应用数:", len(v1))
+          print("V2 应用数:", len(v2["apps"]))
+          PY
+
+      - name: 提交更新
+        run: |
+          if git diff --quiet; then
+            echo "没有变化，不需要提交。"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add fnpack.json fnpack-v2.json assets/icons
+          git add bililivetools litepan metube openlistnative streamcap taosync 2>/dev/null || true
+
+          git commit -m "chore: update FnDepot V1 + V2 indexes"
+          git push
