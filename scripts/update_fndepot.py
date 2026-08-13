@@ -209,7 +209,7 @@ def main():
                     "updated_at": release.get("published_at")
                     or release.get("created_at")
                     or "",
-                    "run_as": "package",
+                    "run_as": item.get("run_as", "package"),
                     "install_type": "",
                     "is_docker": False,
                     "service_port": service_port,
@@ -233,7 +233,7 @@ def main():
                 "distributor", cfg["source_info"]["author"]
             ),
             "distributor_url": f"https://github.com/{repo}",
-            "run_as": "package",
+            "run_as": item.get("run_as", "package"),
             "install_type": "",
             "is_docker": False,
             "service_port": service_port,
