@@ -1,0 +1,251 @@
+{
+  "schema_version": "2",
+  "source_info": {
+    "name": "cmby 的 fnOS 应用源",
+    "author": "cmbya",
+    "homepage": "https://github.com/cmbya/FnDepot",
+    "description": "自动收录自建 fnOS 原生应用的 Release（包含 Pre-release）。"
+  },
+  "apps": {
+    "bililivetools": {
+      "display_name": "biliLive-tools",
+      "desc": "直播录制、弹幕与视频处理工具的 fnOS x86 原生版。",
+      "platform": [
+        "x86"
+      ],
+      "categories": [
+        "影音娱乐"
+      ],
+      "icon_url": "assets/icons/bililivetools.png",
+      "readme_url": "https://github.com/cmbya/biliLive-tools-fnOS",
+      "bug_report_url": "https://github.com/cmbya/biliLive-tools-fnOS/issues",
+      "maintainer": "renmu123",
+      "maintainer_url": "https://github.com/renmu123/biliLive-tools",
+      "distributor": "cmbya",
+      "distributor_url": "https://github.com/cmbya/biliLive-tools-fnOS",
+      "run_as": "package",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "3000",
+      "releases": {
+        "3.19.0-native1": {
+          "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 biliLive-tools **3.19.0**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：3.19.0\n- fnOS 封装：native1\n- 架构：x86 / amd64\n- Docker：不使用\n- 升级：保留应用配置、账号/任务数据和录像目录\n- WebUI：使用 fnOS 同源代理访问本机后端\n\n**这是自动构建的 Pre-release。上游升级可能改变依赖或接口，建议先在飞牛上覆盖升级测试，确认页面和录制正常后再改成正式版。**",
+          "updated_at": "2026-08-13T12:12:43Z",
+          "service_port": "3000",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/cmbya/biliLive-tools-fnOS/releases/download/fnos-3.19.0-native1/biliLive-tools_3.19.0_native1_fnOS_x86.fpk",
+              "sha256": "2557b729489e3d361101c6d41cc851c6f57080af8ed43966c6e8b39ee210c6d8",
+              "size": 217228,
+              "updated_at": "2026-08-13T12:12:43Z",
+              "run_as": "package",
+              "install_type": "",
+              "is_docker": false,
+              "service_port": "3000"
+            }
+          }
+        }
+      }
+    },
+    "litepan": {
+      "display_name": "LitePan",
+      "desc": "网盘管理、WebDAV、STRM 与媒体整理工具的 fnOS x86 原生版。",
+      "platform": [
+        "x86"
+      ],
+      "categories": [
+        "系统工具"
+      ],
+      "icon_url": "assets/icons/litepan.png",
+      "readme_url": "https://github.com/cmbya/LitePan-fnOS",
+      "bug_report_url": "https://github.com/cmbya/LitePan-fnOS/issues",
+      "maintainer": "Ponphil",
+      "maintainer_url": "https://github.com/Ponphil/LitePan",
+      "distributor": "cmbya",
+      "distributor_url": "https://github.com/cmbya/LitePan-fnOS",
+      "run_as": "root",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "5211",
+      "releases": {
+        "0.4.9-beta-native1": {
+          "changelog": "【Pre-release 自动构建】\n\n根据上游 Docker Hub **ponphil/litepan:v0.4.9-beta** 自动生成 fnOS x86 原生 FPK。\n\n- 上游：Ponphil/LitePan\n- 上游镜像标签：v0.4.9-beta\n- fnOS 封装：native1\n- 架构：x86 / amd64\n- Web 端口：5211\n- Docker：运行时不使用 Docker\n- 安装方式：从上游官方镜像提取 linux/amd64 LitePan 二进制\n- 数据：data / strm / mounts 持久化\n\n这是自动构建的 Pre-release。",
+          "updated_at": "2026-08-13T16:44:24Z",
+          "service_port": "5211",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/cmbya/LitePan-fnOS/releases/download/fnos-v0.4.9-beta-native1/LitePan_0.4.9-beta_native1_fnOS_x86.fpk",
+              "sha256": "f1cf5dec4746d1bbaf8795804e13efe08e7a0bc046f8616d873aa5a840e5ba3d",
+              "size": 12007,
+              "updated_at": "2026-08-13T16:44:24Z",
+              "run_as": "root",
+              "install_type": "",
+              "is_docker": false,
+              "service_port": "5211"
+            }
+          }
+        }
+      }
+    },
+    "metube": {
+      "display_name": "MeTube",
+      "desc": "在线视频下载工具的 fnOS x86 原生版，FPK 内置 FFmpeg。",
+      "platform": [
+        "x86"
+      ],
+      "categories": [
+        "影音娱乐"
+      ],
+      "icon_url": "assets/icons/metube.png",
+      "readme_url": "https://github.com/cmbya/MeTube-fnOS",
+      "bug_report_url": "https://github.com/cmbya/MeTube-fnOS/issues",
+      "maintainer": "alexta69",
+      "maintainer_url": "https://github.com/alexta69/metube",
+      "distributor": "cmbya",
+      "distributor_url": "https://github.com/cmbya/MeTube-fnOS",
+      "run_as": "package",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "8081",
+      "releases": {
+        "2026.08.04-native2": {
+          "changelog": "【Pre-release 自动构建】\n\n自动检测到 MeTube 上游 **2026.08.04**，并生成 fnOS x86 原生 FPK。\n\n- fnOS 封装：native2\n- Web 端口：8081\n- Docker：不使用\n- FFmpeg：已直接打包进 FPK\n- FFmpeg：7.0.2-static / Linux x86_64\n- FFmpeg SHA256：e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99\n- 下载目录：优先使用 fnOS 第一个可写授权目录；无授权目录时使用 metube/downloads\n\n构建脚本会重新解开 app.tgz 校验 FFmpeg；缺失或 SHA256 不正确时不会发布。",
+          "updated_at": "2026-08-13T18:04:35Z",
+          "service_port": "8081",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/cmbya/MeTube-fnOS/releases/download/fnos-2026.08.04-native2/MeTube_2026.08.04_native2_fnOS_x86.fpk",
+              "sha256": "1b544e038aa7bc9ea439b835bf7737565933fe17d8998f1f0a257110591b81d9",
+              "size": 29440571,
+              "updated_at": "2026-08-13T18:04:35Z",
+              "run_as": "package",
+              "install_type": "",
+              "is_docker": false,
+              "service_port": "8081"
+            }
+          }
+        }
+      }
+    },
+    "openlistnative": {
+      "display_name": "OpenList",
+      "desc": "多存储聚合管理工具的 fnOS x86 原生版。",
+      "platform": [
+        "x86"
+      ],
+      "categories": [
+        "系统工具"
+      ],
+      "icon_url": "assets/icons/openlistnative.png",
+      "readme_url": "https://github.com/cmbya/OpenList-fnOS",
+      "bug_report_url": "https://github.com/cmbya/OpenList-fnOS/issues",
+      "maintainer": "OpenListTeam",
+      "maintainer_url": "https://github.com/OpenListTeam/OpenList",
+      "distributor": "cmbya",
+      "distributor_url": "https://github.com/cmbya/OpenList-fnOS",
+      "run_as": "package",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "5244",
+      "releases": {
+        "4.2.5-native1": {
+          "changelog": "【Pre-release 自动构建】\n\n根据 OpenList 上游正式 Release **v4.2.5** 自动生成 fnOS x86 原生 FPK。\n\n- 上游版本：v4.2.5\n- fnOS 封装：native1\n- 架构：x86 / amd64\n- Web 端口：5244\n- Docker：不使用\n- 数据：升级保留 OpenList data 数据库和配置\n- 上游二进制：openlist-linux-amd64.tar.gz\n\n这是自动构建的 **Pre-release**。建议先在飞牛上覆盖升级测试，确认正常后再手动改为正式 Release。",
+          "updated_at": "2026-08-13T13:22:13Z",
+          "service_port": "5244",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/cmbya/OpenList-fnOS/releases/download/fnos-v4.2.5-native1/OpenList_4.2.5_native1_fnOS_x86.fpk",
+              "sha256": "be49fdbdce3b62783006030ad0ed45665bac6fb999546aec98515734e310648a",
+              "size": 22514,
+              "updated_at": "2026-08-13T13:22:13Z",
+              "run_as": "package",
+              "install_type": "",
+              "is_docker": false,
+              "service_port": "5244"
+            }
+          }
+        }
+      }
+    },
+    "streamcap": {
+      "display_name": "StreamCap",
+      "desc": "多平台直播录制工具的 fnOS x86 原生版。",
+      "platform": [
+        "x86"
+      ],
+      "categories": [
+        "影音娱乐"
+      ],
+      "icon_url": "assets/icons/streamcap.png",
+      "readme_url": "https://github.com/cmbya/StreamCap-fnOS",
+      "bug_report_url": "https://github.com/cmbya/StreamCap-fnOS/issues",
+      "maintainer": "ihmily",
+      "maintainer_url": "https://github.com/ihmily/StreamCap",
+      "distributor": "cmbya",
+      "distributor_url": "https://github.com/cmbya/StreamCap-fnOS",
+      "run_as": "package",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "6006",
+      "releases": {
+        "1.0.3-native2": {
+          "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 StreamCap **v1.0.3**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：v1.0.3\n- fnOS 封装：native2\n- 架构：x86 / amd64\n- Docker：不使用\n- 升级：保留 StreamCap 持久化配置与录像目录\n\n这是自动构建的 Pre-release。\n建议先在飞牛上覆盖升级测试，确认录制正常后再改成正式版。",
+          "updated_at": "2026-08-13T11:54:03Z",
+          "service_port": "6006",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/cmbya/StreamCap-fnOS/releases/download/fnos-v1.0.3-native2/StreamCap_1.0.3_native2_fnOS_x86.fpk",
+              "sha256": "b5837d8421db08166b1be821e503e8ecdc702910579ef8b489fcca3245445dc6",
+              "size": 24429,
+              "updated_at": "2026-08-13T11:54:03Z",
+              "run_as": "package",
+              "install_type": "",
+              "is_docker": false,
+              "service_port": "6006"
+            }
+          }
+        }
+      }
+    },
+    "taosync": {
+      "display_name": "TaoSync",
+      "desc": "文件同步工具的 fnOS x86 原生版。",
+      "platform": [
+        "x86"
+      ],
+      "categories": [
+        "系统工具"
+      ],
+      "icon_url": "assets/icons/taosync.png",
+      "readme_url": "https://github.com/cmbya/TaoSync-fnOS",
+      "bug_report_url": "https://github.com/cmbya/TaoSync-fnOS/issues",
+      "maintainer": "dr34m-cn",
+      "maintainer_url": "https://github.com/dr34m-cn/taosync",
+      "distributor": "cmbya",
+      "distributor_url": "https://github.com/cmbya/TaoSync-fnOS",
+      "run_as": "package",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "8023",
+      "releases": {
+        "0.4.0-native1": {
+          "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 TaoSync **v0.4.0**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：v0.4.0\n- fnOS 封装：native1\n- 架构：x86 / amd64\n- Docker：不使用\n- 上游程序：官方 Linux StaticX amd64\n- Web 端口：8023\n- 升级：保留 TaoSync 数据库、配置和任务数据\n\n**这是自动构建的 Pre-release。建议先在飞牛上覆盖升级测试，确认同步任务正常后再把本 Release 改成正式版。**",
+          "updated_at": "2026-08-13T12:52:13Z",
+          "service_port": "8023",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/cmbya/TaoSync-fnOS/releases/download/fnos-v0.4.0-native1/TaoSync_0.4.0_native1_fnOS_x86.fpk",
+              "sha256": "015e593b286b8fe70a4220ae5ee1ebb83c1fe28cd68966cbc309e9215b79f97a",
+              "size": 121879,
+              "updated_at": "2026-08-13T12:52:13Z",
+              "run_as": "package",
+              "install_type": "",
+              "is_docker": false,
+              "service_port": "8023"
+            }
+          }
+        }
+      }
+    }
+  }
+}
