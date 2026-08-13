@@ -4,7 +4,7 @@
     "name": "cmby 的 fnOS 应用源",
     "author": "cmbya",
     "homepage": "https://github.com/cmbya/FnDepot",
-    "description": "自动收录自建 fnOS 原生应用的正式 Release。"
+    "description": "自动收录自建 fnOS 原生应用的 Release（包含 Pre-release）。"
   },
   "apps": {
     "bililivetools": {
@@ -42,6 +42,86 @@
               "install_type": "",
               "is_docker": false,
               "service_port": "3000"
+            }
+          }
+        }
+      }
+    },
+    "litepan": {
+      "display_name": "LitePan",
+      "desc": "网盘管理、WebDAV、STRM 与媒体整理工具的 fnOS x86 原生版。",
+      "platform": [
+        "x86"
+      ],
+      "categories": [
+        "系统工具"
+      ],
+      "icon_url": "assets/icons/litepan.png",
+      "readme_url": "https://github.com/cmbya/LitePan-fnOS",
+      "bug_report_url": "https://github.com/cmbya/LitePan-fnOS/issues",
+      "maintainer": "Ponphil",
+      "maintainer_url": "https://github.com/Ponphil/LitePan",
+      "distributor": "cmbya",
+      "distributor_url": "https://github.com/cmbya/LitePan-fnOS",
+      "run_as": "root",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "5211",
+      "releases": {
+        "0.4.9-beta-native1": {
+          "changelog": "【Pre-release 自动构建】\n\n根据上游 Docker Hub **ponphil/litepan:v0.4.9-beta** 自动生成 fnOS x86 原生 FPK。\n\n- 上游：Ponphil/LitePan\n- 上游镜像标签：v0.4.9-beta\n- fnOS 封装：native1\n- 架构：x86 / amd64\n- Web 端口：5211\n- Docker：运行时不使用 Docker\n- 安装方式：从上游官方镜像提取 linux/amd64 LitePan 二进制\n- 数据：data / strm / mounts 持久化\n\n这是自动构建的 Pre-release。",
+          "updated_at": "2026-08-13T16:44:24Z",
+          "service_port": "5211",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/cmbya/LitePan-fnOS/releases/download/fnos-v0.4.9-beta-native1/LitePan_0.4.9-beta_native1_fnOS_x86.fpk",
+              "sha256": "f1cf5dec4746d1bbaf8795804e13efe08e7a0bc046f8616d873aa5a840e5ba3d",
+              "size": 12007,
+              "updated_at": "2026-08-13T16:44:24Z",
+              "run_as": "root",
+              "install_type": "",
+              "is_docker": false,
+              "service_port": "5211"
+            }
+          }
+        }
+      }
+    },
+    "metube": {
+      "display_name": "MeTube",
+      "desc": "在线视频下载工具的 fnOS x86 原生版，FPK 内置 FFmpeg。",
+      "platform": [
+        "x86"
+      ],
+      "categories": [
+        "影音娱乐"
+      ],
+      "icon_url": "assets/icons/metube.png",
+      "readme_url": "https://github.com/cmbya/MeTube-fnOS",
+      "bug_report_url": "https://github.com/cmbya/MeTube-fnOS/issues",
+      "maintainer": "alexta69",
+      "maintainer_url": "https://github.com/alexta69/metube",
+      "distributor": "cmbya",
+      "distributor_url": "https://github.com/cmbya/MeTube-fnOS",
+      "run_as": "package",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "8081",
+      "releases": {
+        "2026.08.04-native2": {
+          "changelog": "【Pre-release 自动构建】\n\n自动检测到 MeTube 上游 **2026.08.04**，并生成 fnOS x86 原生 FPK。\n\n- fnOS 封装：native2\n- Web 端口：8081\n- Docker：不使用\n- FFmpeg：已直接打包进 FPK\n- FFmpeg：7.0.2-static / Linux x86_64\n- FFmpeg SHA256：e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99\n- 下载目录：优先使用 fnOS 第一个可写授权目录；无授权目录时使用 metube/downloads\n\n构建脚本会重新解开 app.tgz 校验 FFmpeg；缺失或 SHA256 不正确时不会发布。",
+          "updated_at": "2026-08-13T18:04:35Z",
+          "service_port": "8081",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/cmbya/MeTube-fnOS/releases/download/fnos-2026.08.04-native2/MeTube_2026.08.04_native2_fnOS_x86.fpk",
+              "sha256": "1b544e038aa7bc9ea439b835bf7737565933fe17d8998f1f0a257110591b81d9",
+              "size": 29440571,
+              "updated_at": "2026-08-13T18:04:35Z",
+              "run_as": "package",
+              "install_type": "",
+              "is_docker": false,
+              "service_port": "8081"
             }
           }
         }
