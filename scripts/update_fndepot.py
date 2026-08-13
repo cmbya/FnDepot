@@ -3,10 +3,10 @@ import hashlib
 import io
 import json
 import os
-import sys
 import tarfile
 import urllib.error
 import urllib.request
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -33,15 +33,14 @@ def request_json(url):
         return json.load(r)
 
 def request_bytes(url):
-    req = urllib.request.Request(url, headers={
-        **headers(),
-        "Accept": "application/octet-stream",
-    })
+    req = urllib.request.Request(
+        url,
+        headers={**headers(), "Accept": "application/octet-stream"},
+    )
     with urllib.request.urlopen(req, timeout=180) as r:
         return r.read()
 
 def parse_manifest(blob):
-    # FPK 是 tar.gz；manifest 位于根目录。
     with tarfile.open(fileobj=io.BytesIO(blob), mode="r:gz") as tf:
         manifest_member = None
         icon_member = None
@@ -86,15 +85,27 @@ def load_existing():
     except Exception:
         return {"schema_version": "2", "source_info": {}, "apps": {}}
 
-def latest_stable(repo):
-    # GitHub /releases/latest 自动排除 prerelease/draft。
-    url = f"https://api.github.com/repos/{repo}/releases/latest"
+def _release_time(release):
+    value = release.get("published_at") or release.get("created_at") or ""
     try:
-        return request_json(url)
-    except urllib.error.HTTPError as e:
-        if e.code == 404:
-            return None
-        raise
+        return datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except Exception:
+        return datetime.min.replace(tzinfo=timezone.utc)
+
+def latest_non_draft_release(repo):
+    """
+    获取最新的非 Draft Release。
+    与 /releases/latest 不同，这里会包含 Pre-release。
+    """
+    url = f"https://api.github.com/repos/{repo}/releases?per_page=30"
+    releases = request_json(url)
+
+    candidates = [r for r in releases if not r.get("draft", False)]
+    if not candidates:
+        return None
+
+    # 明确按发布时间选择最新，避免依赖 API 返回顺序。
+    return max(candidates, key=_release_time)
 
 def choose_fpk_asset(release):
     assets = release.get("assets") or []
@@ -102,7 +113,6 @@ def choose_fpk_asset(release):
     if not candidates:
         return None
 
-    # 优先选择明显的 x86/amd64 包。
     def score(a):
         n = str(a.get("name", "")).lower()
         s = 0
@@ -111,15 +121,16 @@ def choose_fpk_asset(release):
         if "arm" in n or "aarch64" in n:
             s -= 20
         return s
+
     candidates.sort(key=score, reverse=True)
     return candidates[0]
 
-def compact_changelog(text):
+def compact_changelog(text, prerelease=False):
     text = (text or "").strip()
+    prefix = "【Pre-release 自动构建】\n\n" if prerelease else ""
     if not text:
-        return "由 GitHub Actions 自动同步的 fnOS 正式构建。"
-    # 防止 fnpack.json 变得过大。
-    return text[:6000]
+        return prefix + "由 GitHub Actions 自动同步的 fnOS 构建。"
+    return prefix + text[:6000]
 
 def main():
     cfg = json.loads(CONFIG.read_text(encoding="utf-8"))
@@ -137,14 +148,19 @@ def main():
         repo = item["repo"]
         print(f"\n=== 检查 {repo} ===")
 
-        release = latest_stable(repo)
+        release = latest_non_draft_release(repo)
         if release is None:
-            print("没有正式 Release，跳过（Pre-release 不会进入应用源）。")
+            print("没有可用 Release，跳过。")
             continue
+
+        if release.get("prerelease"):
+            print("发现最新 Pre-release，将收录。")
+        else:
+            print("发现最新正式 Release，将收录。")
 
         asset = choose_fpk_asset(release)
         if asset is None:
-            print("正式 Release 中没有 .fpk，跳过。")
+            print("该 Release 中没有 .fpk，跳过。")
             continue
 
         download_url = asset["browser_download_url"]
@@ -162,7 +178,9 @@ def main():
         if not appname or not version:
             raise RuntimeError(f"{repo}: FPK manifest 缺少 appname/version")
         if platform not in ("x86", "all"):
-            raise RuntimeError(f"{repo}: 当前只收录 x86/all 包，实际 platform={platform!r}")
+            raise RuntimeError(
+                f"{repo}: 当前只收录 x86/all 包，实际 platform={platform!r}"
+            )
 
         sha256 = hashlib.sha256(blob).hexdigest()
         size = len(blob)
@@ -175,21 +193,28 @@ def main():
         releases = dict(old_app.get("releases") or {})
 
         releases[version] = {
-            "changelog": compact_changelog(release.get("body")),
-            "updated_at": release.get("published_at") or release.get("created_at") or "",
+            "changelog": compact_changelog(
+                release.get("body"),
+                prerelease=bool(release.get("prerelease")),
+            ),
+            "updated_at": release.get("published_at")
+            or release.get("created_at")
+            or "",
             "service_port": service_port,
             "packages": {
                 "x86": {
                     "download_url": download_url,
                     "sha256": sha256,
                     "size": size,
-                    "updated_at": release.get("published_at") or release.get("created_at") or "",
+                    "updated_at": release.get("published_at")
+                    or release.get("created_at")
+                    or "",
                     "run_as": "package",
                     "install_type": "",
                     "is_docker": False,
                     "service_port": service_port,
                 }
-            }
+            },
         }
 
         app_obj = {
@@ -199,10 +224,14 @@ def main():
             "categories": item["categories"],
             "icon_url": icon_rel,
             "readme_url": f"https://github.com/{repo}",
-            "bug_report_url": item.get("bug_report_url", f"https://github.com/{repo}/issues"),
+            "bug_report_url": item.get(
+                "bug_report_url", f"https://github.com/{repo}/issues"
+            ),
             "maintainer": item["maintainer"],
             "maintainer_url": item["maintainer_url"],
-            "distributor": item.get("distributor", cfg["source_info"]["author"]),
+            "distributor": item.get(
+                "distributor", cfg["source_info"]["author"]
+            ),
             "distributor_url": f"https://github.com/{repo}",
             "run_as": "package",
             "install_type": "",
@@ -213,17 +242,22 @@ def main():
 
         if old_app != app_obj:
             changed_any = True
+
         out["apps"][appname] = app_obj
 
-        print(f"收录: {appname} {version}")
+        release_type = "Pre-release" if release.get("prerelease") else "正式 Release"
+        print(f"收录: {appname} {version} ({release_type})")
         print(f"SHA256: {sha256}")
         print(f"大小: {size} bytes")
 
-    # 排序，保证 Git diff 稳定。
-    out["apps"] = dict(sorted(out["apps"].items(), key=lambda x: x[0].lower()))
-    INDEX.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    out["apps"] = dict(
+        sorted(out["apps"].items(), key=lambda x: x[0].lower())
+    )
+    INDEX.write_text(
+        json.dumps(out, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
 
-    # 严格基本校验
     verify = json.loads(INDEX.read_text(encoding="utf-8"))
     if verify.get("schema_version") != "2":
         raise RuntimeError('schema_version 必须是字符串 "2"')
