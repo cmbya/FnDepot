@@ -55,4 +55,30 @@
       "bug_report_url": "https://github.com/cmbya/OpenList-fnOS/issues"
     }
   ]
+},
+{
+  "repo": "cmbya/MeTube-fnOS",
+  "display_name": "MeTube",
+  "desc": "在线视频下载工具的 fnOS x86 原生版，内置 FFmpeg。",
+  "categories": [
+    "影音娱乐"
+  ],
+  "maintainer": "alexta69",
+  "maintainer_url": "https://github.com/alexta69/metube",
+  "distributor": "cmbya",
+  "bug_report_url": "https://github.com/cmbya/MeTube-fnOS/issues",
+  "run_as": "package"
+},
+{
+  "repo": "cmbya/LitePan-fnOS",
+  "display_name": "LitePan",
+  "desc": "网盘管理、WebDAV、STRM 与媒体整理工具的 fnOS x86 原生版。",
+  "categories": [
+    "系统工具"
+  ],
+  "maintainer": "Ponphil",
+  "maintainer_url": "https://github.com/Ponphil/LitePan",
+  "distributor": "cmbya",
+  "bug_report_url": "https://github.com/cmbya/LitePan-fnOS/issues",
+  "run_as": "root"
 }
