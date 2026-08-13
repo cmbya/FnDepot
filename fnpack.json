@@ -1,0 +1,10 @@
+{
+  "schema_version": "2",
+  "source_info": {
+    "name": "cmby 的 fnOS 应用源",
+    "author": "cmbya",
+    "homepage": "https://github.com/cmbya/FnDepot",
+    "description": "自动收录自建 fnOS 原生应用的正式 Release。"
+  },
+  "apps": {}
+}
