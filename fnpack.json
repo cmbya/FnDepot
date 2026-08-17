@@ -2,7 +2,7 @@
   "bililivetools": {
     "display_name": "biliLive-tools",
     "platform": "x86",
-    "version": "3.19.0-native1",
+    "version": "3.20.8",
     "desc": "直播录制、弹幕与视频处理工具的 fnOS x86 原生版。",
     "labels": "原生,影音娱乐,直播录制",
     "distributor": "cmbya",
@@ -10,9 +10,9 @@
     "bug_report_url": "https://github.com/cmbya/biliLive-tools-fnOS/issues",
     "install_type": "存储空间",
     "isdocker": "false",
-    "size": "0.21 MB",
-    "download_url": "https://github.com/cmbya/biliLive-tools-fnOS/releases/download/fnos-3.19.0-native1/biliLive-tools_3.19.0_native1_fnOS_x86.fpk",
-    "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 biliLive-tools **3.19.0**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：3.19.0\n- fnOS 封装：native1\n- 架构：x86 / amd64\n- Docker：不使用\n- 升级：保留应用配置、账号/任务数据和录像目录\n- WebUI：使用 fnOS 同源代理访问本机后端\n\n**这是自动构建的 Pre-release。上游升级可能改变依赖或接口，建议先在飞牛上覆盖升级测试，确认页面和录制正常后再改成正式版。**"
+    "size": "0.22 MB",
+    "download_url": "https://github.com/cmbya/biliLive-tools-fnOS/releases/download/fnos-3.20.0-native8/biliLive-tools_3.20.0_native8_fnOS_x86.fpk",
+    "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 biliLive-tools **3.20.0**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：3.20.0\n- fnOS 封装：native8\n- 架构：x86 / amd64\n- Docker：不使用\n- native2：修复监控时间段提前录制\n- Bilibili：修复批量查询绕过 handleTime\n- startRecord：修复反向时间判断\n- 日志：录像目录/biliLive-tools-Logs\n- 升级：保留应用配置、账号/任务数据和录像目录\n\n**这是自动构建的 Pre-release。**"
   },
   "litepan": {
     "display_name": "LitePan",
@@ -32,7 +32,7 @@
   "metube": {
     "display_name": "MeTube",
     "platform": "x86",
-    "version": "2026.08.04-native2",
+    "version": "2026.08.15-native2",
     "desc": "在线视频下载工具的 fnOS x86 原生版，FPK 内置 FFmpeg。",
     "labels": "原生,影音娱乐,下载",
     "distributor": "cmbya",
@@ -41,8 +41,8 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "28 MB",
-    "download_url": "https://github.com/cmbya/MeTube-fnOS/releases/download/fnos-2026.08.04-native2/MeTube_2026.08.04_native2_fnOS_x86.fpk",
-    "changelog": "【Pre-release 自动构建】\n\n自动检测到 MeTube 上游 **2026.08.04**，并生成 fnOS x86 原生 FPK。\n\n- fnOS 封装：native2\n- Web 端口：8081\n- Docker：不使用\n- FFmpeg：已直接打包进 FPK\n- FFmpeg：7.0.2-static / Linux x86_64\n- FFmpeg SHA256：e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99\n- 下载目录：优先使用 fnOS 第一个可写授权目录；无授权目录时使用 metube/downloads\n\n构建脚本会重新解开 app.tgz 校验 FFmpeg；缺失或 SHA256 不正确时不会发布。"
+    "download_url": "https://github.com/cmbya/MeTube-fnOS/releases/download/fnos-2026.08.15-native2/MeTube_2026.08.15_native2_fnOS_x86.fpk",
+    "changelog": "【Pre-release 自动构建】\n\n自动检测到 MeTube 上游 **2026.08.15**，并生成 fnOS x86 原生 FPK。\n\n- fnOS 封装：native2\n- Web 端口：8081\n- Docker：不使用\n- FFmpeg：已直接打包进 FPK\n- FFmpeg：7.0.2-static / Linux x86_64\n- FFmpeg SHA256：e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99\n- 下载目录：优先使用 fnOS 第一个可写授权目录；无授权目录时使用 metube/downloads\n\n构建脚本会重新解开 app.tgz 校验 FFmpeg；缺失或 SHA256 不正确时不会发布。"
   },
   "openlistnative": {
     "display_name": "OpenList",
@@ -62,7 +62,7 @@
   "streamcap": {
     "display_name": "StreamCap",
     "platform": "x86",
-    "version": "1.0.3-native2",
+    "version": "1.0.306",
     "desc": "多平台直播录制工具的 fnOS x86 原生版。",
     "labels": "原生,影音娱乐,直播录制",
     "distributor": "cmbya",
@@ -70,9 +70,9 @@
     "bug_report_url": "https://github.com/cmbya/StreamCap-fnOS/issues",
     "install_type": "存储空间",
     "isdocker": "false",
-    "size": "0.02 MB",
-    "download_url": "https://github.com/cmbya/StreamCap-fnOS/releases/download/fnos-v1.0.3-native2/StreamCap_1.0.3_native2_fnOS_x86.fpk",
-    "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 StreamCap **v1.0.3**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：v1.0.3\n- fnOS 封装：native2\n- 架构：x86 / amd64\n- Docker：不使用\n- 升级：保留 StreamCap 持久化配置与录像目录\n\n这是自动构建的 Pre-release。\n建议先在飞牛上覆盖升级测试，确认录制正常后再改成正式版。"
+    "size": "0.03 MB",
+    "download_url": "https://github.com/cmbya/StreamCap-fnOS/releases/download/fnos-v1.0.3-native6/StreamCap_1.0.3_native6_fnOS_x86.fpk",
+    "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 StreamCap **v1.0.3**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：v1.0.3\n- fnOS 封装：native6\n- 架构：x86 / amd64\n- Docker：不使用\n- 升级：保留 StreamCap 持久化配置与录像目录\n\n这是自动构建的 Pre-release。\n建议先在飞牛上覆盖升级测试，确认录制正常后再改成正式版。"
   },
   "taosync": {
     "display_name": "TaoSync",
