@@ -17,7 +17,7 @@
   "litepan": {
     "display_name": "LitePan",
     "platform": "x86",
-    "version": "0.4.9-beta-native1",
+    "version": "0.5.0-beta-native1",
     "desc": "网盘管理、WebDAV、STRM 与媒体整理工具的 fnOS x86 原生版。",
     "labels": "原生,系统工具,网盘",
     "distributor": "cmbya",
@@ -26,13 +26,13 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "0.01 MB",
-    "download_url": "https://github.com/cmbya/LitePan-fnOS/releases/download/fnos-v0.4.9-beta-native1/LitePan_0.4.9-beta_native1_fnOS_x86.fpk",
-    "changelog": "【Pre-release 自动构建】\n\n根据上游 Docker Hub **ponphil/litepan:v0.4.9-beta** 自动生成 fnOS x86 原生 FPK。\n\n- 上游：Ponphil/LitePan\n- 上游镜像标签：v0.4.9-beta\n- fnOS 封装：native1\n- 架构：x86 / amd64\n- Web 端口：5211\n- Docker：运行时不使用 Docker\n- 安装方式：从上游官方镜像提取 linux/amd64 LitePan 二进制\n- 数据：data / strm / mounts 持久化\n\n这是自动构建的 Pre-release。"
+    "download_url": "https://github.com/cmbya/LitePan-fnOS/releases/download/fnos-v0.5.0-beta-native1/LitePan_0.5.0-beta_native1_fnOS_x86.fpk",
+    "changelog": "【Pre-release 自动构建】\n\n根据上游 Docker Hub **ponphil/litepan:v0.5.0-beta** 自动生成 fnOS x86 原生 FPK。\n\n- 上游：Ponphil/LitePan\n- 上游镜像标签：v0.5.0-beta\n- fnOS 封装：native1\n- 架构：x86 / amd64\n- Web 端口：5211\n- Docker：运行时不使用 Docker\n- 安装方式：从上游官方镜像提取 linux/amd64 LitePan 二进制\n- 数据：data / strm / mounts 持久化\n\n这是自动构建的 Pre-release。"
   },
   "metube": {
     "display_name": "MeTube",
     "platform": "x86",
-    "version": "2026.08.15-native2",
+    "version": "2026.08.16-native2",
     "desc": "在线视频下载工具的 fnOS x86 原生版，FPK 内置 FFmpeg。",
     "labels": "原生,影音娱乐,下载",
     "distributor": "cmbya",
@@ -41,8 +41,8 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "28 MB",
-    "download_url": "https://github.com/cmbya/MeTube-fnOS/releases/download/fnos-2026.08.15-native2/MeTube_2026.08.15_native2_fnOS_x86.fpk",
-    "changelog": "【Pre-release 自动构建】\n\n自动检测到 MeTube 上游 **2026.08.15**，并生成 fnOS x86 原生 FPK。\n\n- fnOS 封装：native2\n- Web 端口：8081\n- Docker：不使用\n- FFmpeg：已直接打包进 FPK\n- FFmpeg：7.0.2-static / Linux x86_64\n- FFmpeg SHA256：e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99\n- 下载目录：优先使用 fnOS 第一个可写授权目录；无授权目录时使用 metube/downloads\n\n构建脚本会重新解开 app.tgz 校验 FFmpeg；缺失或 SHA256 不正确时不会发布。"
+    "download_url": "https://github.com/cmbya/MeTube-fnOS/releases/download/fnos-2026.08.16-native2/MeTube_2026.08.16_native2_fnOS_x86.fpk",
+    "changelog": "【Pre-release 自动构建】\n\n自动检测到 MeTube 上游 **2026.08.16**，并生成 fnOS x86 原生 FPK。\n\n- fnOS 封装：native2\n- Web 端口：8081\n- Docker：不使用\n- FFmpeg：已直接打包进 FPK\n- FFmpeg：7.0.2-static / Linux x86_64\n- FFmpeg SHA256：e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99\n- 下载目录：优先使用 fnOS 第一个可写授权目录；无授权目录时使用 metube/downloads\n\n构建脚本会重新解开 app.tgz 校验 FFmpeg；缺失或 SHA256 不正确时不会发布。"
   },
   "openlistnative": {
     "display_name": "OpenList",
