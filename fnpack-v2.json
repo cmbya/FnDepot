@@ -68,16 +68,16 @@
       "is_docker": false,
       "service_port": "5211",
       "releases": {
-        "0.5.0-beta-native1": {
-          "changelog": "【Pre-release 自动构建】\n\n根据上游 Docker Hub **ponphil/litepan:v0.5.0-beta** 自动生成 fnOS x86 原生 FPK。\n\n- 上游：Ponphil/LitePan\n- 上游镜像标签：v0.5.0-beta\n- fnOS 封装：native1\n- 架构：x86 / amd64\n- Web 端口：5211\n- Docker：运行时不使用 Docker\n- 安装方式：从上游官方镜像提取 linux/amd64 LitePan 二进制\n- 数据：data / strm / mounts 持久化\n\n这是自动构建的 Pre-release。",
-          "updated_at": "2026-08-17T03:09:47Z",
+        "0.5.1-beta-native1": {
+          "changelog": "【Pre-release 自动构建】\n\n根据上游 Docker Hub **ponphil/litepan:v0.5.1-beta** 自动生成 fnOS x86 原生 FPK。\n\n- 上游：Ponphil/LitePan\n- 上游镜像标签：v0.5.1-beta\n- fnOS 封装：native1\n- 架构：x86 / amd64\n- Web 端口：5211\n- Docker：运行时不使用 Docker\n- 安装方式：从上游官方镜像提取 linux/amd64 LitePan 二进制\n- 数据：data / strm / mounts 持久化\n\n这是自动构建的 Pre-release。",
+          "updated_at": "2026-08-19T03:07:48Z",
           "service_port": "5211",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/LitePan-fnOS/releases/download/fnos-v0.5.0-beta-native1/LitePan_0.5.0-beta_native1_fnOS_x86.fpk",
-              "sha256": "98a60057383aa7bd3e74ce09ac8d4df0a4a12a0849b44668c82591124273ca25",
-              "size": 12013,
-              "updated_at": "2026-08-17T03:09:47Z",
+              "download_url": "https://github.com/cmbya/LitePan-fnOS/releases/download/fnos-v0.5.1-beta-native1/LitePan_0.5.1-beta_native1_fnOS_x86.fpk",
+              "sha256": "6eb7cf96f660a5dcc15d4d7901b2cfece5c6634e79597b51df2fd2c82043eb8e",
+              "size": 12009,
+              "updated_at": "2026-08-19T03:07:48Z",
               "run_as": "root",
               "install_type": "",
               "is_docker": false,
@@ -108,16 +108,16 @@
       "is_docker": false,
       "service_port": "8081",
       "releases": {
-        "2026.08.17-native2": {
-          "changelog": "【Pre-release 自动构建】\n\n自动检测到 MeTube 上游 **2026.08.17**，并生成 fnOS x86 原生 FPK。\n\n- fnOS 封装：native2\n- Web 端口：8081\n- Docker：不使用\n- FFmpeg：已直接打包进 FPK\n- FFmpeg：7.0.2-static / Linux x86_64\n- FFmpeg SHA256：e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99\n- 下载目录：优先使用 fnOS 第一个可写授权目录；无授权目录时使用 metube/downloads\n\n构建脚本会重新解开 app.tgz 校验 FFmpeg；缺失或 SHA256 不正确时不会发布。",
-          "updated_at": "2026-08-18T03:30:47Z",
+        "2026.08.18-native2": {
+          "changelog": "【Pre-release 自动构建】\n\n自动检测到 MeTube 上游 **2026.08.18**，并生成 fnOS x86 原生 FPK。\n\n- fnOS 封装：native2\n- Web 端口：8081\n- Docker：不使用\n- FFmpeg：已直接打包进 FPK\n- FFmpeg：7.0.2-static / Linux x86_64\n- FFmpeg SHA256：e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99\n- 下载目录：优先使用 fnOS 第一个可写授权目录；无授权目录时使用 metube/downloads\n\n构建脚本会重新解开 app.tgz 校验 FFmpeg；缺失或 SHA256 不正确时不会发布。",
+          "updated_at": "2026-08-19T03:32:27Z",
           "service_port": "8081",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/MeTube-fnOS/releases/download/fnos-2026.08.17-native2/MeTube_2026.08.17_native2_fnOS_x86.fpk",
-              "sha256": "59b9e762a999c23ec90f6b67a67ab421500fc0b5393796d630847c1f9ca96171",
-              "size": 29442274,
-              "updated_at": "2026-08-18T03:30:47Z",
+              "download_url": "https://github.com/cmbya/MeTube-fnOS/releases/download/fnos-2026.08.18-native2/MeTube_2026.08.18_native2_fnOS_x86.fpk",
+              "sha256": "7b26b3ad9b48f5cd16d75bd2174a74408250ad00f403f9bb31317eee1a052a55",
+              "size": 29442377,
+              "updated_at": "2026-08-19T03:32:27Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -188,16 +188,16 @@
       "is_docker": false,
       "service_port": "6006",
       "releases": {
-        "1.0.306": {
-          "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 StreamCap **v1.0.3**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：v1.0.3\n- fnOS 封装：native6\n- 架构：x86 / amd64\n- Docker：不使用\n- 升级：保留 StreamCap 持久化配置与录像目录\n\n这是自动构建的 Pre-release。\n建议先在飞牛上覆盖升级测试，确认录制正常后再改成正式版。",
-          "updated_at": "2026-08-16T16:37:17Z",
+        "1.0.307": {
+          "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 StreamCap **v1.0.3**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：v1.0.3\n- fnOS 封装：native7\n- 架构：x86 / amd64\n- Docker：不使用\n- 升级：保留 StreamCap 持久化配置与录像目录\n\n这是自动构建的 Pre-release。\n建议先在飞牛上覆盖升级测试，确认录制正常后再改成正式版。",
+          "updated_at": "2026-08-19T06:37:20Z",
           "service_port": "6006",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/StreamCap-fnOS/releases/download/fnos-v1.0.3-native6/StreamCap_1.0.3_native6_fnOS_x86.fpk",
-              "sha256": "e2463fd727cd593d6510b7ea88af1b17dce32dac7cec4e8099ce6490e77fb978",
-              "size": 30516,
-              "updated_at": "2026-08-16T16:37:17Z",
+              "download_url": "https://github.com/cmbya/StreamCap-fnOS/releases/download/fnos-v1.0.3-native7/StreamCap_1.0.3_native7_fnOS_x86.fpk",
+              "sha256": "7b9e8aa21d8c24c413eb5c45360d15a8fcffc2aa0bbcd8345f8a2e82c1fc2b6a",
+              "size": 33638,
+              "updated_at": "2026-08-19T06:37:20Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
