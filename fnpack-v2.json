@@ -108,16 +108,16 @@
       "is_docker": false,
       "service_port": "8081",
       "releases": {
-        "2026.08.20-native2": {
-          "changelog": "【Pre-release 自动构建】\n\n自动检测到 MeTube 上游 **2026.08.20**，并生成 fnOS x86 原生 FPK。\n\n- fnOS 封装：native2\n- Web 端口：8081\n- Docker：不使用\n- FFmpeg：已直接打包进 FPK\n- FFmpeg：7.0.2-static / Linux x86_64\n- FFmpeg SHA256：e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99\n- 下载目录：优先使用 fnOS 第一个可写授权目录；无授权目录时使用 metube/downloads\n\n构建脚本会重新解开 app.tgz 校验 FFmpeg；缺失或 SHA256 不正确时不会发布。",
-          "updated_at": "2026-08-20T03:32:57Z",
+        "2026.08.21-native2": {
+          "changelog": "【Pre-release 自动构建】\n\n自动检测到 MeTube 上游 **2026.08.21**，并生成 fnOS x86 原生 FPK。\n\n- fnOS 封装：native2\n- Web 端口：8081\n- Docker：不使用\n- FFmpeg：已直接打包进 FPK\n- FFmpeg：7.0.2-static / Linux x86_64\n- FFmpeg SHA256：e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99\n- 下载目录：优先使用 fnOS 第一个可写授权目录；无授权目录时使用 metube/downloads\n\n构建脚本会重新解开 app.tgz 校验 FFmpeg；缺失或 SHA256 不正确时不会发布。",
+          "updated_at": "2026-08-22T03:27:37Z",
           "service_port": "8081",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/MeTube-fnOS/releases/download/fnos-2026.08.20-native2/MeTube_2026.08.20_native2_fnOS_x86.fpk",
-              "sha256": "c2ad9762b29672d8297a1ae8f46a573b958cf7cbd9d48ea402642120357f5d31",
-              "size": 29441125,
-              "updated_at": "2026-08-20T03:32:57Z",
+              "download_url": "https://github.com/cmbya/MeTube-fnOS/releases/download/fnos-2026.08.21-native2/MeTube_2026.08.21_native2_fnOS_x86.fpk",
+              "sha256": "3cfcba02ff3a32a52f56c1d24851164b23c838a5413b188f1ff238597bfc0015",
+              "size": 29442138,
+              "updated_at": "2026-08-22T03:27:37Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
