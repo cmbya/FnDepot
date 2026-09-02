@@ -47,7 +47,7 @@
   "openlistnative": {
     "display_name": "OpenList",
     "platform": "x86",
-    "version": "4.2.5-native1",
+    "version": "4.2.6-native1",
     "desc": "多存储聚合管理工具的 fnOS x86 原生版。",
     "labels": "原生,系统工具,网盘",
     "distributor": "cmbya",
@@ -56,8 +56,8 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "0.02 MB",
-    "download_url": "https://github.com/cmbya/OpenList-fnOS/releases/download/fnos-v4.2.5-native1/OpenList_4.2.5_native1_fnOS_x86.fpk",
-    "changelog": "【Pre-release 自动构建】\n\n根据 OpenList 上游正式 Release **v4.2.5** 自动生成 fnOS x86 原生 FPK。\n\n- 上游版本：v4.2.5\n- fnOS 封装：native1\n- 架构：x86 / amd64\n- Web 端口：5244\n- Docker：不使用\n- 数据：升级保留 OpenList data 数据库和配置\n- 上游二进制：openlist-linux-amd64.tar.gz\n\n这是自动构建的 **Pre-release**。建议先在飞牛上覆盖升级测试，确认正常后再手动改为正式 Release。"
+    "download_url": "https://github.com/cmbya/OpenList-fnOS/releases/download/fnos-v4.2.6-native1/OpenList_4.2.6_native1_fnOS_x86.fpk",
+    "changelog": "【Pre-release 自动构建】\n\n根据 OpenList 上游正式 Release **v4.2.6** 自动生成 fnOS x86 原生 FPK。\n\n- 上游版本：v4.2.6\n- fnOS 封装：native1\n- 架构：x86 / amd64\n- Web 端口：5244\n- Docker：不使用\n- 数据：升级保留 OpenList data 数据库和配置\n- 上游二进制：openlist-linux-amd64.tar.gz\n\n这是自动构建的 **Pre-release**。建议先在飞牛上覆盖升级测试，确认正常后再手动改为正式 Release。"
   },
   "streamcap": {
     "display_name": "StreamCap",

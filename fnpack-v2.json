@@ -148,16 +148,16 @@
       "is_docker": false,
       "service_port": "5244",
       "releases": {
-        "4.2.5-native1": {
-          "changelog": "【Pre-release 自动构建】\n\n根据 OpenList 上游正式 Release **v4.2.5** 自动生成 fnOS x86 原生 FPK。\n\n- 上游版本：v4.2.5\n- fnOS 封装：native1\n- 架构：x86 / amd64\n- Web 端口：5244\n- Docker：不使用\n- 数据：升级保留 OpenList data 数据库和配置\n- 上游二进制：openlist-linux-amd64.tar.gz\n\n这是自动构建的 **Pre-release**。建议先在飞牛上覆盖升级测试，确认正常后再手动改为正式 Release。",
-          "updated_at": "2026-08-13T13:22:13Z",
+        "4.2.6-native1": {
+          "changelog": "【Pre-release 自动构建】\n\n根据 OpenList 上游正式 Release **v4.2.6** 自动生成 fnOS x86 原生 FPK。\n\n- 上游版本：v4.2.6\n- fnOS 封装：native1\n- 架构：x86 / amd64\n- Web 端口：5244\n- Docker：不使用\n- 数据：升级保留 OpenList data 数据库和配置\n- 上游二进制：openlist-linux-amd64.tar.gz\n\n这是自动构建的 **Pre-release**。建议先在飞牛上覆盖升级测试，确认正常后再手动改为正式 Release。",
+          "updated_at": "2026-09-02T05:48:30Z",
           "service_port": "5244",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/OpenList-fnOS/releases/download/fnos-v4.2.5-native1/OpenList_4.2.5_native1_fnOS_x86.fpk",
-              "sha256": "be49fdbdce3b62783006030ad0ed45665bac6fb999546aec98515734e310648a",
-              "size": 22514,
-              "updated_at": "2026-08-13T13:22:13Z",
+              "download_url": "https://github.com/cmbya/OpenList-fnOS/releases/download/fnos-v4.2.6-native1/OpenList_4.2.6_native1_fnOS_x86.fpk",
+              "sha256": "72d36dc9c7d9e55d55afffb8a976f9e750e1d29c0f98b6fb839fc7bf295a3e1e",
+              "size": 22497,
+              "updated_at": "2026-09-02T05:48:30Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
