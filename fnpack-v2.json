@@ -68,16 +68,16 @@
       "is_docker": false,
       "service_port": "5211",
       "releases": {
-        "0.5.2-beta-native1": {
-          "changelog": "【Pre-release 自动构建】\n\n根据上游 Docker Hub **ponphil/litepan:v0.5.2-beta** 自动生成 fnOS x86 原生 FPK。\n\n- 上游：Ponphil/LitePan\n- 上游镜像标签：v0.5.2-beta\n- fnOS 封装：native1\n- 架构：x86 / amd64\n- Web 端口：5211\n- Docker：运行时不使用 Docker\n- 安装方式：从上游官方镜像提取 linux/amd64 LitePan 二进制\n- 数据：data / strm / mounts 持久化\n\n这是自动构建的 Pre-release。",
-          "updated_at": "2026-08-29T08:59:06Z",
+        "0.5.3-beta-native1": {
+          "changelog": "【Pre-release 自动构建】\n\n根据上游 Docker Hub **ponphil/litepan:v0.5.3-beta** 自动生成 fnOS x86 原生 FPK。\n\n- 上游：Ponphil/LitePan\n- 上游镜像标签：v0.5.3-beta\n- fnOS 封装：native1\n- 架构：x86 / amd64\n- Web 端口：5211\n- Docker：运行时不使用 Docker\n- 安装方式：从上游官方镜像提取 linux/amd64 LitePan 二进制\n- 数据：data / strm / mounts 持久化\n\n这是自动构建的 Pre-release。",
+          "updated_at": "2026-09-02T07:03:50Z",
           "service_port": "5211",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/LitePan-fnOS/releases/download/fnos-v0.5.2-beta-native1/LitePan_0.5.2-beta_native1_fnOS_x86.fpk",
-              "sha256": "0511974ae782cb623a277824febd7d0363e78b590c3eb7c69d022f8432eb7bfd",
-              "size": 12001,
-              "updated_at": "2026-08-29T08:59:06Z",
+              "download_url": "https://github.com/cmbya/LitePan-fnOS/releases/download/fnos-v0.5.3-beta-native1/LitePan_0.5.3-beta_native1_fnOS_x86.fpk",
+              "sha256": "b50c1d9e9e6e210ef280a1aeb9026f2fef1aa19ec3f6ea5032076faf2214b90f",
+              "size": 12008,
+              "updated_at": "2026-09-02T07:03:50Z",
               "run_as": "root",
               "install_type": "",
               "is_docker": false,
