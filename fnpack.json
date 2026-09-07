@@ -2,7 +2,7 @@
   "bililivetools": {
     "display_name": "biliLive-tools",
     "platform": "x86",
-    "version": "3.20.8",
+    "version": "3.21.8",
     "desc": "直播录制、弹幕与视频处理工具的 fnOS x86 原生版。",
     "labels": "原生,影音娱乐,直播录制",
     "distributor": "cmbya",
@@ -11,8 +11,8 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "0.22 MB",
-    "download_url": "https://github.com/cmbya/biliLive-tools-fnOS/releases/download/fnos-3.20.0-native8/biliLive-tools_3.20.0_native8_fnOS_x86.fpk",
-    "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 biliLive-tools **3.20.0**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：3.20.0\n- fnOS 封装：native8\n- 架构：x86 / amd64\n- Docker：不使用\n- native2：修复监控时间段提前录制\n- Bilibili：修复批量查询绕过 handleTime\n- startRecord：修复反向时间判断\n- 日志：录像目录/biliLive-tools-Logs\n- 升级：保留应用配置、账号/任务数据和录像目录\n\n**这是自动构建的 Pre-release。**"
+    "download_url": "https://github.com/cmbya/biliLive-tools-fnOS/releases/download/fnos-3.21.0-native8/biliLive-tools_3.21.0_native8_fnOS_x86.fpk",
+    "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 biliLive-tools **3.21.0**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：3.21.0\n- fnOS 封装：native8\n- 架构：x86 / amd64\n- Docker：不使用\n- native2：修复监控时间段提前录制\n- Bilibili：修复批量查询绕过 handleTime\n- startRecord：修复反向时间判断\n- 日志：录像目录/biliLive-tools-Logs\n- 升级：保留应用配置、账号/任务数据和录像目录\n\n**这是自动构建的 Pre-release。**"
   },
   "litepan": {
     "display_name": "LitePan",

@@ -28,16 +28,16 @@
       "is_docker": false,
       "service_port": "3000",
       "releases": {
-        "3.20.8": {
-          "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 biliLive-tools **3.20.0**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：3.20.0\n- fnOS 封装：native8\n- 架构：x86 / amd64\n- Docker：不使用\n- native2：修复监控时间段提前录制\n- Bilibili：修复批量查询绕过 handleTime\n- startRecord：修复反向时间判断\n- 日志：录像目录/biliLive-tools-Logs\n- 升级：保留应用配置、账号/任务数据和录像目录\n\n**这是自动构建的 Pre-release。**",
-          "updated_at": "2026-08-17T02:06:10Z",
+        "3.21.8": {
+          "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 biliLive-tools **3.21.0**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：3.21.0\n- fnOS 封装：native8\n- 架构：x86 / amd64\n- Docker：不使用\n- native2：修复监控时间段提前录制\n- Bilibili：修复批量查询绕过 handleTime\n- startRecord：修复反向时间判断\n- 日志：录像目录/biliLive-tools-Logs\n- 升级：保留应用配置、账号/任务数据和录像目录\n\n**这是自动构建的 Pre-release。**",
+          "updated_at": "2026-09-07T05:09:05Z",
           "service_port": "3000",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/biliLive-tools-fnOS/releases/download/fnos-3.20.0-native8/biliLive-tools_3.20.0_native8_fnOS_x86.fpk",
-              "sha256": "52e8aba27c161b8431e89f1ea436b3b606e9cbc5ed9a0b6ae2866a70b3449147",
-              "size": 228664,
-              "updated_at": "2026-08-17T02:06:10Z",
+              "download_url": "https://github.com/cmbya/biliLive-tools-fnOS/releases/download/fnos-3.21.0-native8/biliLive-tools_3.21.0_native8_fnOS_x86.fpk",
+              "sha256": "3ad19ee94d5219dc37dd57ef731b53573aeedfd4961570308f823ad0aee5f9b6",
+              "size": 226028,
+              "updated_at": "2026-09-07T05:09:05Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
