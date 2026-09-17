@@ -27,7 +27,7 @@
     "isdocker": "false",
     "size": "309 MB",
     "download_url": "https://github.com/cmbya/F2Media-fnOS/releases/download/v0.1.2/F2Media_0.1.2_fnOS_x86.fpk",
-    "changelog": "F2Media v0.1.2：九平台解析/下载架构重构；抖音优先 douyin_parse；douyin_parse + 可编辑免费 API + gallery-dl + yt-dlp；支持 REST/MCP、Cookie、日期/平台/标题目录、Live Photo 成对下载、任务管理，以及平台解析路由可视化排序；保留 x-cli；gallery-dl/yt-dlp/x-cli 支持 WebUI 在线更新与一键回滚。"
+    "changelog": "F2Media v0.1.2：九平台解析/下载架构重构；抖音优先 douyin_parse；douyin_parse + 可编辑免费 API + gallery-dl + yt-dlp；支持 REST/MCP、Cookie、日期/平台/标题目录、Live Photo 成对下载、任务管理，以及 平台解析路由可视化排序；保留 x-cli；gallery-dl/yt-dlp/x-cli 支持 WebUI 在线更新与一键回滚。"
   },
   "HermesAgent": {
     "display_name": "Hermes Agent",
@@ -77,7 +77,7 @@
   "metube": {
     "display_name": "MeTube",
     "platform": "x86",
-    "version": "2026.08.28-native2",
+    "version": "2026.09.15-native2",
     "desc": "在线视频下载工具的 fnOS x86 原生版，FPK 内置 FFmpeg。",
     "labels": "原生,影音娱乐,下载",
     "distributor": "cmbya",
@@ -86,8 +86,8 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "28 MB",
-    "download_url": "https://github.com/cmbya/MeTube-fnOS/releases/download/fnos-2026.08.28-native2/MeTube_2026.08.28_native2_fnOS_x86.fpk",
-    "changelog": "【Pre-release 自动构建】\n\n自动检测到 MeTube 上游 **2026.08.28**，并生成 fnOS x86 原生 FPK。\n\n- fnOS 封装：native2\n- Web 端口：8081\n- Docker：不使用\n- FFmpeg：已直接打包进 FPK\n- FFmpeg：7.0.2-static / Linux x86_64\n- FFmpeg SHA256：e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99\n- 下载目录：优先使用 fnOS 第一个可写授权目录；无授权目录时使用 metube/downloads\n\n构建脚本会重新解开 app.tgz 校验 FFmpeg；缺失或 SHA256 不正确时不会发布。"
+    "download_url": "https://github.com/cmbya/MeTube-fnOS/releases/download/fnos-2026.09.15-native2/MeTube_2026.09.15_native2_fnOS_x86.fpk",
+    "changelog": "【Pre-release 自动构建】\n\n自动检测到 MeTube 上游 **2026.09.15**，并生成 fnOS x86 原生 FPK。\n\n- fnOS 封装：native2\n- Web 端口：8081\n- Docker：不使用\n- FFmpeg：已直接打包进 FPK\n- FFmpeg：7.0.2-static / Linux x86_64\n- FFmpeg SHA256：e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99\n- 下载目录：优先使用 fnOS 第一个可写授权目录；无授权目录时使用 metube/downloads\n\n构建脚本会重新解开 app.tgz 校验 FFmpeg；缺失或 SHA256 不正确时不会发布。"
   },
   "openlistnative": {
     "display_name": "OpenList",
@@ -147,6 +147,6 @@
     "isdocker": "false",
     "size": "0.03 MB",
     "download_url": "https://github.com/cmbya/ZJJX/releases/download/v0.2.6/ZJJX-0.2.6.fpk",
-    "changelog": "**Full Changelog**: [v0.2.5...v0.2.6](https://github.com/cmbya/ZJJX/compare/v0.2.5...v0.2.6)"
+    "changelog": "**Full Changelog**: https://github.com/cmbya/ZJJX/compare/v0.2.5...v0.2.6"
   }
 }
