@@ -87,21 +87,33 @@ def release_time(release):
     except Exception:
         return datetime.min.replace(tzinfo=timezone.utc)
 
-def latest_non_draft_release(repo):
+def latest_non_draft_release(repo, release_tag=None, release_name_prefix=None):
     releases = request_json(
         f"https://api.github.com/repos/{repo}/releases?per_page=30"
     )
     releases = [r for r in releases if not r.get("draft", False)]
+    if release_tag:
+        releases = [r for r in releases if r.get("tag_name") == release_tag]
+    if release_name_prefix:
+        releases = [
+            r for r in releases
+            if str(r.get("name") or "").startswith(release_name_prefix)
+        ]
     if not releases:
         return None
     return max(releases, key=release_time)
 
-def choose_fpk_asset(release):
+def choose_fpk_asset(release, preferred_name=None):
     assets = [
         a for a in (release.get("assets") or [])
         if str(a.get("name", "")).lower().endswith(".fpk")
     ]
     if not assets:
+        return None
+    if preferred_name:
+        for asset in assets:
+            if asset.get("name") == preferred_name:
+                return asset
         return None
 
     def score(a):
@@ -149,12 +161,16 @@ def main():
         repo = item["repo"]
         print(f"\n=== 检查 {repo} ===")
 
-        release = latest_non_draft_release(repo)
+        release = latest_non_draft_release(
+            repo,
+            release_tag=item.get("release_tag"),
+            release_name_prefix=item.get("release_name_prefix"),
+        )
         if release is None:
             print("没有 Release，跳过")
             continue
 
-        asset = choose_fpk_asset(release)
+        asset = choose_fpk_asset(release, item.get("asset_name"))
         if asset is None:
             print("Release 中没有 FPK，跳过")
             continue
