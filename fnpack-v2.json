@@ -28,16 +28,16 @@
       "is_docker": false,
       "service_port": "3000",
       "releases": {
-        "3.22.8": {
-          "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 biliLive-tools **3.22.0**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：3.22.0\n- fnOS 封装：native8\n- 架构：x86 / amd64\n- Docker：不使用\n- native2：修复监控时间段提前录制\n- Bilibili：修复批量查询绕过 handleTime\n- startRecord：修复反向时间判断\n- 日志：录像目录/biliLive-tools-Logs\n- 升级：保留应用配置、账号/任务数据和录像目录\n\n**这是自动构建的 Pre-release。**",
-          "updated_at": "2026-09-21T05:22:45Z",
+        "3.22.108": {
+          "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 biliLive-tools **3.22.1**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：3.22.1\n- fnOS 封装：native8\n- 架构：x86 / amd64\n- Docker：不使用\n- native2：修复监控时间段提前录制\n- Bilibili：修复批量查询绕过 handleTime\n- startRecord：修复反向时间判断\n- 日志：录像目录/biliLive-tools-Logs\n- 升级：保留应用配置、账号/任务数据和录像目录\n\n**这是自动构建的 Pre-release。**",
+          "updated_at": "2026-09-22T05:19:23Z",
           "service_port": "3000",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/biliLive-tools-fnOS/releases/download/fnos-3.22.0-native8/biliLive-tools_3.22.0_native8_fnOS_x86.fpk",
-              "sha256": "d1913e4e04f04fcd2580bbeb156abb13da312b3b35b5372fb09ddbc3024cc393",
-              "size": 226031,
-              "updated_at": "2026-09-21T05:22:45Z",
+              "download_url": "https://github.com/cmbya/biliLive-tools-fnOS/releases/download/fnos-3.22.1-native8/biliLive-tools_3.22.1_native8_fnOS_x86.fpk",
+              "sha256": "727aa71fd2eaec212af7ea5453fc5d1b6cb9ce7b9fcae8b80de3a1e19c607f2e",
+              "size": 226029,
+              "updated_at": "2026-09-22T05:19:23Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -108,16 +108,16 @@
       "is_docker": false,
       "service_port": "8642",
       "releases": {
-        "0.1.3": {
-          "changelog": "更新类型：Hermes Agent。统一 fnOS 版本：0.1.3。上游版本：v0.21.3 (v2026.9.14)。目标平台：fnOS 1.2 x86_64。",
-          "updated_at": "2026-09-15T07:43:17Z",
+        "0.1.7": {
+          "changelog": "更新类型：Hermes Agent。统一 fnOS 版本：0.1.7。上游版本：v0.21.4 (v2026.9.21)。目标平台：fnOS 1.2 x86_64。",
+          "updated_at": "2026-09-22T05:00:49Z",
           "service_port": "8642",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FNAMS/releases/download/v0.1.3/HermesAgent-0.1.3-fnOS-x86_64.fpk",
-              "sha256": "6822845743c00d7b15c6993d8a96712b1977da028d6c7ffe21e693e864b6dc1e",
-              "size": 454903173,
-              "updated_at": "2026-09-15T07:43:17Z",
+              "download_url": "https://github.com/cmbya/FNAMS/releases/download/v0.1.7/HermesAgent-0.1.7-fnOS-x86_64.fpk",
+              "sha256": "aa81d59131238a81df77c1acacf327fd83923b493837fbfd7c722e0f35e146e5",
+              "size": 456325002,
+              "updated_at": "2026-09-22T05:00:49Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
