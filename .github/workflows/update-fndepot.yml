@@ -25,16 +25,22 @@ jobs:
       - name: 校验 JSON
         run: |
           python3 -m json.tool fnpack.json >/dev/null
+          python3 -m json.tool fnpack-v1.json >/dev/null
           python3 -m json.tool fnpack-v2.json >/dev/null
 
           python3 - <<'PY'
           import json
-          v1 = json.load(open("fnpack.json", encoding="utf-8"))
-          v2 = json.load(open("fnpack-v2.json", encoding="utf-8"))
+          v1 = json.load(open("fnpack-v1.json", encoding="utf-8"))
+          v2 = json.load(open("fnpack.json", encoding="utf-8"))
+          v2_alias = json.load(open("fnpack-v2.json", encoding="utf-8"))
 
           assert "schema_version" not in v1, "V1 根节点不能有 schema_version"
           assert v2.get("schema_version") == "2"
           assert isinstance(v2.get("apps"), dict)
+          assert v2 == v2_alias, "V2 兼容直链与根目录索引不一致"
+          assert set(v1) == set(v2["apps"]), "V1/V2 应用集合不一致"
+          for appname, app in v1.items():
+              assert app["version"] in v2["apps"][appname]["releases"], appname
 
           print("V1/V2 JSON 校验通过")
           print("V1 应用数:", len(v1))
@@ -51,7 +57,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add fnpack.json fnpack-v2.json assets/icons
+          git add fnpack.json fnpack-v1.json fnpack-v2.json assets/icons
           git add bililivetools litepan metube openlistnative streamcap taosync 2>/dev/null || true
 
           git commit -m "chore: update FnDepot V1 + V2 indexes"
