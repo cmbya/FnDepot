@@ -11,8 +11,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "apps.json"
-V1_INDEX = ROOT / "fnpack.json"
-V2_INDEX = ROOT / "fnpack-v2.json"
+V1_INDEX = ROOT / "fnpack-v1.json"
+V2_INDEX = ROOT / "fnpack.json"
+V2_ALIAS = ROOT / "fnpack-v2.json"
 ICONS = ROOT / "assets" / "icons"
 ICONS.mkdir(parents=True, exist_ok=True)
 
@@ -288,6 +289,9 @@ def main():
         encoding="utf-8",
     )
 
+    # 保留已有 V2 JSON 直链，避免影响使用 fnpack-v2.json 的用户
+    V2_ALIAS.write_text(V2_INDEX.read_text(encoding="utf-8"), encoding="utf-8")
+
     # 严格 JSON 自检
     json.loads(V1_INDEX.read_text(encoding="utf-8"))
     v2_check = json.loads(V2_INDEX.read_text(encoding="utf-8"))
@@ -295,8 +299,9 @@ def main():
         raise RuntimeError('V2 schema_version 必须为字符串 "2"')
 
     print(f"\n完成：V1 {len(v1)} 个应用，V2 {len(v2['apps'])} 个应用")
-    print("fnpack.json = V1 兼容源")
-    print("fnpack-v2.json = V2 新版源")
+    print("fnpack.json = V2 GitHub 仓库源")
+    print("fnpack-v1.json = V1 兼容直链")
+    print("fnpack-v2.json = V2 兼容直链")
 
 if __name__ == "__main__":
     main()
