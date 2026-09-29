@@ -47,7 +47,7 @@
   "HermesStudio": {
     "display_name": "Hermes Studio",
     "platform": "x86",
-    "version": "0.1.8",
+    "version": "0.2.0",
     "desc": "Hermes Studio fnOS 管理界面，用于连接和管理 Hermes Agent。",
     "labels": "原生,系统工具,AI工具",
     "distributor": "cmbya",
@@ -55,9 +55,9 @@
     "bug_report_url": "https://github.com/cmbya/FNAMS/issues",
     "install_type": "存储空间",
     "isdocker": "false",
-    "size": "181 MB",
-    "download_url": "https://github.com/cmbya/FNAMS/releases/download/v0.1.8/HermesStudio-0.1.8-fnOS-x86_64.fpk",
-    "changelog": "更新类型：Hermes Studio。统一 fnOS 版本：0.1.8。上游版本：v0.7.24。目标平台：fnOS 1.2 x86_64。"
+    "size": "182 MB",
+    "download_url": "https://github.com/cmbya/FNAMS/releases/download/v0.2.0/HermesStudio-0.2.0-fnOS-x86_64.fpk",
+    "changelog": "更新类型：Hermes Studio。统一 fnOS 版本：0.2.0。上游版本：v0.7.25。目标平台：fnOS 1.2 x86_64。"
   },
   "litepan": {
     "display_name": "LitePan",
