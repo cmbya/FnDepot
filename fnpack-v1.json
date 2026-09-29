@@ -62,7 +62,7 @@
   "litepan": {
     "display_name": "LitePan",
     "platform": "x86",
-    "version": "0.5.6-beta-native1",
+    "version": "0.5.6-beta",
     "desc": "网盘管理、WebDAV、STRM 与媒体整理工具的 fnOS x86 原生版。",
     "labels": "原生,系统工具,网盘",
     "distributor": "cmbya",
@@ -71,13 +71,13 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "0.01 MB",
-    "download_url": "https://github.com/cmbya/LitePan-fnOS/releases/download/fnos-v0.5.6-beta-native1/LitePan_0.5.6-beta_native1_fnOS_x86.fpk",
-    "changelog": "【Pre-release 自动构建】\n\n根据上游 Docker Hub **ponphil/litepan:v0.5.6-beta** 自动生成 fnOS x86 原生 FPK。\n\n- 上游：Ponphil/LitePan\n- 上游镜像标签：v0.5.6-beta\n- fnOS 封装：native1\n- 架构：x86 / amd64\n- Web 端口：5211\n- Docker：运行时不使用 Docker\n- 安装方式：从上游官方镜像提取 linux/amd64 LitePan 二进制\n- 数据：data / strm / mounts 持久化\n\n这是自动构建的 Pre-release。"
+    "download_url": "https://github.com/cmbya/LitePan-fnOS/releases/download/fnos-v0.5.6-beta/LitePan_0.5.6-beta_fnOS_x86.fpk",
+    "changelog": "【Pre-release 自动构建】\n\n根据上游 Docker Hub **ponphil/litepan:v0.5.6-beta** 自动生成 fnOS x86 原生 FPK。\n\n- 上游：Ponphil/LitePan\n- 上游镜像标签：v0.5.6-beta\n- 架构：x86 / amd64\n- Web 端口：5211\n- Docker：运行时不使用 Docker\n- 安装方式：从上游官方镜像提取 linux/amd64 LitePan 二进制\n- 数据：data / strm / mounts 持久化\n\n这是自动构建的 Pre-release。"
   },
   "metube": {
     "display_name": "MeTube",
     "platform": "x86",
-    "version": "2026.09.27-native2",
+    "version": "2026.09.28",
     "desc": "在线视频下载工具的 fnOS x86 原生版，FPK 内置 FFmpeg。",
     "labels": "原生,影音娱乐,下载",
     "distributor": "cmbya",
@@ -86,13 +86,13 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "28 MB",
-    "download_url": "https://github.com/cmbya/MeTube-fnOS/releases/download/fnos-2026.09.27-native2/MeTube_2026.09.27_native2_fnOS_x86.fpk",
-    "changelog": "【Pre-release 自动构建】\n\n自动检测到 MeTube 上游 **2026.09.27**，并生成 fnOS x86 原生 FPK。\n\n- fnOS 封装：native2\n- Web 端口：8081\n- Docker：不使用\n- FFmpeg：已直接打包进 FPK\n- FFmpeg：7.0.2-static / Linux x86_64\n- FFmpeg SHA256：e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99\n- 下载目录：优先使用 fnOS 第一个可写授权目录；无授权目录时使用 metube/downloads\n\n构建脚本会重新解开 app.tgz 校验 FFmpeg；缺失或 SHA256 不正确时不会发布。"
+    "download_url": "https://github.com/cmbya/MeTube-fnOS/releases/download/fnos-2026.09.28/MeTube_2026.09.28_fnOS_x86.fpk",
+    "changelog": "【Pre-release 自动构建】\n\n自动检测到 MeTube 上游 **2026.09.28**，并生成 fnOS x86 原生 FPK。\n\n- Web 端口：8081\n- Docker：不使用\n- FFmpeg：已直接打包进 FPK\n- FFmpeg：7.0.2-static / Linux x86_64\n- FFmpeg SHA256：e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99\n- 下载目录：优先使用 fnOS 第一个可写授权目录；无授权目录时使用 metube/downloads\n\n构建脚本会重新解开 app.tgz 校验 FFmpeg；缺失或 SHA256 不正确时不会发布。"
   },
   "openlistnative": {
     "display_name": "OpenList",
     "platform": "x86",
-    "version": "4.2.6-native1",
+    "version": "4.2.6",
     "desc": "多存储聚合管理工具的 fnOS x86 原生版。",
     "labels": "原生,系统工具,网盘",
     "distributor": "cmbya",
@@ -101,13 +101,13 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "0.02 MB",
-    "download_url": "https://github.com/cmbya/OpenList-fnOS/releases/download/fnos-v4.2.6-native1/OpenList_4.2.6_native1_fnOS_x86.fpk",
-    "changelog": "【Pre-release 自动构建】\n\n根据 OpenList 上游正式 Release **v4.2.6** 自动生成 fnOS x86 原生 FPK。\n\n- 上游版本：v4.2.6\n- fnOS 封装：native1\n- 架构：x86 / amd64\n- Web 端口：5244\n- Docker：不使用\n- 数据：升级保留 OpenList data 数据库和配置\n- 上游二进制：openlist-linux-amd64.tar.gz\n\n这是自动构建的 **Pre-release**。建议先在飞牛上覆盖升级测试，确认正常后再手动改为正式 Release。"
+    "download_url": "https://github.com/cmbya/OpenList-fnOS/releases/download/fnos-v4.2.6/OpenList_4.2.6_fnOS_x86.fpk",
+    "changelog": "【Pre-release 自动构建】\n\n根据 OpenList 上游正式 Release **v4.2.6** 自动生成 fnOS x86 原生 FPK。\n\n- 上游版本：v4.2.6\n- 架构：x86 / amd64\n- Web 端口：5244\n- Docker：不使用\n- 数据：升级保留 OpenList data 数据库和配置\n- 上游二进制：openlist-linux-amd64.tar.gz\n\n这是自动构建的 **Pre-release**。建议先在飞牛上覆盖升级测试，确认正常后再手动改为正式 Release。"
   },
   "streamcap": {
     "display_name": "StreamCap",
     "platform": "x86",
-    "version": "1.0.307",
+    "version": "1.0.3",
     "desc": "多平台直播录制工具的 fnOS x86 原生版。",
     "labels": "原生,影音娱乐,直播录制",
     "distributor": "cmbya",
@@ -116,13 +116,13 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "0.03 MB",
-    "download_url": "https://github.com/cmbya/StreamCap-fnOS/releases/download/fnos-v1.0.3-native7/StreamCap_1.0.3_native7_fnOS_x86.fpk",
-    "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 StreamCap **v1.0.3**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：v1.0.3\n- fnOS 封装：native7\n- 架构：x86 / amd64\n- Docker：不使用\n- 升级：保留 StreamCap 持久化配置与录像目录\n\n这是自动构建的 Pre-release。\n建议先在飞牛上覆盖升级测试，确认录制正常后再改成正式版。"
+    "download_url": "https://github.com/cmbya/StreamCap-fnOS/releases/download/fnos-v1.0.3/StreamCap_1.0.3_fnOS_x86.fpk",
+    "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 StreamCap **v1.0.3**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：v1.0.3\n- 架构：x86 / amd64\n- Docker：不使用\n- 升级：保留 StreamCap 持久化配置与录像目录\n\n这是自动构建的 Pre-release。\n建议先在飞牛上覆盖升级测试，确认录制正常后再改成正式版。"
   },
   "taosync": {
     "display_name": "TaoSync",
     "platform": "x86",
-    "version": "0.4.0-native1",
+    "version": "0.4.0",
     "desc": "文件同步工具的 fnOS x86 原生版。",
     "labels": "原生,系统工具,同步",
     "distributor": "cmbya",
@@ -131,8 +131,8 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "0.12 MB",
-    "download_url": "https://github.com/cmbya/TaoSync-fnOS/releases/download/fnos-v0.4.0-native1/TaoSync_0.4.0_native1_fnOS_x86.fpk",
-    "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 TaoSync **v0.4.0**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：v0.4.0\n- fnOS 封装：native1\n- 架构：x86 / amd64\n- Docker：不使用\n- 上游程序：官方 Linux StaticX amd64\n- Web 端口：8023\n- 升级：保留 TaoSync 数据库、配置和任务数据\n\n**这是自动构建的 Pre-release。建议先在飞牛上覆盖升级测试，确认同步任务正常后再把本 Release 改成正式版。**"
+    "download_url": "https://github.com/cmbya/TaoSync-fnOS/releases/download/fnos-v0.4.0/TaoSync_0.4.0_fnOS_x86.fpk",
+    "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 TaoSync **v0.4.0**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：v0.4.0\n- 架构：x86 / amd64\n- Docker：不使用\n- 上游程序：官方 Linux StaticX amd64\n- Web 端口：8023\n- 升级：保留 TaoSync 数据库、配置和任务数据\n\n**这是自动构建的 Pre-release。建议先在飞牛上覆盖升级测试，确认同步任务正常后再把本 Release 改成正式版。**"
   },
   "ZJJX": {
     "display_name": "ZJJX",
