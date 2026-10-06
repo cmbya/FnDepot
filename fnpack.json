@@ -148,16 +148,16 @@
       "is_docker": false,
       "service_port": "8648",
       "releases": {
-        "0.2.3": {
-          "changelog": "更新类型：Hermes Studio。统一 fnOS 版本：0.2.3。上游版本：v0.7.29。目标平台：fnOS 1.2 x86_64。",
-          "updated_at": "2026-10-03T08:02:31Z",
+        "0.2.4": {
+          "changelog": "更新类型：Hermes Studio。统一 fnOS 版本：0.2.4。上游版本：v0.7.30。目标平台：fnOS 1.2 x86_64。",
+          "updated_at": "2026-10-05T08:55:47Z",
           "service_port": "8648",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FNAMS/releases/download/v0.2.3/HermesStudio-0.2.3-fnOS-x86_64.fpk",
-              "sha256": "08fadaa5750931cd5963d43ad62cd2967b787648194419249ada43ab57a08802",
-              "size": 190774087,
-              "updated_at": "2026-10-03T08:02:31Z",
+              "download_url": "https://github.com/cmbya/FNAMS/releases/download/v0.2.4/HermesStudio-0.2.4-fnOS-x86_64.fpk",
+              "sha256": "307fcb3d20f48a47b21da7bc05292c8aa8e49f61c652d30cfa872c2bb335c0b3",
+              "size": 190805218,
+              "updated_at": "2026-10-05T08:55:47Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
