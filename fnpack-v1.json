@@ -14,6 +14,21 @@
     "download_url": "https://github.com/cmbya/biliLive-tools-fnOS/releases/download/fnos-3.22.2/biliLive-tools_3.22.2_fnOS_x86.fpk",
     "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 biliLive-tools **3.22.2**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：3.22.2\n- 架构：x86 / amd64\n- Docker：不使用\n- native2：修复监控时间段提前录制\n- Bilibili：修复批量查询绕过 handleTime\n- startRecord：修复反向时间判断\n- 日志：录像目录/biliLive-tools-Logs\n- 升级：保留应用配置、账号/任务数据和录像目录\n\n**这是自动构建的 Pre-release。**"
   },
+  "cliproxyapi": {
+    "display_name": "CLIProxyAPI",
+    "platform": "x86",
+    "version": "8.0.28",
+    "desc": "CLIProxyAPI 的 fnOS x86 原生版，提供 OpenAI/Gemini/Claude 等兼容 API 与浏览器管理界面。",
+    "labels": "原生,系统工具,AI工具,API代理",
+    "distributor": "cmbya",
+    "distributor_url": "https://github.com/cmbya/CPA",
+    "bug_report_url": "https://github.com/cmbya/CPA/issues",
+    "install_type": "存储空间",
+    "isdocker": "false",
+    "size": "22 MB",
+    "download_url": "https://github.com/cmbya/CPA/releases/download/fnos-8.0.28/cliproxyapi_8.0.28_fnOS_x86.fpk",
+    "changelog": "【Pre-release 自动构建】\n\n自动构建产物，尚未完成真实 fnOS 设备安装测试。源代码与版本来自 router-for-me/CLIProxyAPI。请先测试后再用于正式环境。"
+  },
   "f2media": {
     "display_name": "F2Media",
     "platform": "x86",
