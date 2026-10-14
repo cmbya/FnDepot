@@ -4,6 +4,7 @@
 
 当前自动索引以下仓库的**最新非 Draft Release（包含 Pre-release）**：
 
+- `cmbya/CPA`（CLIProxyAPI）
 - `cmbya/StreamCap-fnOS`
 - `cmbya/biliLive-tools-fnOS`
 - `cmbya/TaoSync-fnOS`

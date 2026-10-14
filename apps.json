@@ -7,6 +7,18 @@
   },
   "repositories": [
     {
+      "repo": "cmbya/CPA",
+      "display_name": "CLIProxyAPI",
+      "desc": "CLIProxyAPI 的 fnOS x86 原生版，提供 OpenAI/Gemini/Claude 等兼容 API 与浏览器管理界面。",
+      "categories": ["系统工具"],
+      "labels": "原生,系统工具,AI工具,API代理",
+      "maintainer": "router-for-me",
+      "maintainer_url": "https://github.com/router-for-me/CLIProxyAPI",
+      "distributor": "cmbya",
+      "bug_report_url": "https://github.com/cmbya/CPA/issues",
+      "run_as": "package"
+    },
+    {
       "repo": "cmbya/StreamCap-fnOS",
       "display_name": "StreamCap",
       "desc": "多平台直播录制工具的 fnOS x86 原生版。",
