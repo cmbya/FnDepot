@@ -17,7 +17,7 @@
   "cliproxyapi": {
     "display_name": "CLIProxyAPI",
     "platform": "x86",
-    "version": "8.0.28",
+    "version": "8.0.29",
     "desc": "CLIProxyAPI 的 fnOS x86 原生版，提供 OpenAI/Gemini/Claude 等兼容 API 与浏览器管理界面。",
     "labels": "原生,系统工具,AI工具,API代理",
     "distributor": "cmbya",
@@ -26,7 +26,7 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "22 MB",
-    "download_url": "https://github.com/cmbya/CPA/releases/download/fnos-8.0.28/cliproxyapi_8.0.28_fnOS_x86.fpk",
+    "download_url": "https://github.com/cmbya/CPA/releases/download/fnos-8.0.29/cliproxyapi_8.0.29_fnOS_x86.fpk",
     "changelog": "【Pre-release 自动构建】\n\n自动构建产物，尚未完成真实 fnOS 设备安装测试。源代码与版本来自 router-for-me/CLIProxyAPI。请先测试后再用于正式环境。"
   },
   "f2media": {

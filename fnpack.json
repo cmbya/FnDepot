@@ -68,16 +68,16 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "8.0.28": {
+        "8.0.29": {
           "changelog": "【Pre-release 自动构建】\n\n自动构建产物，尚未完成真实 fnOS 设备安装测试。源代码与版本来自 router-for-me/CLIProxyAPI。请先测试后再用于正式环境。",
-          "updated_at": "2026-10-14T05:36:34Z",
+          "updated_at": "2026-10-14T17:41:19Z",
           "service_port": "",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/CPA/releases/download/fnos-8.0.28/cliproxyapi_8.0.28_fnOS_x86.fpk",
-              "sha256": "dd9f75a09f3342aab88ecee99a2bb1279d699f027f9ed9f457462f033a3c31e7",
-              "size": 23015086,
-              "updated_at": "2026-10-14T05:36:34Z",
+              "download_url": "https://github.com/cmbya/CPA/releases/download/fnos-8.0.29/cliproxyapi_8.0.29_fnOS_x86.fpk",
+              "sha256": "0b8bf2286f4eff8863eeb47510269fbfd5cdd44f05cd24d6e66665a6da0dbcdc",
+              "size": 23038827,
+              "updated_at": "2026-10-14T17:41:19Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
