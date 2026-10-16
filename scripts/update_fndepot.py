@@ -88,9 +88,10 @@ def release_time(release):
     except Exception:
         return datetime.min.replace(tzinfo=timezone.utc)
 
-def latest_non_draft_release(repo, release_tag=None, release_name_prefix=None):
+def latest_non_draft_release(repo, release_tag=None, release_name_prefix=None,
+                             asset_prefix=None):
     releases = request_json(
-        f"https://api.github.com/repos/{repo}/releases?per_page=30"
+        f"https://api.github.com/repos/{repo}/releases?per_page=100"
     )
     releases = [r for r in releases if not r.get("draft", False)]
     if release_tag:
@@ -100,17 +101,36 @@ def latest_non_draft_release(repo, release_tag=None, release_name_prefix=None):
             r for r in releases
             if str(r.get("name") or "").startswith(release_name_prefix)
         ]
+    if asset_prefix:
+        # 聚合式 Release（一个 Release 里放多个应用的 fpk）：
+        # 只保留「含有该前缀资产」的 Release，否则某天只有别的应用更新时
+        # 会误取到不含本应用产物的 Release。
+        releases = [
+            r for r in releases
+            if any(
+                str(a.get("name", "")).startswith(asset_prefix)
+                and str(a.get("name", "")).lower().endswith(".fpk")
+                for a in (r.get("assets") or [])
+            )
+        ]
     if not releases:
         return None
     return max(releases, key=release_time)
 
-def choose_fpk_asset(release, preferred_name=None):
+def choose_fpk_asset(release, preferred_name=None, asset_prefix=None):
     assets = [
         a for a in (release.get("assets") or [])
         if str(a.get("name", "")).lower().endswith(".fpk")
     ]
     if not assets:
         return None
+    if asset_prefix:
+        assets = [
+            a for a in assets
+            if str(a.get("name", "")).startswith(asset_prefix)
+        ]
+        if not assets:
+            return None
     if preferred_name:
         for asset in assets:
             if asset.get("name") == preferred_name:
@@ -160,18 +180,24 @@ def main():
 
     for item in cfg["repositories"]:
         repo = item["repo"]
+        asset_prefix = item.get("asset_prefix")
         print(f"\n=== 检查 {repo} ===")
 
         release = latest_non_draft_release(
             repo,
             release_tag=item.get("release_tag"),
             release_name_prefix=item.get("release_name_prefix"),
+            asset_prefix=asset_prefix,
         )
         if release is None:
             print("没有 Release，跳过")
             continue
 
-        asset = choose_fpk_asset(release, item.get("asset_name"))
+        asset = choose_fpk_asset(
+            release,
+            item.get("asset_name"),
+            asset_prefix=asset_prefix,
+        )
         if asset is None:
             print("Release 中没有 FPK，跳过")
             continue
@@ -192,13 +218,24 @@ def main():
         sha256 = hashlib.sha256(blob).hexdigest()
         size = len(blob)
         prerelease = bool(release.get("prerelease"))
-        changelog = clean_changelog(release.get("body"), prerelease)
+        changelog_override = item.get("changelog")
+        if changelog_override:
+            # 包由集中构建仓产出时，上游 Release 正文（属于构建仓）与本应用
+            # 无关，改用 apps.json 里的模板，{version} 会被替换。
+            changelog = changelog_override.replace("{version}", version)
+        else:
+            changelog = clean_changelog(release.get("body"), prerelease)
         updated_at = (
             release.get("published_at")
             or release.get("created_at")
             or ""
         )
         run_as = item.get("run_as", "package")
+
+        # 允许在 apps.json 里覆盖展示用链接（例如包集中在 FnDepot 时，
+        # 上游项目页应与构建仓区分开）
+        readme_url = item.get("readme_url") or f"https://github.com/{repo}"
+        distributor_url = item.get("distributor_url") or f"https://github.com/{repo}"
 
         # 保存通用图标
         icon_rel = f"assets/icons/{appname}.png"
@@ -221,7 +258,7 @@ def main():
             "desc": item["desc"],
             "labels": item.get("labels", "原生"),
             "distributor": item.get("distributor", cfg["source_info"]["author"]),
-            "distributor_url": f"https://github.com/{repo}",
+            "distributor_url": distributor_url,
             "bug_report_url": item.get(
                 "bug_report_url",
                 f"https://github.com/{repo}/issues",
@@ -240,7 +277,7 @@ def main():
             "platform": ["x86"],
             "categories": item["categories"],
             "icon_url": icon_rel,
-            "readme_url": f"https://github.com/{repo}",
+            "readme_url": readme_url,
             "bug_report_url": item.get(
                 "bug_report_url",
                 f"https://github.com/{repo}/issues",
@@ -248,7 +285,7 @@ def main():
             "maintainer": item["maintainer"],
             "maintainer_url": item["maintainer_url"],
             "distributor": item.get("distributor", cfg["source_info"]["author"]),
-            "distributor_url": f"https://github.com/{repo}",
+            "distributor_url": distributor_url,
             "run_as": run_as,
             "install_type": "",
             "is_docker": False,

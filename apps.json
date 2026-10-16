@@ -7,7 +7,8 @@
   },
   "repositories": [
     {
-      "repo": "cmbya/CPA",
+      "repo": "cmbya/FnDepot",
+      "asset_prefix": "CLIProxyAPI_",
       "display_name": "CLIProxyAPI",
       "desc": "CLIProxyAPI 的 fnOS x86 原生版，提供 OpenAI/Gemini/Claude 等兼容 API 与浏览器管理界面。",
       "categories": ["系统工具"],
@@ -15,7 +16,10 @@
       "maintainer": "router-for-me",
       "maintainer_url": "https://github.com/router-for-me/CLIProxyAPI",
       "distributor": "cmbya",
-      "bug_report_url": "https://github.com/cmbya/CPA/issues",
+      "readme_url": "https://github.com/router-for-me/CLIProxyAPI",
+      "distributor_url": "https://github.com/cmbya/fnos-buildbot",
+      "bug_report_url": "https://github.com/cmbya/FnDepot/issues",
+      "changelog": "CLIProxyAPI {version} fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
       "run_as": "package"
     },
     {
@@ -47,7 +51,8 @@
       "run_as": "package"
     },
     {
-      "repo": "cmbya/TaoSync-fnOS",
+      "repo": "cmbya/FnDepot",
+      "asset_prefix": "TaoSync_",
       "display_name": "TaoSync",
       "desc": "文件同步工具的 fnOS x86 原生版。",
       "categories": [
@@ -57,11 +62,15 @@
       "maintainer": "dr34m-cn",
       "maintainer_url": "https://github.com/dr34m-cn/taosync",
       "distributor": "cmbya",
-      "bug_report_url": "https://github.com/cmbya/TaoSync-fnOS/issues",
+      "readme_url": "https://github.com/dr34m-cn/taosync",
+      "distributor_url": "https://github.com/cmbya/fnos-buildbot",
+      "bug_report_url": "https://github.com/cmbya/FnDepot/issues",
+      "changelog": "TaoSync {version} fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
       "run_as": "package"
     },
     {
-      "repo": "cmbya/OpenList-fnOS",
+      "repo": "cmbya/FnDepot",
+      "asset_prefix": "OpenList_",
       "display_name": "OpenList",
       "desc": "多存储聚合管理工具的 fnOS x86 原生版。",
       "categories": [
@@ -71,7 +80,10 @@
       "maintainer": "OpenListTeam",
       "maintainer_url": "https://github.com/OpenListTeam/OpenList",
       "distributor": "cmbya",
-      "bug_report_url": "https://github.com/cmbya/OpenList-fnOS/issues",
+      "readme_url": "https://github.com/OpenListTeam/OpenList",
+      "distributor_url": "https://github.com/cmbya/fnos-buildbot",
+      "bug_report_url": "https://github.com/cmbya/FnDepot/issues",
+      "changelog": "OpenList {version} fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
       "run_as": "package"
     },
     {
