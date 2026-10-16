@@ -36,13 +36,13 @@
     "desc": "多平台图片、视频、图集与 Live Photo 媒体解析下载器的 fnOS x86 原生版。",
     "labels": "原生,影音娱乐,媒体解析,下载",
     "distributor": "cmbya",
-    "distributor_url": "https://github.com/cmbya/F2Media-fnOS",
+    "distributor_url": "https://github.com/cmbya/fnos-buildbot",
     "bug_report_url": "https://github.com/cmbya/F2Media-fnOS/issues",
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "309 MB",
-    "download_url": "https://github.com/cmbya/F2Media-fnOS/releases/download/v0.1.2/F2Media_0.1.2_fnOS_x86.fpk",
-    "changelog": "F2Media v0.1.2：九平台解析/下载架构重构；抖音优先 douyin_parse；douyin_parse + 可编辑免费 API + gallery-dl + yt-dlp；支持 REST/MCP、Cookie、日期/平台/标题目录、Live Photo 成对下载、任务管理，以及 平台解析路由可视化排序；保留 x-cli；gallery-dl/yt-dlp/x-cli 支持 WebUI 在线更新与一键回滚。"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.16/F2Media_0.1.2_fnOS_x86.fpk",
+    "changelog": "由 cmbya/fnos-buildbot 自动构建的 fnOS x86 原生 FPK。构建时间：2026-10-16 13:53 UTC。尚未完成真实设备安装回归测试，请自行验证后再用于正式环境。"
   },
   "HermesAgent": {
     "display_name": "Hermes Agent",
@@ -156,12 +156,12 @@
     "desc": "媒体链接解析、预览与下载工具的 fnOS x86 原生版。",
     "labels": "原生,影音娱乐,媒体解析,下载",
     "distributor": "cmbya",
-    "distributor_url": "https://github.com/cmbya/ZJJX",
+    "distributor_url": "https://github.com/cmbya/fnos-buildbot",
     "bug_report_url": "https://github.com/cmbya/ZJJX/issues",
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "0.03 MB",
-    "download_url": "https://github.com/cmbya/ZJJX/releases/download/v0.2.6/ZJJX-0.2.6.fpk",
-    "changelog": "**Full Changelog**: https://github.com/cmbya/ZJJX/compare/v0.2.5...v0.2.6"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.16/ZJJX-0.2.6.fpk",
+    "changelog": "由 cmbya/fnos-buildbot 自动构建的 fnOS x86 原生 FPK。构建时间：2026-10-16 13:53 UTC。尚未完成真实设备安装回归测试，请自行验证后再用于正式环境。"
   }
 }
