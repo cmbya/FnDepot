@@ -17,27 +17,27 @@
         "影音娱乐"
       ],
       "icon_url": "assets/icons/bililivetools.png",
-      "readme_url": "https://github.com/cmbya/biliLive-tools-fnOS",
+      "readme_url": "https://github.com/renmu123/biliLive-tools",
       "bug_report_url": "https://github.com/cmbya/biliLive-tools-fnOS/issues",
       "maintainer": "renmu123",
       "maintainer_url": "https://github.com/renmu123/biliLive-tools",
       "distributor": "cmbya",
-      "distributor_url": "https://github.com/cmbya/biliLive-tools-fnOS",
+      "distributor_url": "https://github.com/cmbya/fnos-buildbot",
       "run_as": "package",
       "install_type": "",
       "is_docker": false,
       "service_port": "3000",
       "releases": {
-        "3.22.2": {
-          "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 biliLive-tools **3.22.2**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：3.22.2\n- 架构：x86 / amd64\n- Docker：不使用\n- native2：修复监控时间段提前录制\n- Bilibili：修复批量查询绕过 handleTime\n- startRecord：修复反向时间判断\n- 日志：录像目录/biliLive-tools-Logs\n- 升级：保留应用配置、账号/任务数据和录像目录\n\n**这是自动构建的 Pre-release。**",
-          "updated_at": "2026-10-04T06:15:40Z",
+        "4.0.0": {
+          "changelog": "biliLive-tools 4.0.0：正式 Release 固定 tag/SHA 源码构建，内置 Node、前后端及媒体工具；保留原数据、录像路径和严格北京时间监控窗口。尚未完成真机安装与真实录制回归。",
+          "updated_at": "2026-10-16T16:32:45Z",
           "service_port": "3000",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/biliLive-tools-fnOS/releases/download/fnos-3.22.2/biliLive-tools_3.22.2_fnOS_x86.fpk",
-              "sha256": "d7ddf1f6a2859b2b158384bd6afc41ada638888b1b2e27fa58928e3501401a35",
-              "size": 228292,
-              "updated_at": "2026-10-04T06:15:40Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.17/biliLive-tools_4.0.0_fnOS_x86.fpk",
+              "sha256": "6249f55fce321f95cb9ae10be4e36b1181a815387e54ee5ead480f79bcb05c97",
+              "size": 275262471,
+              "updated_at": "2026-10-16T16:32:45Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
