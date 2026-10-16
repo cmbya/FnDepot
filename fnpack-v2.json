@@ -129,7 +129,7 @@
     },
     "litepan": {
       "display_name": "LitePan",
-      "desc": "网盘管理、WebDAV、STRM 与媒体整理工具的 fnOS x86 原生版。",
+      "desc": "网盘管理、WebDAV、STRM 与媒体整理工具的 fnOS x86 原生版；Actions 从固定上游 tag 编译并内置程序。",
       "platform": [
         "x86"
       ],
@@ -137,27 +137,27 @@
         "系统工具"
       ],
       "icon_url": "assets/icons/litepan.png",
-      "readme_url": "https://github.com/cmbya/LitePan-fnOS",
-      "bug_report_url": "https://github.com/cmbya/LitePan-fnOS/issues",
+      "readme_url": "https://github.com/Ponphil/LitePan",
+      "bug_report_url": "https://github.com/cmbya/FnDepot/issues",
       "maintainer": "Ponphil",
       "maintainer_url": "https://github.com/Ponphil/LitePan",
       "distributor": "cmbya",
-      "distributor_url": "https://github.com/cmbya/LitePan-fnOS",
+      "distributor_url": "https://github.com/cmbya/fnos-buildbot",
       "run_as": "root",
       "install_type": "",
       "is_docker": false,
       "service_port": "5211",
       "releases": {
         "0.5.7-beta": {
-          "changelog": "【Pre-release 自动构建】\n\n根据上游 Docker Hub **ponphil/litepan:v0.5.7-beta** 自动生成 fnOS x86 原生 FPK。\n\n- 上游：Ponphil/LitePan\n- 上游镜像标签：v0.5.7-beta\n- 架构：x86 / amd64\n- Web 端口：5211\n- Docker：运行时不使用 Docker\n- 安装方式：从上游官方镜像提取 linux/amd64 LitePan 二进制\n- 数据：data / strm / mounts 持久化\n\n这是自动构建的 Pre-release。",
-          "updated_at": "2026-10-03T08:01:04Z",
+          "changelog": "LitePan 0.5.7-beta：Actions 固定 tag/SHA 源码构建，前后端内置；保留 litepan 标识与数据路径。尚未完成真实设备安装、升级和 FUSE 挂载回归测试。",
+          "updated_at": "2026-10-16T13:53:43Z",
           "service_port": "5211",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/LitePan-fnOS/releases/download/fnos-v0.5.7-beta/LitePan_0.5.7-beta_fnOS_x86.fpk",
-              "sha256": "daf0e727cd5b8f550143d33fb72685a27c937ec75e9abdb789d195fdb4fee29e",
-              "size": 11999,
-              "updated_at": "2026-10-03T08:01:04Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.16/LitePan_0.5.7-beta_fnOS_x86.fpk",
+              "sha256": "03700e464b7a91135d764fa586a8a7e8fad04ad1c9cdb774b941cd3b2858906c",
+              "size": 17556429,
+              "updated_at": "2026-10-16T13:53:43Z",
               "run_as": "root",
               "install_type": "",
               "is_docker": false,
