@@ -119,38 +119,6 @@
       "run_as": "root"
     },
     {
-      "repo": "cmbya/FNAMS",
-      "release_name_prefix": "Hermes Agent fnOS",
-      "display_name": "Hermes Agent",
-      "frozen": true,
-      "desc": "Hermes Agent fnOS 后台网关，提供消息网关、定时任务和 AI Agent 运行环境。",
-      "categories": [
-        "系统工具"
-      ],
-      "labels": "原生,系统工具,AI工具",
-      "maintainer": "cmbya",
-      "maintainer_url": "https://github.com/cmbya",
-      "distributor": "cmbya",
-      "bug_report_url": "https://github.com/cmbya/FNAMS/issues",
-      "run_as": "package"
-    },
-    {
-      "repo": "cmbya/FNAMS",
-      "release_name_prefix": "Hermes Studio fnOS",
-      "display_name": "Hermes Studio",
-      "frozen": true,
-      "desc": "Hermes Studio fnOS 管理界面，用于连接和管理 Hermes Agent。",
-      "categories": [
-        "系统工具"
-      ],
-      "labels": "原生,系统工具,AI工具",
-      "maintainer": "cmbya",
-      "maintainer_url": "https://github.com/cmbya",
-      "distributor": "cmbya",
-      "bug_report_url": "https://github.com/cmbya/FNAMS/issues",
-      "run_as": "package"
-    },
-    {
       "repo": "cmbya/FnDepot",
       "asset_prefix": "ZJJX-",
       "readme_url": "https://github.com/cmbya/ZJJX",

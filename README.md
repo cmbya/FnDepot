@@ -23,7 +23,7 @@
 - `cmbya/biliLive-tools-fnOS`
 - `cmbya/MeTube-fnOS`
 - `cmbya/LitePan-fnOS`
-- `cmbya/FNAMS`（Hermes Agent、Hermes Studio）
+
 
 
 冻结的应用在 `apps.json` 里带 `"frozen": true`。索引脚本会直接沿用它们上次收录的结果，

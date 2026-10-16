@@ -44,36 +44,6 @@
     "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.16/F2Media_0.1.2_fnOS_x86.fpk",
     "changelog": "由 cmbya/fnos-buildbot 自动构建的 fnOS x86 原生 FPK。构建时间：2026-10-16 13:53 UTC。尚未完成真实设备安装回归测试，请自行验证后再用于正式环境。"
   },
-  "HermesAgent": {
-    "display_name": "Hermes Agent",
-    "platform": "x86",
-    "version": "0.1.9",
-    "desc": "Hermes Agent fnOS 后台网关，提供消息网关、定时任务和 AI Agent 运行环境。",
-    "labels": "原生,系统工具,AI工具",
-    "distributor": "cmbya",
-    "distributor_url": "https://github.com/cmbya/FNAMS",
-    "bug_report_url": "https://github.com/cmbya/FNAMS/issues",
-    "install_type": "存储空间",
-    "isdocker": "false",
-    "size": "435 MB",
-    "download_url": "https://github.com/cmbya/FNAMS/releases/download/v0.1.9/HermesAgent-0.1.9-fnOS-x86_64.fpk",
-    "changelog": "更新类型：Hermes Agent。统一 fnOS 版本：0.1.9。上游版本：v0.21.5 (v2026.9.24)。目标平台：fnOS 1.2 x86_64。"
-  },
-  "HermesStudio": {
-    "display_name": "Hermes Studio",
-    "platform": "x86",
-    "version": "0.2.5",
-    "desc": "Hermes Studio fnOS 管理界面，用于连接和管理 Hermes Agent。",
-    "labels": "原生,系统工具,AI工具",
-    "distributor": "cmbya",
-    "distributor_url": "https://github.com/cmbya/FNAMS",
-    "bug_report_url": "https://github.com/cmbya/FNAMS/issues",
-    "install_type": "存储空间",
-    "isdocker": "false",
-    "size": "187 MB",
-    "download_url": "https://github.com/cmbya/FNAMS/releases/download/v0.2.5/HermesStudio-0.2.5-fnOS-x86_64.fpk",
-    "changelog": "更新类型：Hermes Studio。统一 fnOS 版本：0.2.5。上游版本：v0.7.31。目标平台：fnOS 1.2 x86_64。"
-  },
   "litepan": {
     "display_name": "LitePan",
     "platform": "x86",
