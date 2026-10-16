@@ -10,6 +10,13 @@
 - CLIProxyAPI（`router-for-me/CLIProxyAPI`）
 - TaoSync（`dr34m-cn/taosync`）
 
+**自动转存现成 FPK（由同一 buildbot 每天北京时间 10:05 / 22:05 检查）**
+
+- F2Media：从 `cmbya/F2Media-fnOS` 的正式 Release 获取 FPK
+- ZJJX：从 `cmbya/ZJJX` 的正式 Release 获取 FPK
+
+这两个应用不重新编译、不重新打包；校验后原样转存到本仓日期 Release，再更新索引。无新版本则跳过。
+
 **冻结（保留最后收录的版本，不再自动扫描）**
 
 - `cmbya/StreamCap-fnOS`
@@ -17,8 +24,7 @@
 - `cmbya/MeTube-fnOS`
 - `cmbya/LitePan-fnOS`
 - `cmbya/FNAMS`（Hermes Agent、Hermes Studio）
-- `cmbya/ZJJX`
-- `cmbya/F2Media-fnOS`
+
 
 冻结的应用在 `apps.json` 里带 `"frozen": true`。索引脚本会直接沿用它们上次收录的结果，
 不会联网扫描，也不会因为停止扫描而把它们从索引里移除。

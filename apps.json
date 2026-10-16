@@ -151,9 +151,11 @@
       "run_as": "package"
     },
     {
-      "repo": "cmbya/ZJJX",
+      "repo": "cmbya/FnDepot",
+      "asset_prefix": "ZJJX-",
+      "readme_url": "https://github.com/cmbya/ZJJX",
+      "distributor_url": "https://github.com/cmbya/fnos-buildbot",
       "display_name": "ZJJX",
-      "frozen": true,
       "desc": "媒体链接解析、预览与下载工具的 fnOS x86 原生版。",
       "categories": [
         "影音娱乐"
@@ -166,9 +168,11 @@
       "run_as": "package"
     },
     {
-      "repo": "cmbya/F2Media-fnOS",
+      "repo": "cmbya/FnDepot",
+      "asset_prefix": "F2Media_",
+      "readme_url": "https://github.com/cmbya/F2Media-fnOS",
+      "distributor_url": "https://github.com/cmbya/fnos-buildbot",
       "display_name": "F2Media",
-      "frozen": true,
       "desc": "多平台图片、视频、图集与 Live Photo 媒体解析下载器的 fnOS x86 原生版。",
       "categories": [
         "影音娱乐"
