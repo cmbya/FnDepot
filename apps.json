@@ -104,10 +104,12 @@
       "run_as": "package"
     },
     {
-      "repo": "cmbya/LitePan-fnOS",
+      "repo": "cmbya/FnDepot",
+      "asset_prefix": "LitePan_",
+      "readme_url": "https://github.com/Ponphil/LitePan",
+      "distributor_url": "https://github.com/cmbya/fnos-buildbot",
       "display_name": "LitePan",
-      "frozen": true,
-      "desc": "网盘管理、WebDAV、STRM 与媒体整理工具的 fnOS x86 原生版。",
+      "desc": "网盘管理、WebDAV、STRM 与媒体整理工具的 fnOS x86 原生版；Actions 从固定上游 tag 编译并内置程序。",
       "categories": [
         "系统工具"
       ],
@@ -115,7 +117,8 @@
       "maintainer": "Ponphil",
       "maintainer_url": "https://github.com/Ponphil/LitePan",
       "distributor": "cmbya",
-      "bug_report_url": "https://github.com/cmbya/LitePan-fnOS/issues",
+      "bug_report_url": "https://github.com/cmbya/FnDepot/issues",
+      "changelog": "LitePan {version}：Actions 固定 tag/SHA 源码构建，前后端内置；保留 litepan 标识与数据路径。尚未完成真实设备安装、升级和 FUSE 挂载回归测试。",
       "run_as": "root"
     },
     {
