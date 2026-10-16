@@ -1,9 +1,14 @@
 name: Update FnDepot Source
 
+# 索引生成不再定时自动扫描各应用仓。
+# 触发方式：
+#   1) cmbya/fnos-buildbot 构建发布后自动调用（repository_dispatch / workflow_dispatch）
+#   2) 手动 workflow_dispatch
+# 已冻结的应用沿用上次收录结果，不会因为不再扫描而掉出索引。
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "33 1 * * *"
+  repository_dispatch:
+    types: [refresh-index]
 
 permissions:
   contents: write

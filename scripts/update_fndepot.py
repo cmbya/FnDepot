@@ -165,6 +165,28 @@ def mb_string(size_bytes):
         return f"{mb:.1f} MB"
     return f"{mb:.0f} MB"
 
+def load_existing_v2():
+    if not V2_INDEX.exists():
+        return {}
+    try:
+        return json.loads(V2_INDEX.read_text(encoding="utf-8")).get("apps", {})
+    except Exception:
+        return {}
+
+def load_existing_v1():
+    if not V1_INDEX.exists():
+        return {}
+    try:
+        return json.loads(V1_INDEX.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+def find_old_appname_by_display_name(old_v2, display_name):
+    for appname, app in old_v2.items():
+        if app.get("display_name") == display_name:
+            return appname
+    return None
+
 def main():
     cfg = json.loads(CONFIG.read_text(encoding="utf-8"))
 
@@ -175,12 +197,34 @@ def main():
         "apps": {},
     }
 
+    # 冻结应用的旧索引（不再联网扫描，直接沿用上次收录结果）
+    old_v2 = load_existing_v2()
+    old_v1 = load_existing_v1()
+
     # 清理旧 V1 app 目录，避免残留
     managed_names = []
 
     for item in cfg["repositories"]:
         repo = item["repo"]
         asset_prefix = item.get("asset_prefix")
+
+        if item.get("frozen"):
+            # 冻结：包仍由各应用仓自行发版，但本仓不再自动扫描/更新。
+            # 直接沿用上次收录结果，避免索引里出现「版本还在、下载失效」。
+            appname = item.get("appname") or find_old_appname_by_display_name(
+                old_v2, item["display_name"]
+            )
+            print(f"\n=== 冻结 {item['display_name']}（不再扫描 {repo}） ===")
+            if not appname or appname not in old_v2:
+                print("警告：旧索引里找不到，跳过")
+                continue
+            v2["apps"][appname] = old_v2[appname]
+            if appname in old_v1:
+                v1[appname] = old_v1[appname]
+            managed_names.append(appname)
+            print(f"沿用: {appname} {sorted(old_v2[appname]['releases'])}")
+            continue
+
         print(f"\n=== 检查 {repo} ===")
 
         release = latest_non_draft_release(
@@ -191,6 +235,13 @@ def main():
         )
         if release is None:
             print("没有 Release，跳过")
+            fallback = find_old_appname_by_display_name(old_v2, item["display_name"])
+            if fallback:
+                print(f"沿用旧记录: {fallback}")
+                v2["apps"][fallback] = old_v2[fallback]
+                if fallback in old_v1:
+                    v1[fallback] = old_v1[fallback]
+                managed_names.append(fallback)
             continue
 
         asset = choose_fpk_asset(
@@ -200,6 +251,13 @@ def main():
         )
         if asset is None:
             print("Release 中没有 FPK，跳过")
+            fallback = find_old_appname_by_display_name(old_v2, item["display_name"])
+            if fallback:
+                print(f"沿用旧记录: {fallback}")
+                v2["apps"][fallback] = old_v2[fallback]
+                if fallback in old_v1:
+                    v1[fallback] = old_v1[fallback]
+                managed_names.append(fallback)
             continue
 
         blob = request_bytes(asset["browser_download_url"])
@@ -313,6 +371,15 @@ def main():
 
         kind = "Pre-release" if prerelease else "正式 Release"
         print(f"收录: {appname} {version} ({kind})")
+
+    # 兜底：旧索引里存在、但本次未出现在 apps.json 清单中的应用，
+    # 原样保留（避免清单遗漏导致商店里的应用被静默下架）。
+    for appname, app in old_v2.items():
+        if appname not in v2["apps"]:
+            print(f"\n保留未在清单中的应用: {appname}")
+            v2["apps"][appname] = app
+            if appname in old_v1:
+                v1[appname] = old_v1[appname]
 
     v1 = dict(sorted(v1.items(), key=lambda x: x[0].lower()))
     v2["apps"] = dict(sorted(v2["apps"].items(), key=lambda x: x[0].lower()))

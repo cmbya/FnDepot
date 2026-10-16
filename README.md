@@ -2,22 +2,34 @@
 
 这是 `cmbya` 的 fnOS 第三方应用源。
 
-当前自动索引以下仓库的**最新非 Draft Release（包含 Pre-release）**：
+当前索引分两类：
 
-- `cmbya/CPA`（CLIProxyAPI）
+**自动构建（由 [`cmbya/fnos-buildbot`](https://github.com/cmbya/fnos-buildbot) 产出，跟随上游自动更新）**
+
+- OpenList（`OpenListTeam/OpenList`）
+- CLIProxyAPI（`router-for-me/CLIProxyAPI`）
+- TaoSync（`dr34m-cn/taosync`）
+
+**冻结（保留最后收录的版本，不再自动扫描）**
+
 - `cmbya/StreamCap-fnOS`
 - `cmbya/biliLive-tools-fnOS`
-- `cmbya/TaoSync-fnOS`
-- `cmbya/OpenList-fnOS`
 - `cmbya/MeTube-fnOS`
 - `cmbya/LitePan-fnOS`
 - `cmbya/FNAMS`（Hermes Agent、Hermes Studio）
 - `cmbya/ZJJX`
 - `cmbya/F2Media-fnOS`
 
+冻结的应用在 `apps.json` 里带 `"frozen": true`。索引脚本会直接沿用它们上次收录的结果，
+不会联网扫描，也不会因为停止扫描而把它们从索引里移除。
+它们的包仍由各自应用仓自行发版；需要重新收录时，删掉该条 `frozen` 即可。
+
 ## 自动更新规则
 
-GitHub Actions 每天运行一次，并且支持手动 `Run workflow`。
+索引**不再定时运行**。触发方式：
+
+1. `cmbya/fnos-buildbot` 构建发布后自动调用（`repository_dispatch` 事件 `refresh-index`，或 `workflow_dispatch`）
+2. 手动 `Run workflow`
 
 收录 GitHub 最新的非 Draft Release：
 - Draft：不收录
