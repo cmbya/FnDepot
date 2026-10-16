@@ -38,9 +38,12 @@
       "run_as": "package"
     },
     {
-      "repo": "cmbya/biliLive-tools-fnOS",
+      "repo": "cmbya/FnDepot",
+      "asset_prefix": "biliLive-tools_",
       "display_name": "biliLive-tools",
-      "frozen": true,
+      "readme_url": "https://github.com/renmu123/biliLive-tools",
+      "distributor_url": "https://github.com/cmbya/fnos-buildbot",
+      "changelog": "biliLive-tools {version}：正式 Release 固定 tag/SHA 源码构建，内置 Node、前后端及媒体工具；保留原数据、录像路径和严格北京时间监控窗口。尚未完成真机安装与真实录制回归。",
       "desc": "直播录制、弹幕与视频处理工具的 fnOS x86 原生版。",
       "categories": [
         "影音娱乐"

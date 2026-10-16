@@ -9,6 +9,7 @@
 - OpenList（`OpenListTeam/OpenList`）
 - CLIProxyAPI（`router-for-me/CLIProxyAPI`）
 - TaoSync（`dr34m-cn/taosync`）
+- biliLive-tools（`renmu123/biliLive-tools` 正式 Release 固定 tag/SHA 源码构建；内置匹配的 Node、前后端及媒体工具，离线部署，保留原应用 ID、3000 端口、数据和录像目录）
 
 **自动转存现成 FPK（由同一 buildbot 每天北京时间 10:05 / 22:05 检查）**
 
@@ -20,7 +21,7 @@
 **冻结（保留最后收录的版本，不再自动扫描）**
 
 - `cmbya/StreamCap-fnOS`
-- `cmbya/biliLive-tools-fnOS`
+
 - `cmbya/MeTube-fnOS`
 - `cmbya/LitePan-fnOS`
 
