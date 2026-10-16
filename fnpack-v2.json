@@ -68,16 +68,16 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "8.0.29": {
+        "8.0.31": {
           "changelog": "【Pre-release 自动构建】\n\n自动构建产物，尚未完成真实 fnOS 设备安装测试。源代码与版本来自 router-for-me/CLIProxyAPI。请先测试后再用于正式环境。",
-          "updated_at": "2026-10-14T17:41:19Z",
+          "updated_at": "2026-10-16T05:15:55Z",
           "service_port": "",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/CPA/releases/download/fnos-8.0.29/cliproxyapi_8.0.29_fnOS_x86.fpk",
-              "sha256": "0b8bf2286f4eff8863eeb47510269fbfd5cdd44f05cd24d6e66665a6da0dbcdc",
-              "size": 23038827,
-              "updated_at": "2026-10-14T17:41:19Z",
+              "download_url": "https://github.com/cmbya/CPA/releases/download/fnos-8.0.31/cliproxyapi_8.0.31_fnOS_x86.fpk",
+              "sha256": "53833835d4b546770ebf38cbfe7422312d0ac83743ed58ca1c331b3e5f2cd87f",
+              "size": 23065452,
+              "updated_at": "2026-10-16T05:15:55Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -308,16 +308,16 @@
       "is_docker": false,
       "service_port": "5244",
       "releases": {
-        "4.2.6": {
-          "changelog": "【Pre-release 自动构建】\n\n根据 OpenList 上游正式 Release **v4.2.6** 自动生成 fnOS x86 原生 FPK。\n\n- 上游版本：v4.2.6\n- 架构：x86 / amd64\n- Web 端口：5244\n- Docker：不使用\n- 数据：升级保留 OpenList data 数据库和配置\n- 上游二进制：openlist-linux-amd64.tar.gz\n\n这是自动构建的 **Pre-release**。建议先在飞牛上覆盖升级测试，确认正常后再手动改为正式 Release。",
-          "updated_at": "2026-09-29T05:17:34Z",
+        "4.2.7": {
+          "changelog": "【Pre-release 自动构建】\n\n根据 OpenList 上游正式 Release **v4.2.7** 自动生成 fnOS x86 原生 FPK。\n\n- 上游版本：v4.2.7\n- 架构：x86 / amd64\n- Web 端口：5244\n- Docker：不使用\n- 数据：升级保留 OpenList data 数据库和配置\n- 上游二进制：openlist-linux-amd64.tar.gz\n\n这是自动构建的 **Pre-release**。建议先在飞牛上覆盖升级测试，确认正常后再手动改为正式 Release。",
+          "updated_at": "2026-10-16T05:50:06Z",
           "service_port": "5244",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/OpenList-fnOS/releases/download/fnos-v4.2.6/OpenList_4.2.6_fnOS_x86.fpk",
-              "sha256": "792336d4d5ddbaf0dde3ad9b0a2e3196b5bcff54781fbc3d2b6e4ec1c4ea1b1b",
-              "size": 22502,
-              "updated_at": "2026-09-29T05:17:34Z",
+              "download_url": "https://github.com/cmbya/OpenList-fnOS/releases/download/fnos-v4.2.7/OpenList_4.2.7_fnOS_x86.fpk",
+              "sha256": "a0142f296bdaba68f643552029848cdd5a7aefded4dfbfeb7f1a6b22b23ed2b5",
+              "size": 22493,
+              "updated_at": "2026-10-16T05:50:06Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
