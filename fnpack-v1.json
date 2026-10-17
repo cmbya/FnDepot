@@ -96,13 +96,13 @@
     "desc": "多平台直播录制工具的 fnOS x86 原生版。",
     "labels": "原生,影音娱乐,直播录制",
     "distributor": "cmbya",
-    "distributor_url": "https://github.com/cmbya/StreamCap-fnOS",
+    "distributor_url": "https://github.com/cmbya/fnos-buildbot",
     "bug_report_url": "https://github.com/cmbya/StreamCap-fnOS/issues",
     "install_type": "存储空间",
     "isdocker": "false",
-    "size": "0.03 MB",
-    "download_url": "https://github.com/cmbya/StreamCap-fnOS/releases/download/fnos-v1.0.3/StreamCap_1.0.3_fnOS_x86.fpk",
-    "changelog": "【Pre-release 自动构建】\n\n自动检测到上游 StreamCap **v1.0.3**，并生成 fnOS x86 原生 FPK。\n\n- 上游版本：v1.0.3\n- 架构：x86 / amd64\n- Docker：不使用\n- 升级：保留 StreamCap 持久化配置与录像目录\n\n这是自动构建的 Pre-release。\n建议先在飞牛上覆盖升级测试，确认录制正常后再改成正式版。"
+    "size": "263 MB",
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.17/StreamCap_1.0.3_fnOS_x86.fpk",
+    "changelog": "StreamCap 1.0.3：固定 tag/SHA 源码构建，保留 native7 定时录制行为，内置 Python 3.12、Node 20 与 FFmpeg；离线安装升级。尚未验证真机升级与真实直播录制。"
   },
   "taosync": {
     "display_name": "TaoSync",
