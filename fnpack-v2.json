@@ -169,7 +169,7 @@
     },
     "metube": {
       "display_name": "MeTube",
-      "desc": "在线视频下载工具的 fnOS x86 原生版，FPK 内置 FFmpeg。",
+      "desc": "在线视频下载工具的 fnOS x86 原生版，Actions 构建前后端并内置 Python、FFmpeg/FFprobe、Deno 与 POT provider。",
       "platform": [
         "x86"
       ],
@@ -177,27 +177,27 @@
         "影音娱乐"
       ],
       "icon_url": "assets/icons/metube.png",
-      "readme_url": "https://github.com/cmbya/MeTube-fnOS",
+      "readme_url": "https://github.com/alexta69/metube",
       "bug_report_url": "https://github.com/cmbya/MeTube-fnOS/issues",
       "maintainer": "alexta69",
       "maintainer_url": "https://github.com/alexta69/metube",
       "distributor": "cmbya",
-      "distributor_url": "https://github.com/cmbya/MeTube-fnOS",
+      "distributor_url": "https://github.com/cmbya/fnos-buildbot",
       "run_as": "package",
       "install_type": "",
       "is_docker": false,
       "service_port": "8081",
       "releases": {
         "2026.10.09": {
-          "changelog": "【Pre-release 自动构建】\n\n自动检测到 MeTube 上游 **2026.10.09**，并生成 fnOS x86 原生 FPK。\n\n- Web 端口：8081\n- Docker：不使用\n- FFmpeg：已直接打包进 FPK\n- FFmpeg：7.0.2-static / Linux x86_64\n- FFmpeg SHA256：e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99\n- 下载目录：优先使用 fnOS 第一个可写授权目录；无授权目录时使用 metube/downloads\n\n构建脚本会重新解开 app.tgz 校验 FFmpeg；缺失或 SHA256 不正确时不会发布。",
-          "updated_at": "2026-10-09T09:40:13Z",
+          "changelog": "MeTube 2026.10.09：固定上游 tag/SHA 源码构建，内置 Python 3.14、WebUI、锁定依赖及媒体工具，离线安装升级；尚未完成真机和真实站点下载回归。",
+          "updated_at": "2026-10-16T16:32:45Z",
           "service_port": "8081",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/MeTube-fnOS/releases/download/fnos-2026.10.09/MeTube_2026.10.09_fnOS_x86.fpk",
-              "sha256": "8b32353fad5ded3e0771e717e388136cadc973e0a52d94790aaa48b24b725732",
-              "size": 29435973,
-              "updated_at": "2026-10-09T09:40:13Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.17/MeTube_2026.10.09_fnOS_x86.fpk",
+              "sha256": "f30f6644692175f37779ec1ce138b34ae2dbd658ca1c22f41c8e6da263eff803",
+              "size": 299909952,
+              "updated_at": "2026-10-16T16:32:45Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
