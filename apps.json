@@ -23,9 +23,8 @@
       "run_as": "package"
     },
     {
-      "repo": "cmbya/StreamCap-fnOS",
+      "repo": "cmbya/FnDepot",
       "display_name": "StreamCap",
-      "frozen": true,
       "desc": "多平台直播录制工具的 fnOS x86 原生版。",
       "categories": [
         "影音娱乐"
@@ -35,7 +34,11 @@
       "maintainer_url": "https://github.com/ihmily/StreamCap",
       "distributor": "cmbya",
       "bug_report_url": "https://github.com/cmbya/StreamCap-fnOS/issues",
-      "run_as": "package"
+      "run_as": "package",
+      "asset_prefix": "StreamCap_",
+      "readme_url": "https://github.com/ihmily/StreamCap",
+      "distributor_url": "https://github.com/cmbya/fnos-buildbot",
+      "changelog": "StreamCap {version}：固定 tag/SHA 源码构建，保留 native7 定时录制行为，内置 Python 3.12、Node 20 与 FFmpeg；离线安装升级。尚未验证真机升级与真实直播录制。"
     },
     {
       "repo": "cmbya/FnDepot",

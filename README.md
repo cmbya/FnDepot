@@ -18,18 +18,13 @@
 
 这两个应用不重新编译、不重新打包；校验后原样转存到本仓日期 Release，再更新索引。无新版本则跳过。
 
-**冻结（保留最后收录的版本，不再自动扫描）**
+**源码原生构建与迁移状态**
 
-- `cmbya/StreamCap-fnOS`
+- StreamCap（`ihmily/StreamCap` 正式 Release 固定 tag/SHA；保留 native7 定时录制修复，内置 Python 3.12、Node 20、FFmpeg，离线安装升级，应用标识 `streamcap` 和持久化路径不变）
+- MeTube（`alexta69/metube` 固定 tag/SHA 源码构建）
+- LitePan（`Ponphil/LitePan` 固定 tag/SHA 源码构建）
 
-- `cmbya/MeTube-fnOS`
-- `cmbya/LitePan-fnOS`
-
-
-
-冻结的应用在 `apps.json` 里带 `"frozen": true`。索引脚本会直接沿用它们上次收录的结果，
-不会联网扫描，也不会因为停止扫描而把它们从索引里移除。
-它们的包仍由各自应用仓自行发版；需要重新收录时，删掉该条 `frozen` 即可。
+当前注册表没有冻结条目。源码包的 CI 验收不等同真实 fnOS 安装/升级或真实站点录制、下载回归。StreamCap 的 Flet 浏览器交互及完全断网渲染尚未验证。
 
 ## 自动更新规则
 
