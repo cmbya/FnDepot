@@ -92,10 +92,13 @@
       "run_as": "package"
     },
     {
-      "repo": "cmbya/MeTube-fnOS",
+      "repo": "cmbya/FnDepot",
+      "asset_prefix": "MeTube_",
       "display_name": "MeTube",
-      "frozen": true,
-      "desc": "在线视频下载工具的 fnOS x86 原生版，FPK 内置 FFmpeg。",
+      "readme_url": "https://github.com/alexta69/metube",
+      "distributor_url": "https://github.com/cmbya/fnos-buildbot",
+      "changelog": "MeTube {version}：固定上游 tag/SHA 源码构建，内置 Python 3.14、WebUI、锁定依赖及媒体工具，离线安装升级；尚未完成真机和真实站点下载回归。",
+      "desc": "在线视频下载工具的 fnOS x86 原生版，Actions 构建前后端并内置 Python、FFmpeg/FFprobe、Deno 与 POT provider。",
       "categories": [
         "影音娱乐"
       ],
