@@ -68,16 +68,16 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "8.0.35": {
-          "changelog": "CLIProxyAPI 8.0.35 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
-          "updated_at": "2026-10-19T19:53:50Z",
+        "8.0.36": {
+          "changelog": "CLIProxyAPI 8.0.36 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
+          "updated_at": "2026-10-20T18:30:17Z",
           "service_port": "",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.20/CLIProxyAPI_8.0.35_fnOS_x86.fpk",
-              "sha256": "d955d6099e98da96d076dfe49345e3f1b623bb7c48b103745964a94c40b7780f",
-              "size": 23286941,
-              "updated_at": "2026-10-19T19:53:50Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/CLIProxyAPI_8.0.36_fnOS_x86.fpk",
+              "sha256": "d4d487d52e23813323a71acb38238f4714e62cc492e8b0168ddc1825f2c06401",
+              "size": 23305737,
+              "updated_at": "2026-10-20T18:30:17Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -188,16 +188,16 @@
       "is_docker": false,
       "service_port": "8081",
       "releases": {
-        "2026.10.19": {
-          "changelog": "MeTube 2026.10.19：固定上游 tag/SHA 源码构建，内置 Python 3.14、WebUI、锁定依赖及媒体工具，离线安装升级；尚未完成真机和真实站点下载回归。",
-          "updated_at": "2026-10-19T19:53:50Z",
+        "2026.10.20": {
+          "changelog": "MeTube 2026.10.20：固定上游 tag/SHA 源码构建，内置 Python 3.14、WebUI、锁定依赖及媒体工具，离线安装升级；尚未完成真机和真实站点下载回归。",
+          "updated_at": "2026-10-20T18:30:17Z",
           "service_port": "8081",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.20/MeTube_2026.10.19_fnOS_x86.fpk",
-              "sha256": "90a71a460a63f36c234cb9c31c1b4c6d8a40e4e88485aefcef495e3d239cbaaf",
-              "size": 299950243,
-              "updated_at": "2026-10-19T19:53:50Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/MeTube_2026.10.20_fnOS_x86.fpk",
+              "sha256": "b7e308267d1c599ddef9e076db842a448fb32d71c09a7eeef88ba2428d90a46a",
+              "size": 300226212,
+              "updated_at": "2026-10-20T18:30:17Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
