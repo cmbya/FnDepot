@@ -114,9 +114,9 @@
           "service_port": "8758",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/Ekko_0.7.38_fnOS_x86.fpk",
-              "sha256": "01d3b9a9e55c0d174b6fafa858e2f4ca9267f33332d7d450033bbaf9f058ebaf",
-              "size": 208894564,
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/Ekko-0.7.38-x86.fpk",
+              "sha256": "16ccb4e923687fbc119d0e7a605c89417f9ebf46fd424da114fb791dfc115f08",
+              "size": 208879273,
               "updated_at": "2026-10-20T18:30:17Z",
               "run_as": "package",
               "install_type": "",
