@@ -106,22 +106,22 @@
       "run_as": "package",
       "install_type": "",
       "is_docker": false,
-      "service_port": "8758",
+      "service_port": "8770",
       "releases": {
         "0.7.38": {
           "changelog": "Ekko Studio 0.7.38：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。",
           "updated_at": "2026-10-20T18:30:17Z",
-          "service_port": "8758",
+          "service_port": "8770",
           "packages": {
             "x86": {
               "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/Ekko-0.7.38-x86.fpk",
-              "sha256": "16ccb4e923687fbc119d0e7a605c89417f9ebf46fd424da114fb791dfc115f08",
-              "size": 208879273,
+              "sha256": "e913b129f5776d137a1feac1115f3ddf8b77467183a6dd696f3f4be8701ceb52",
+              "size": 208955297,
               "updated_at": "2026-10-20T18:30:17Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
-              "service_port": "8758"
+              "service_port": "8770"
             }
           }
         }
