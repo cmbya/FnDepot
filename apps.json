@@ -8,6 +8,22 @@
   "repositories": [
     {
       "repo": "cmbya/FnDepot",
+      "asset_prefix": "Ekko_",
+      "display_name": "Ekko Studio",
+      "desc": "多智能体统一工作台的 fnOS x86 原生版，内置 Node 24；Agent 按需安装。仅非商业用途，商业使用须另获上游许可。",
+      "categories": ["系统工具"],
+      "labels": "原生,系统工具,AI工具",
+      "maintainer": "EKKOLearnAI",
+      "maintainer_url": "https://github.com/EKKOLearnAI/ekko-studio",
+      "distributor": "cmbya",
+      "distributor_url": "https://github.com/cmbya/fnos-buildbot",
+      "readme_url": "https://github.com/cmbya/fnos-buildbot/blob/main/docs/ekko.md",
+      "bug_report_url": "https://github.com/cmbya/fnos-buildbot/issues",
+      "changelog": "Ekko Studio {version}：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。",
+      "run_as": "package"
+    },
+    {
+      "repo": "cmbya/FnDepot",
       "asset_prefix": "CLIProxyAPI_",
       "display_name": "CLIProxyAPI",
       "desc": "CLIProxyAPI 的 fnOS x86 原生版，提供 OpenAI/Gemini/Claude 等兼容 API 与浏览器管理界面。",
