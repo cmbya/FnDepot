@@ -87,6 +87,46 @@
         }
       }
     },
+    "Ekko": {
+      "display_name": "Ekko Studio",
+      "desc": "多智能体统一工作台的 fnOS x86 原生版，内置 Node 24；Agent 按需安装。仅非商业用途，商业使用须另获上游许可。",
+      "platform": [
+        "x86"
+      ],
+      "categories": [
+        "系统工具"
+      ],
+      "icon_url": "assets/icons/Ekko.png",
+      "readme_url": "https://github.com/cmbya/fnos-buildbot/blob/main/docs/ekko.md",
+      "bug_report_url": "https://github.com/cmbya/fnos-buildbot/issues",
+      "maintainer": "EKKOLearnAI",
+      "maintainer_url": "https://github.com/EKKOLearnAI/ekko-studio",
+      "distributor": "cmbya",
+      "distributor_url": "https://github.com/cmbya/fnos-buildbot",
+      "run_as": "package",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "8758",
+      "releases": {
+        "0.7.38": {
+          "changelog": "Ekko Studio 0.7.38：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。",
+          "updated_at": "2026-10-20T18:30:17Z",
+          "service_port": "8758",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/Ekko_0.7.38_fnOS_x86.fpk",
+              "sha256": "01d3b9a9e55c0d174b6fafa858e2f4ca9267f33332d7d450033bbaf9f058ebaf",
+              "size": 208894564,
+              "updated_at": "2026-10-20T18:30:17Z",
+              "run_as": "package",
+              "install_type": "",
+              "is_docker": false,
+              "service_port": "8758"
+            }
+          }
+        }
+      }
+    },
     "f2media": {
       "display_name": "F2Media",
       "desc": "多平台图片、视频、图集与 Live Photo 媒体解析下载器的 fnOS x86 原生版。",
