@@ -115,8 +115,8 @@
           "packages": {
             "x86": {
               "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/Ekko-0.7.38-x86.fpk",
-              "sha256": "b68e62b0607ca7dda7d38b1122384487d9d94282095d03db1a2c60a0b4566573",
-              "size": 208953972,
+              "sha256": "576be89a4396b71bf9c3cba9b6338a1c3494ed6ac176e6f5ae393be2efc567f6",
+              "size": 124887217,
               "updated_at": "2026-10-21T03:25:55Z",
               "run_as": "package",
               "install_type": "",

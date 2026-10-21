@@ -40,7 +40,7 @@
     "bug_report_url": "https://github.com/cmbya/fnos-buildbot/issues",
     "install_type": "存储空间",
     "isdocker": "false",
-    "size": "199 MB",
+    "size": "119 MB",
     "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/Ekko-0.7.38-x86.fpk",
     "changelog": "Ekko Studio 0.7.38：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。"
   },
