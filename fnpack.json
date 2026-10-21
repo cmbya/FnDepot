@@ -30,14 +30,14 @@
       "releases": {
         "4.0.0": {
           "changelog": "biliLive-tools 4.0.0：正式 Release 固定 tag/SHA 源码构建，内置 Node、前后端及媒体工具；保留原数据、录像路径和严格北京时间监控窗口。尚未完成真机安装与真实录制回归。",
-          "updated_at": "2026-10-16T16:32:45Z",
+          "updated_at": "2026-10-21T03:25:55Z",
           "service_port": "3000",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.17/biliLive-tools_4.0.0_fnOS_x86.fpk",
-              "sha256": "6249f55fce321f95cb9ae10be4e36b1181a815387e54ee5ead480f79bcb05c97",
-              "size": 275262471,
-              "updated_at": "2026-10-16T16:32:45Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/biliLive-tools_4.0.0_fnOS_x86.fpk",
+              "sha256": "e0f7480d546f24280b08964022db71d4b9585d2d70bf9d3581e545f8a74cdcc5",
+              "size": 275221186,
+              "updated_at": "2026-10-21T03:25:55Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -70,14 +70,14 @@
       "releases": {
         "8.0.36": {
           "changelog": "CLIProxyAPI 8.0.36 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
-          "updated_at": "2026-10-20T18:30:17Z",
+          "updated_at": "2026-10-21T03:25:55Z",
           "service_port": "",
           "packages": {
             "x86": {
               "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/CLIProxyAPI_8.0.36_fnOS_x86.fpk",
-              "sha256": "d4d487d52e23813323a71acb38238f4714e62cc492e8b0168ddc1825f2c06401",
-              "size": 23305737,
-              "updated_at": "2026-10-20T18:30:17Z",
+              "sha256": "e7f5bf963ee5012ef673235dcb660f7078725969ffcd093b07390acc3e475ca6",
+              "size": 23305730,
+              "updated_at": "2026-10-21T03:25:55Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -110,14 +110,14 @@
       "releases": {
         "0.7.38": {
           "changelog": "Ekko Studio 0.7.38：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。",
-          "updated_at": "2026-10-20T18:30:17Z",
+          "updated_at": "2026-10-21T03:25:55Z",
           "service_port": "8770",
           "packages": {
             "x86": {
               "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/Ekko-0.7.38-x86.fpk",
-              "sha256": "8f1fae680416c95b81b49adf24bed971adae83bd2e0d5a86dc3b9e26093ae14a",
-              "size": 208947134,
-              "updated_at": "2026-10-20T18:30:17Z",
+              "sha256": "b68e62b0607ca7dda7d38b1122384487d9d94282095d03db1a2c60a0b4566573",
+              "size": 208953972,
+              "updated_at": "2026-10-21T03:25:55Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -149,15 +149,15 @@
       "service_port": "18082",
       "releases": {
         "0.1.2": {
-          "changelog": "由 cmbya/fnos-buildbot 自动构建的 fnOS x86 原生 FPK。构建时间：2026-10-16 13:53 UTC。尚未完成真实设备安装回归测试，请自行验证后再用于正式环境。",
-          "updated_at": "2026-10-16T13:53:43Z",
+          "changelog": "由 cmbya/fnos-buildbot 自动构建的 fnOS x86 原生 FPK。构建时间：2026-10-21 03:25 UTC。尚未完成真实设备安装回归测试，请自行验证后再用于正式环境。",
+          "updated_at": "2026-10-21T03:25:55Z",
           "service_port": "18082",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.16/F2Media_0.1.2_fnOS_x86.fpk",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/F2Media_0.1.2_fnOS_x86.fpk",
               "sha256": "294ef4540cb560385d4129507fab080d2c880ce33771c7767858d43fc6371f3f",
               "size": 324307850,
-              "updated_at": "2026-10-16T13:53:43Z",
+              "updated_at": "2026-10-21T03:25:55Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -190,14 +190,14 @@
       "releases": {
         "0.5.7-beta": {
           "changelog": "LitePan 0.5.7-beta：Actions 固定 tag/SHA 源码构建，前后端内置；保留 litepan 标识与数据路径。尚未完成真实设备安装、升级和 FUSE 挂载回归测试。",
-          "updated_at": "2026-10-16T13:53:43Z",
+          "updated_at": "2026-10-21T03:25:55Z",
           "service_port": "5211",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.16/LitePan_0.5.7-beta_fnOS_x86.fpk",
-              "sha256": "03700e464b7a91135d764fa586a8a7e8fad04ad1c9cdb774b941cd3b2858906c",
-              "size": 17556429,
-              "updated_at": "2026-10-16T13:53:43Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/LitePan_0.5.7-beta_fnOS_x86.fpk",
+              "sha256": "6c8283c57fbeeeb0fb9bd877ee2a9a7d06c9c406caedb26148665920f452f69b",
+              "size": 17556487,
+              "updated_at": "2026-10-21T03:25:55Z",
               "run_as": "root",
               "install_type": "",
               "is_docker": false,
@@ -230,14 +230,14 @@
       "releases": {
         "2026.10.20": {
           "changelog": "MeTube 2026.10.20：固定上游 tag/SHA 源码构建，内置 Python 3.14、WebUI、锁定依赖及媒体工具，离线安装升级；尚未完成真机和真实站点下载回归。",
-          "updated_at": "2026-10-20T18:30:17Z",
+          "updated_at": "2026-10-21T03:25:55Z",
           "service_port": "8081",
           "packages": {
             "x86": {
               "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/MeTube_2026.10.20_fnOS_x86.fpk",
-              "sha256": "b7e308267d1c599ddef9e076db842a448fb32d71c09a7eeef88ba2428d90a46a",
-              "size": 300226212,
-              "updated_at": "2026-10-20T18:30:17Z",
+              "sha256": "540e32289694335247866aa5e00d455a805023f6b48f593f54213f0bfa79456d",
+              "size": 300202541,
+              "updated_at": "2026-10-21T03:25:55Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -270,14 +270,14 @@
       "releases": {
         "4.2.7": {
           "changelog": "OpenList 4.2.7 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
-          "updated_at": "2026-10-16T13:53:43Z",
+          "updated_at": "2026-10-21T03:25:55Z",
           "service_port": "5244",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.16/OpenList_4.2.7_fnOS_x86.fpk",
-              "sha256": "fe86f0d10803da3731ec537531a3af4a06b40404e624a71c3ecc7829a619d2be",
-              "size": 50043020,
-              "updated_at": "2026-10-16T13:53:43Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/OpenList_4.2.7_fnOS_x86.fpk",
+              "sha256": "575c1ee4a21ff7b7c5e405b6ccf2b17c89abd5a6ec7bd3c952c114b960f7e183",
+              "size": 50042939,
+              "updated_at": "2026-10-21T03:25:55Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -310,14 +310,14 @@
       "releases": {
         "1.0.3": {
           "changelog": "StreamCap 1.0.3：固定 tag/SHA 源码构建，保留 native7 定时录制行为，内置 Python 3.12、Node 20 与 FFmpeg；离线安装升级。尚未验证真机升级与真实直播录制。",
-          "updated_at": "2026-10-16T16:32:45Z",
+          "updated_at": "2026-10-21T03:25:55Z",
           "service_port": "6006",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.17/StreamCap_1.0.3_fnOS_x86.fpk",
-              "sha256": "7327f0c22e5eead0a1b44c3693d3bcc2f06d0001e20c33fbcc9f19c6a633d9e2",
-              "size": 275679430,
-              "updated_at": "2026-10-16T16:32:45Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/StreamCap_1.0.3_fnOS_x86.fpk",
+              "sha256": "78d0abee88bfc10878c70913a048938c51b027802311b3fba06076393421810e",
+              "size": 275645157,
+              "updated_at": "2026-10-21T03:25:55Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -350,14 +350,14 @@
       "releases": {
         "0.4.0": {
           "changelog": "TaoSync 0.4.0 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
-          "updated_at": "2026-10-16T13:53:43Z",
+          "updated_at": "2026-10-21T03:25:55Z",
           "service_port": "8023",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.16/TaoSync_0.4.0_fnOS_x86.fpk",
-              "sha256": "c8c6f6fbd6cb8f031cb560d2de6cc2f941dbb1336451a028cd0e21b851f4cc10",
-              "size": 14653194,
-              "updated_at": "2026-10-16T13:53:43Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/TaoSync_0.4.0_fnOS_x86.fpk",
+              "sha256": "852589277cbc6ecc5704acdc1e4fad9f4d9c60065d7b7599bb7d082d40f7520f",
+              "size": 14653190,
+              "updated_at": "2026-10-21T03:25:55Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -389,15 +389,15 @@
       "service_port": "",
       "releases": {
         "0.2.6": {
-          "changelog": "由 cmbya/fnos-buildbot 自动构建的 fnOS x86 原生 FPK。构建时间：2026-10-16 13:53 UTC。尚未完成真实设备安装回归测试，请自行验证后再用于正式环境。",
-          "updated_at": "2026-10-16T13:53:43Z",
+          "changelog": "由 cmbya/fnos-buildbot 自动构建的 fnOS x86 原生 FPK。构建时间：2026-10-21 03:25 UTC。尚未完成真实设备安装回归测试，请自行验证后再用于正式环境。",
+          "updated_at": "2026-10-21T03:25:55Z",
           "service_port": "",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.16/ZJJX-0.2.6.fpk",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/ZJJX-0.2.6.fpk",
               "sha256": "37f72a21525e24ce263be5001b6bee303a873219cf7d33f3710ba4ee9866ac60",
               "size": 29814,
-              "updated_at": "2026-10-16T13:53:43Z",
+              "updated_at": "2026-10-21T03:25:55Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,

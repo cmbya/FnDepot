@@ -10,8 +10,8 @@
     "bug_report_url": "https://github.com/cmbya/biliLive-tools-fnOS/issues",
     "install_type": "存储空间",
     "isdocker": "false",
-    "size": "263 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.17/biliLive-tools_4.0.0_fnOS_x86.fpk",
+    "size": "262 MB",
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/biliLive-tools_4.0.0_fnOS_x86.fpk",
     "changelog": "biliLive-tools 4.0.0：正式 Release 固定 tag/SHA 源码构建，内置 Node、前后端及媒体工具；保留原数据、录像路径和严格北京时间监控窗口。尚未完成真机安装与真实录制回归。"
   },
   "cliproxyapi": {
@@ -56,8 +56,8 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "309 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.16/F2Media_0.1.2_fnOS_x86.fpk",
-    "changelog": "由 cmbya/fnos-buildbot 自动构建的 fnOS x86 原生 FPK。构建时间：2026-10-16 13:53 UTC。尚未完成真实设备安装回归测试，请自行验证后再用于正式环境。"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/F2Media_0.1.2_fnOS_x86.fpk",
+    "changelog": "由 cmbya/fnos-buildbot 自动构建的 fnOS x86 原生 FPK。构建时间：2026-10-21 03:25 UTC。尚未完成真实设备安装回归测试，请自行验证后再用于正式环境。"
   },
   "litepan": {
     "display_name": "LitePan",
@@ -71,7 +71,7 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "17 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.16/LitePan_0.5.7-beta_fnOS_x86.fpk",
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/LitePan_0.5.7-beta_fnOS_x86.fpk",
     "changelog": "LitePan 0.5.7-beta：Actions 固定 tag/SHA 源码构建，前后端内置；保留 litepan 标识与数据路径。尚未完成真实设备安装、升级和 FUSE 挂载回归测试。"
   },
   "metube": {
@@ -101,7 +101,7 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "48 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.16/OpenList_4.2.7_fnOS_x86.fpk",
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/OpenList_4.2.7_fnOS_x86.fpk",
     "changelog": "OpenList 4.2.7 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
   },
   "streamcap": {
@@ -116,7 +116,7 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "263 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.17/StreamCap_1.0.3_fnOS_x86.fpk",
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/StreamCap_1.0.3_fnOS_x86.fpk",
     "changelog": "StreamCap 1.0.3：固定 tag/SHA 源码构建，保留 native7 定时录制行为，内置 Python 3.12、Node 20 与 FFmpeg；离线安装升级。尚未验证真机升级与真实直播录制。"
   },
   "taosync": {
@@ -131,7 +131,7 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "14 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.16/TaoSync_0.4.0_fnOS_x86.fpk",
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/TaoSync_0.4.0_fnOS_x86.fpk",
     "changelog": "TaoSync 0.4.0 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
   },
   "ZJJX": {
@@ -146,7 +146,7 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "0.03 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.16/ZJJX-0.2.6.fpk",
-    "changelog": "由 cmbya/fnos-buildbot 自动构建的 fnOS x86 原生 FPK。构建时间：2026-10-16 13:53 UTC。尚未完成真实设备安装回归测试，请自行验证后再用于正式环境。"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/ZJJX-0.2.6.fpk",
+    "changelog": "由 cmbya/fnos-buildbot 自动构建的 fnOS x86 原生 FPK。构建时间：2026-10-21 03:25 UTC。尚未完成真实设备安装回归测试，请自行验证后再用于正式环境。"
   }
 }
