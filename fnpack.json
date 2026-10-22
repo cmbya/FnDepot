@@ -228,16 +228,16 @@
       "is_docker": false,
       "service_port": "8081",
       "releases": {
-        "2026.10.20": {
-          "changelog": "MeTube 2026.10.20：固定上游 tag/SHA 源码构建，内置 Python 3.14、WebUI、锁定依赖及媒体工具，离线安装升级；尚未完成真机和真实站点下载回归。",
-          "updated_at": "2026-10-21T03:25:55Z",
+        "2026.10.22": {
+          "changelog": "MeTube 2026.10.22：固定上游 tag/SHA 源码构建，内置 Python 3.14、WebUI、锁定依赖及媒体工具，离线安装升级；尚未完成真机和真实站点下载回归。",
+          "updated_at": "2026-10-21T18:34:26Z",
           "service_port": "8081",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/MeTube_2026.10.20_fnOS_x86.fpk",
-              "sha256": "540e32289694335247866aa5e00d455a805023f6b48f593f54213f0bfa79456d",
-              "size": 300202541,
-              "updated_at": "2026-10-21T03:25:55Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.22/MeTube_2026.10.22_fnOS_x86.fpk",
+              "sha256": "ad63c4b8d40d5ead61fe0a9938d501aba6913ac5be27521bb9c662f19c19645d",
+              "size": 300591847,
+              "updated_at": "2026-10-21T18:34:26Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
