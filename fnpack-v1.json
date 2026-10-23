@@ -17,7 +17,7 @@
   "cliproxyapi": {
     "display_name": "CLIProxyAPI",
     "platform": "x86",
-    "version": "8.0.39",
+    "version": "8.0.40",
     "desc": "CLIProxyAPI 的 fnOS x86 原生版，提供 OpenAI/Gemini/Claude 等兼容 API 与浏览器管理界面。",
     "labels": "原生,系统工具,AI工具,API代理",
     "distributor": "cmbya",
@@ -26,8 +26,8 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "23 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.23/CLIProxyAPI_8.0.39_fnOS_x86.fpk",
-    "changelog": "CLIProxyAPI 8.0.39 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.24/CLIProxyAPI_8.0.40_fnOS_x86.fpk",
+    "changelog": "CLIProxyAPI 8.0.40 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
   },
   "Ekko": {
     "display_name": "Ekko Studio",
@@ -77,7 +77,7 @@
   "metube": {
     "display_name": "MeTube",
     "platform": "x86",
-    "version": "2026.10.22",
+    "version": "2026.10.23",
     "desc": "在线视频下载工具的 fnOS x86 原生版，Actions 构建前后端并内置 Python、FFmpeg/FFprobe、Deno 与 POT provider。",
     "labels": "原生,影音娱乐,下载",
     "distributor": "cmbya",
@@ -86,8 +86,8 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "287 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.22/MeTube_2026.10.22_fnOS_x86.fpk",
-    "changelog": "MeTube 2026.10.22：固定上游 tag/SHA 源码构建，内置 Python 3.14、WebUI、锁定依赖及媒体工具，离线安装升级；尚未完成真机和真实站点下载回归。"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.24/MeTube_2026.10.23_fnOS_x86.fpk",
+    "changelog": "MeTube 2026.10.23：固定上游 tag/SHA 源码构建，内置 Python 3.14、WebUI、锁定依赖及媒体工具，离线安装升级；尚未完成真机和真实站点下载回归。"
   },
   "openlistnative": {
     "display_name": "OpenList",
