@@ -17,7 +17,7 @@
   "cliproxyapi": {
     "display_name": "CLIProxyAPI",
     "platform": "x86",
-    "version": "8.0.40",
+    "version": "8.0.42",
     "desc": "CLIProxyAPI 的 fnOS x86 原生版，提供 OpenAI/Gemini/Claude 等兼容 API 与浏览器管理界面。",
     "labels": "原生,系统工具,AI工具,API代理",
     "distributor": "cmbya",
@@ -26,8 +26,8 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "23 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.24/CLIProxyAPI_8.0.40_fnOS_x86.fpk",
-    "changelog": "CLIProxyAPI 8.0.40 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.25/CLIProxyAPI_8.0.42_fnOS_x86.fpk",
+    "changelog": "CLIProxyAPI 8.0.42 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
   },
   "Ekko": {
     "display_name": "Ekko Studio",
@@ -92,7 +92,7 @@
   "openlistnative": {
     "display_name": "OpenList",
     "platform": "x86",
-    "version": "4.2.7",
+    "version": "4.2.8",
     "desc": "多存储聚合管理工具的 fnOS x86 原生版。",
     "labels": "原生,系统工具,网盘",
     "distributor": "cmbya",
@@ -100,9 +100,9 @@
     "bug_report_url": "https://github.com/cmbya/FnDepot/issues",
     "install_type": "存储空间",
     "isdocker": "false",
-    "size": "48 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/OpenList_4.2.7_fnOS_x86.fpk",
-    "changelog": "OpenList 4.2.7 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
+    "size": "51 MB",
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.25/OpenList_4.2.8_fnOS_x86.fpk",
+    "changelog": "OpenList 4.2.8 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
   },
   "streamcap": {
     "display_name": "StreamCap",
