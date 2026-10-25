@@ -68,16 +68,16 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "8.0.42": {
-          "changelog": "CLIProxyAPI 8.0.42 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
-          "updated_at": "2026-10-24T17:24:03Z",
+        "8.0.43": {
+          "changelog": "CLIProxyAPI 8.0.43 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
+          "updated_at": "2026-10-25T17:40:17Z",
           "service_port": "",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.25/CLIProxyAPI_8.0.42_fnOS_x86.fpk",
-              "sha256": "9f90be8dd6b786e122231244a73d535b1c33b525d14e1d2648ee048a507ed0d1",
-              "size": 23656342,
-              "updated_at": "2026-10-24T17:24:03Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.26/CLIProxyAPI_8.0.43_fnOS_x86.fpk",
+              "sha256": "759ae6c8bd051a0cd736d0559991960342bfd1ee2894e6d82e871362214de9ff",
+              "size": 23662829,
+              "updated_at": "2026-10-25T17:40:17Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -228,16 +228,16 @@
       "is_docker": false,
       "service_port": "8081",
       "releases": {
-        "2026.10.23": {
-          "changelog": "MeTube 2026.10.23：固定上游 tag/SHA 源码构建，内置 Python 3.14、WebUI、锁定依赖及媒体工具，离线安装升级；尚未完成真机和真实站点下载回归。",
-          "updated_at": "2026-10-23T16:43:18Z",
+        "2026.10.25": {
+          "changelog": "MeTube 2026.10.25：固定上游 tag/SHA 源码构建，内置 Python 3.14、WebUI、锁定依赖及媒体工具，离线安装升级；尚未完成真机和真实站点下载回归。",
+          "updated_at": "2026-10-25T17:40:17Z",
           "service_port": "8081",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.24/MeTube_2026.10.23_fnOS_x86.fpk",
-              "sha256": "980b65819630c7c1aca16efe64ccca260682e038f4b5efaafc5047430edabe44",
-              "size": 300585536,
-              "updated_at": "2026-10-23T16:43:18Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.26/MeTube_2026.10.25_fnOS_x86.fpk",
+              "sha256": "79cdea82fd395e9595ce3ac958fe5d21593173f09c3c296154249553fde345ea",
+              "size": 300637341,
+              "updated_at": "2026-10-25T17:40:17Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -268,16 +268,16 @@
       "is_docker": false,
       "service_port": "5244",
       "releases": {
-        "4.2.8": {
-          "changelog": "OpenList 4.2.8 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
-          "updated_at": "2026-10-24T17:24:03Z",
+        "4.2.9": {
+          "changelog": "OpenList 4.2.9 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
+          "updated_at": "2026-10-25T17:40:17Z",
           "service_port": "5244",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.25/OpenList_4.2.8_fnOS_x86.fpk",
-              "sha256": "2736c3d483ffc811a898864ad72674cc667a3bd93056b30a75785182d34b007a",
-              "size": 53334281,
-              "updated_at": "2026-10-24T17:24:03Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.26/OpenList_4.2.9_fnOS_x86.fpk",
+              "sha256": "0c6b4cc02538d473e90a62ae370822a4689c53083bebae0fa5d6bbf8f525f1c7",
+              "size": 53332500,
+              "updated_at": "2026-10-25T17:40:17Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
