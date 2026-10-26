@@ -30,14 +30,14 @@
       "releases": {
         "4.0.0": {
           "changelog": "biliLive-tools 4.0.0：正式 Release 固定 tag/SHA 源码构建，内置 Node、前后端及媒体工具；保留原数据、录像路径和严格北京时间监控窗口。尚未完成真机安装与真实录制回归。",
-          "updated_at": "2026-10-21T03:25:55Z",
+          "updated_at": "2026-10-25T17:40:17Z",
           "service_port": "3000",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/biliLive-tools_4.0.0_fnOS_x86.fpk",
-              "sha256": "e0f7480d546f24280b08964022db71d4b9585d2d70bf9d3581e545f8a74cdcc5",
-              "size": 275221186,
-              "updated_at": "2026-10-21T03:25:55Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.26/biliLive-tools_4.0.0_fnOS_x86.fpk",
+              "sha256": "940f81df267619a05d7e30d992dab2b671b53c71e46fe63e5eec2c32ee75923d",
+              "size": 275239690,
+              "updated_at": "2026-10-25T17:40:17Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,

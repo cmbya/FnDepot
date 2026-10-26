@@ -11,7 +11,7 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "262 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/biliLive-tools_4.0.0_fnOS_x86.fpk",
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.26/biliLive-tools_4.0.0_fnOS_x86.fpk",
     "changelog": "biliLive-tools 4.0.0：正式 Release 固定 tag/SHA 源码构建，内置 Node、前后端及媒体工具；保留原数据、录像路径和严格北京时间监控窗口。尚未完成真机安装与真实录制回归。"
   },
   "cliproxyapi": {
