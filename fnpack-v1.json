@@ -77,7 +77,7 @@
   "metube": {
     "display_name": "MeTube",
     "platform": "x86",
-    "version": "2026.10.25",
+    "version": "2026.10.27",
     "desc": "在线视频下载工具的 fnOS x86 原生版，Actions 构建前后端并内置 Python、FFmpeg/FFprobe、Deno 与 POT provider。",
     "labels": "原生,影音娱乐,下载",
     "distributor": "cmbya",
@@ -86,8 +86,8 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "287 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.26/MeTube_2026.10.25_fnOS_x86.fpk",
-    "changelog": "MeTube 2026.10.25：固定上游 tag/SHA 源码构建，内置 Python 3.14、WebUI、锁定依赖及媒体工具，离线安装升级；尚未完成真机和真实站点下载回归。"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.27/MeTube_2026.10.27_fnOS_x86.fpk",
+    "changelog": "MeTube 2026.10.27：固定上游 tag/SHA 源码构建，内置 Python 3.14、WebUI、锁定依赖及媒体工具，离线安装升级；尚未完成真机和真实站点下载回归。"
   },
   "openlistnative": {
     "display_name": "OpenList",
