@@ -355,8 +355,8 @@
           "packages": {
             "x86": {
               "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.29/Sub-Store-2.44.2-all.fpk",
-              "sha256": "d16a1427ca50fce73292ceca5dd2fdb3fab6150e9f8843f9fed59a74e08b75f1",
-              "size": 3539061,
+              "sha256": "25eb6c41a34267a9b26d5bda57941859ac100196cb56fc5aa68dc5d747e66b42",
+              "size": 3539470,
               "updated_at": "2026-10-29T09:15:49Z",
               "run_as": "package",
               "install_type": "",
