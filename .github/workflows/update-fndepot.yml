@@ -64,6 +64,7 @@ jobs:
 
           git add fnpack.json fnpack-v1.json fnpack-v2.json assets/icons
           git add bililivetools litepan metube openlistnative streamcap taosync cliproxyapi 2>/dev/null || true
+          if [ -d Sub-Store ]; then git add Sub-Store; fi
 
           git commit -m "chore: update FnDepot V1 + V2 indexes"
           git push

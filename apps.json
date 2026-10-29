@@ -8,6 +8,22 @@
   "repositories": [
     {
       "repo": "cmbya/FnDepot",
+      "asset_prefix": "Sub-Store-",
+      "display_name": "Sub-Store",
+      "desc": "高级订阅管理器的 fnOS 原生版，依赖 Node.js 24，前后端内置；默认端口 21678，无额外登录层，仅建议可信网络使用。",
+      "categories": ["生活服务"],
+      "labels": "原生,生活服务,订阅管理",
+      "maintainer": "sub-store-org",
+      "maintainer_url": "https://github.com/sub-store-org/Sub-Store",
+      "distributor": "cmbya",
+      "distributor_url": "https://github.com/cmbya/fnos-buildbot",
+      "readme_url": "https://github.com/cmbya/fnos-buildbot/blob/main/docs/substore.md",
+      "bug_report_url": "https://github.com/cmbya/fnos-buildbot/issues",
+      "changelog": "Sub-Store {version}：官方前后端正式产物原生封装；默认 /path，依赖飞牛 Node.js 24，升级保留数据。尚未完成 fnOS 真机安装、升级回归。",
+      "run_as": "package"
+    },
+    {
+      "repo": "cmbya/FnDepot",
       "asset_prefix": "Ekko-",
       "display_name": "Ekko Studio",
       "desc": "多智能体统一工作台的 fnOS x86 原生版，内置 Node 24；Agent 按需安装。仅非商业用途，商业使用须另获上游许可。",
