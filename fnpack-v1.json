@@ -17,7 +17,7 @@
   "cliproxyapi": {
     "display_name": "CLIProxyAPI",
     "platform": "x86",
-    "version": "8.0.45",
+    "version": "8.0.47",
     "desc": "CLIProxyAPI 的 fnOS x86 原生版，提供 OpenAI/Gemini/Claude 等兼容 API 与浏览器管理界面。",
     "labels": "原生,系统工具,AI工具,API代理",
     "distributor": "cmbya",
@@ -26,8 +26,8 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "23 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.28/CLIProxyAPI_8.0.45_fnOS_x86.fpk",
-    "changelog": "CLIProxyAPI 8.0.45 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.29/CLIProxyAPI_8.0.47_fnOS_x86.fpk",
+    "changelog": "CLIProxyAPI 8.0.47 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
   },
   "Ekko": {
     "display_name": "Ekko Studio",
@@ -118,6 +118,21 @@
     "size": "263 MB",
     "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/StreamCap_1.0.3_fnOS_x86.fpk",
     "changelog": "StreamCap 1.0.3：固定 tag/SHA 源码构建，保留 native7 定时录制行为，内置 Python 3.12、Node 20 与 FFmpeg；离线安装升级。尚未验证真机升级与真实直播录制。"
+  },
+  "Sub-Store": {
+    "display_name": "Sub-Store",
+    "platform": "x86",
+    "version": "2.44.2",
+    "desc": "高级订阅管理器的 fnOS 原生版，依赖 Node.js 24，前后端内置；默认端口 21678，无额外登录层，仅建议可信网络使用。",
+    "labels": "原生,生活服务,订阅管理",
+    "distributor": "cmbya",
+    "distributor_url": "https://github.com/cmbya/fnos-buildbot",
+    "bug_report_url": "https://github.com/cmbya/fnos-buildbot/issues",
+    "install_type": "存储空间",
+    "isdocker": "false",
+    "size": "3.4 MB",
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.29/Sub-Store-2.44.2-all.fpk",
+    "changelog": "Sub-Store 2.44.2：官方前后端正式产物原生封装；默认 /path，依赖飞牛 Node.js 24，升级保留数据。尚未完成 fnOS 真机安装、升级回归。"
   },
   "taosync": {
     "display_name": "TaoSync",

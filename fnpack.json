@@ -68,16 +68,16 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "8.0.45": {
-          "changelog": "CLIProxyAPI 8.0.45 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
-          "updated_at": "2026-10-28T08:21:43Z",
+        "8.0.47": {
+          "changelog": "CLIProxyAPI 8.0.47 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
+          "updated_at": "2026-10-29T09:15:49Z",
           "service_port": "",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.28/CLIProxyAPI_8.0.45_fnOS_x86.fpk",
-              "sha256": "792efa30bb270922996b10d7fd2ad250105faeebbd2bf7ab628aa525fff18609",
-              "size": 23998848,
-              "updated_at": "2026-10-28T08:21:43Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.29/CLIProxyAPI_8.0.47_fnOS_x86.fpk",
+              "sha256": "2ea3ef9382546055c6b24d473c5ef029aac4f59aab4c497af8dfbee801ed5984",
+              "size": 24040749,
+              "updated_at": "2026-10-29T09:15:49Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -322,6 +322,46 @@
               "install_type": "",
               "is_docker": false,
               "service_port": "6006"
+            }
+          }
+        }
+      }
+    },
+    "Sub-Store": {
+      "display_name": "Sub-Store",
+      "desc": "高级订阅管理器的 fnOS 原生版，依赖 Node.js 24，前后端内置；默认端口 21678，无额外登录层，仅建议可信网络使用。",
+      "platform": [
+        "x86"
+      ],
+      "categories": [
+        "生活服务"
+      ],
+      "icon_url": "assets/icons/Sub-Store.png",
+      "readme_url": "https://github.com/cmbya/fnos-buildbot/blob/main/docs/substore.md",
+      "bug_report_url": "https://github.com/cmbya/fnos-buildbot/issues",
+      "maintainer": "sub-store-org",
+      "maintainer_url": "https://github.com/sub-store-org/Sub-Store",
+      "distributor": "cmbya",
+      "distributor_url": "https://github.com/cmbya/fnos-buildbot",
+      "run_as": "package",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "21678",
+      "releases": {
+        "2.44.2": {
+          "changelog": "Sub-Store 2.44.2：官方前后端正式产物原生封装；默认 /path，依赖飞牛 Node.js 24，升级保留数据。尚未完成 fnOS 真机安装、升级回归。",
+          "updated_at": "2026-10-29T09:15:49Z",
+          "service_port": "21678",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.29/Sub-Store-2.44.2-all.fpk",
+              "sha256": "d16a1427ca50fce73292ceca5dd2fdb3fab6150e9f8843f9fed59a74e08b75f1",
+              "size": 3539061,
+              "updated_at": "2026-10-29T09:15:49Z",
+              "run_as": "package",
+              "install_type": "",
+              "is_docker": false,
+              "service_port": "21678"
             }
           }
         }
