@@ -108,16 +108,16 @@
       "is_docker": false,
       "service_port": "8770",
       "releases": {
-        "0.7.39": {
-          "changelog": "Ekko Studio 0.7.39：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。",
-          "updated_at": "2026-10-23T16:43:18Z",
+        "0.8.14": {
+          "changelog": "Ekko Studio 0.8.14：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。",
+          "updated_at": "2026-11-03T16:29:44Z",
           "service_port": "8770",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.24/Ekko-0.7.39-x86.fpk",
-              "sha256": "aeb9d7eaa312fe0f8f85a0c75dd735d5f32c0863344ccabcfe0042c82aa3091b",
-              "size": 124918866,
-              "updated_at": "2026-10-23T16:43:18Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.04/Ekko-0.8.14-x86.fpk",
+              "sha256": "2966fc046c9a8e8f3afaed583906d52277b8eb8a6696f3686eb583a43351b9f3",
+              "size": 175437577,
+              "updated_at": "2026-11-03T16:29:44Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -228,16 +228,16 @@
       "is_docker": false,
       "service_port": "8081",
       "releases": {
-        "2026.10.27": {
-          "changelog": "MeTube 2026.10.27：固定上游 tag/SHA 源码构建，内置 Python 3.14、WebUI、锁定依赖及媒体工具，离线安装升级；尚未完成真机和真实站点下载回归。",
-          "updated_at": "2026-10-26T19:53:37Z",
+        "2026.11.01": {
+          "changelog": "MeTube 2026.11.01：固定上游 tag/SHA 源码构建，内置 Python 3.14、WebUI、锁定依赖及媒体工具，离线安装升级；尚未完成真机和真实站点下载回归。",
+          "updated_at": "2026-11-03T16:29:44Z",
           "service_port": "8081",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.27/MeTube_2026.10.27_fnOS_x86.fpk",
-              "sha256": "82553f9b4de7e497d65cbde95a2999b975ba4ffc0ed28c5eefabe99ec7178046",
-              "size": 300633091,
-              "updated_at": "2026-10-26T19:53:37Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.04/MeTube_2026.11.01_fnOS_x86.fpk",
+              "sha256": "5eb3f00a0bb1ebcb553c8deba12125234e7e62673c50032abfafe04baacdaa95",
+              "size": 301291364,
+              "updated_at": "2026-11-03T16:29:44Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
