@@ -17,7 +17,7 @@
   "cliproxyapi": {
     "display_name": "CLIProxyAPI",
     "platform": "x86",
-    "version": "8.0.55",
+    "version": "8.0.56",
     "desc": "CLIProxyAPI 的 fnOS x86 原生版，提供 OpenAI/Gemini/Claude 等兼容 API 与浏览器管理界面。",
     "labels": "原生,系统工具,AI工具,API代理",
     "distributor": "cmbya",
@@ -26,13 +26,13 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "24 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.05/CLIProxyAPI_8.0.55_fnOS_x86.fpk",
-    "changelog": "CLIProxyAPI 8.0.55 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.05/CLIProxyAPI_8.0.56_fnOS_x86.fpk",
+    "changelog": "CLIProxyAPI 8.0.56 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
   },
   "Ekko": {
     "display_name": "Ekko Studio",
     "platform": "x86",
-    "version": "0.8.15",
+    "version": "0.8.16",
     "desc": "多智能体统一工作台的 fnOS x86 原生版，内置 Node 24；Agent 按需安装。仅非商业用途，商业使用须另获上游许可。",
     "labels": "原生,系统工具,AI工具",
     "distributor": "cmbya",
@@ -41,8 +41,8 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "167 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.05/Ekko-0.8.15-x86.fpk",
-    "changelog": "Ekko Studio 0.8.15：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.05/Ekko-0.8.16-x86.fpk",
+    "changelog": "Ekko Studio 0.8.16：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。"
   },
   "f2media": {
     "display_name": "F2Media",

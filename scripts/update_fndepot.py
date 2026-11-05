@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import hashlib
+from asset_selection import choose_versioned_asset
 import io
 import json
 import os
@@ -146,7 +147,7 @@ def choose_fpk_asset(release, preferred_name=None, asset_prefix=None):
             s -= 20
         return s
 
-    return sorted(assets, key=score, reverse=True)[0]
+    return choose_versioned_asset(assets, asset_prefix, score)
 
 def clean_changelog(text, prerelease):
     text = (text or "").strip()

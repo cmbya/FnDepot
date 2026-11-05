@@ -68,15 +68,15 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "8.0.55": {
-          "changelog": "CLIProxyAPI 8.0.55 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
+        "8.0.56": {
+          "changelog": "CLIProxyAPI 8.0.56 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
           "updated_at": "2026-11-04T20:58:38Z",
           "service_port": "",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.05/CLIProxyAPI_8.0.55_fnOS_x86.fpk",
-              "sha256": "3ade2644d1bb92fcee41514b51c8e98b298d88ce9d78081daf3e31ee1e3b2bf3",
-              "size": 24898268,
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.05/CLIProxyAPI_8.0.56_fnOS_x86.fpk",
+              "sha256": "61df75d84127b8bfa4d7b6a8ab92abda456336ba6e55a0154a4432f0a6bb566f",
+              "size": 24934423,
               "updated_at": "2026-11-04T20:58:38Z",
               "run_as": "package",
               "install_type": "",
@@ -108,15 +108,15 @@
       "is_docker": false,
       "service_port": "8770",
       "releases": {
-        "0.8.15": {
-          "changelog": "Ekko Studio 0.8.15：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。",
+        "0.8.16": {
+          "changelog": "Ekko Studio 0.8.16：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。",
           "updated_at": "2026-11-04T20:58:38Z",
           "service_port": "8770",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.05/Ekko-0.8.15-x86.fpk",
-              "sha256": "e37d7f2548dc09f30630b8f61707974ebbc8f0c81a1e42d54401ca4389399fcf",
-              "size": 175413142,
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.05/Ekko-0.8.16-x86.fpk",
+              "sha256": "ca2e95b656fe242090505f1f0319e41f58431e72b1ed77cee9b6292da58af28e",
+              "size": 175409950,
               "updated_at": "2026-11-04T20:58:38Z",
               "run_as": "package",
               "install_type": "",
