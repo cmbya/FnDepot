@@ -1,0 +1,62 @@
+name: Verify aggregate asset selection and refresh index
+on:
+  push:
+    branches: [main]
+    paths: ['scripts/asset_selection.py', 'scripts/test_asset_selection.py', '.github/workflows/fix-asset-selection.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply narrow asset ordering integration
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('scripts/update_fndepot.py')
+          text=p.read_text()
+          old='    return sorted(assets, key=score, reverse=True)[0]'
+          new='    return choose_versioned_asset(assets, asset_prefix, score)'
+          if old in text:
+              assert text.count(old)==1
+              text=text.replace('import hashlib\n','import hashlib\nfrom asset_selection import choose_versioned_asset\n',1).replace(old,new,1)
+              p.write_text(text)
+          else:
+              assert new in text and 'from asset_selection import choose_versioned_asset' in text
+          PY
+      - name: Run selection regression tests
+        run: python3 -m unittest discover -s scripts -p test_asset_selection.py -v
+      - name: Generate indexes using verified selection
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/update_fndepot.py
+      - name: Verify Ekko V1 and V2 delivery and alias
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          v1=json.loads(Path('fnpack-v1.json').read_text())
+          v2=json.loads(Path('fnpack.json').read_text())
+          assert v2==json.loads(Path('fnpack-v2.json').read_text())
+          assert v1['Ekko']['version']=='0.8.16'
+          package=v2['apps']['Ekko']['releases']['0.8.16']['packages']['x86']
+          assert package['download_url']==v1['Ekko']['download_url']
+          assert package['download_url'].endswith('/Ekko-0.8.16-x86.fpk')
+          assert package['sha256']=='ca2e95b656fe242090505f1f0319e41f58431e72b1ed77cee9b6292da58af28e'
+          assert package['size']==175409950
+          Path('docs').mkdir(exist_ok=True)
+          Path('docs/ekko-index-verification.json').write_text(json.dumps({'status':'verified','version':'0.8.16','run_url':f"https://github.com/{os.environ['GITHUB_REPOSITORY']}/actions/runs/{os.environ['GITHUB_RUN_ID']}",'package':package},indent=2)+'\n')
+          print('PASS: Ekko 0.8.16 V1/V2, alias, URL, size and SHA256')
+          PY
+      - name: Commit tested integration and generated indexes
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add scripts/update_fndepot.py fnpack.json fnpack-v1.json fnpack-v2.json assets/icons docs/ekko-index-verification.json
+          if [ -d Ekko ]; then git add Ekko; fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'fix(index): select latest same-prefix version and index Ekko 0.8.16'
+            git push
+          fi
