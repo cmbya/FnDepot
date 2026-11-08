@@ -2,7 +2,7 @@
   "bililivetools": {
     "display_name": "biliLive-tools",
     "platform": "x86",
-    "version": "4.0.0",
+    "version": "4.1.0",
     "desc": "直播录制、弹幕与视频处理工具的 fnOS x86 原生版。",
     "labels": "原生,影音娱乐,直播录制",
     "distributor": "cmbya",
@@ -10,14 +10,14 @@
     "bug_report_url": "https://github.com/cmbya/biliLive-tools-fnOS/issues",
     "install_type": "存储空间",
     "isdocker": "false",
-    "size": "262 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.26/biliLive-tools_4.0.0_fnOS_x86.fpk",
-    "changelog": "biliLive-tools 4.0.0：正式 Release 固定 tag/SHA 源码构建，内置 Node、前后端及媒体工具；保留原数据、录像路径和严格北京时间监控窗口。尚未完成真机安装与真实录制回归。"
+    "size": "263 MB",
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.09/biliLive-tools_4.1.0_fnOS_x86.fpk",
+    "changelog": "biliLive-tools 4.1.0：正式 Release 固定 tag/SHA 源码构建，内置 Node、前后端及媒体工具；保留原数据、录像路径和严格北京时间监控窗口。尚未完成真机安装与真实录制回归。"
   },
   "cliproxyapi": {
     "display_name": "CLIProxyAPI",
     "platform": "x86",
-    "version": "8.0.59",
+    "version": "8.0.61",
     "desc": "CLIProxyAPI 的 fnOS x86 原生版，提供 OpenAI/Gemini/Claude 等兼容 API 与浏览器管理界面。",
     "labels": "原生,系统工具,AI工具,API代理",
     "distributor": "cmbya",
@@ -26,8 +26,8 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "24 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.07/CLIProxyAPI_8.0.59_fnOS_x86.fpk",
-    "changelog": "CLIProxyAPI 8.0.59 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.09/CLIProxyAPI_8.0.61_fnOS_x86.fpk",
+    "changelog": "CLIProxyAPI 8.0.61 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
   },
   "Ekko": {
     "display_name": "Ekko Studio",
@@ -122,7 +122,7 @@
   "Sub-Store": {
     "display_name": "Sub-Store",
     "platform": "x86",
-    "version": "2.44.5",
+    "version": "2.44.6",
     "desc": "高级订阅管理器的 fnOS 原生版，依赖 Node.js 24，前后端内置；默认端口 21678，无额外登录层，仅建议可信网络使用。",
     "labels": "原生,生活服务,订阅管理",
     "distributor": "cmbya",
@@ -131,8 +131,8 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "3.4 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.06/Sub-Store-2.44.5-all.fpk",
-    "changelog": "Sub-Store 2.44.5：官方前后端正式产物原生封装；默认 /path，依赖飞牛 Node.js 24，升级保留数据。尚未完成 fnOS 真机安装、升级回归。"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.09/Sub-Store-2.44.6-all.fpk",
+    "changelog": "Sub-Store 2.44.6：官方前后端正式产物原生封装；默认 /path，依赖飞牛 Node.js 24，升级保留数据。尚未完成 fnOS 真机安装、升级回归。"
   },
   "taosync": {
     "display_name": "TaoSync",

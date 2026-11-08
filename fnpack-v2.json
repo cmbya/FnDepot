@@ -28,16 +28,16 @@
       "is_docker": false,
       "service_port": "3000",
       "releases": {
-        "4.0.0": {
-          "changelog": "biliLive-tools 4.0.0：正式 Release 固定 tag/SHA 源码构建，内置 Node、前后端及媒体工具；保留原数据、录像路径和严格北京时间监控窗口。尚未完成真机安装与真实录制回归。",
-          "updated_at": "2026-10-25T17:40:17Z",
+        "4.1.0": {
+          "changelog": "biliLive-tools 4.1.0：正式 Release 固定 tag/SHA 源码构建，内置 Node、前后端及媒体工具；保留原数据、录像路径和严格北京时间监控窗口。尚未完成真机安装与真实录制回归。",
+          "updated_at": "2026-11-08T18:52:18Z",
           "service_port": "3000",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.26/biliLive-tools_4.0.0_fnOS_x86.fpk",
-              "sha256": "940f81df267619a05d7e30d992dab2b671b53c71e46fe63e5eec2c32ee75923d",
-              "size": 275239690,
-              "updated_at": "2026-10-25T17:40:17Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.09/biliLive-tools_4.1.0_fnOS_x86.fpk",
+              "sha256": "2654920c98a55c9252cd953c4749903ac3de90ff59adf03a1d1b14a1f213dcf0",
+              "size": 275278618,
+              "updated_at": "2026-11-08T18:52:18Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -68,16 +68,16 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "8.0.59": {
-          "changelog": "CLIProxyAPI 8.0.59 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
-          "updated_at": "2026-11-06T20:26:21Z",
+        "8.0.61": {
+          "changelog": "CLIProxyAPI 8.0.61 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
+          "updated_at": "2026-11-08T18:52:18Z",
           "service_port": "",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.07/CLIProxyAPI_8.0.59_fnOS_x86.fpk",
-              "sha256": "f4714d201c3e4bd9d71f10390cddbe942dc01aa3d88df31db762857fdcb8d9e6",
-              "size": 25014836,
-              "updated_at": "2026-11-06T20:26:21Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.09/CLIProxyAPI_8.0.61_fnOS_x86.fpk",
+              "sha256": "099805fe0288b8961e2e4436b2c82cb8678244120237dbdd96d6d31109043fe3",
+              "size": 25052861,
+              "updated_at": "2026-11-08T18:52:18Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -348,16 +348,16 @@
       "is_docker": false,
       "service_port": "21678",
       "releases": {
-        "2.44.5": {
-          "changelog": "Sub-Store 2.44.5：官方前后端正式产物原生封装；默认 /path，依赖飞牛 Node.js 24，升级保留数据。尚未完成 fnOS 真机安装、升级回归。",
-          "updated_at": "2026-11-05T21:02:31Z",
+        "2.44.6": {
+          "changelog": "Sub-Store 2.44.6：官方前后端正式产物原生封装；默认 /path，依赖飞牛 Node.js 24，升级保留数据。尚未完成 fnOS 真机安装、升级回归。",
+          "updated_at": "2026-11-08T18:52:18Z",
           "service_port": "21678",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.06/Sub-Store-2.44.5-all.fpk",
-              "sha256": "427fc77304c7615b337fdceaa6dc05e09e7513fb13fdf1f41853d86f314ba214",
-              "size": 3533474,
-              "updated_at": "2026-11-05T21:02:31Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.09/Sub-Store-2.44.6-all.fpk",
+              "sha256": "73a827a1ec92082d959b65b3aca88a4db03454122348f4bf7e99644f45878ab3",
+              "size": 3533779,
+              "updated_at": "2026-11-08T18:52:18Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
