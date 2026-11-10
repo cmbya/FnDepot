@@ -68,15 +68,15 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "8.0.62": {
-          "changelog": "CLIProxyAPI 8.0.62 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
+        "8.0.63": {
+          "changelog": "CLIProxyAPI 8.0.63 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
           "updated_at": "2026-11-09T23:24:37Z",
           "service_port": "",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.10/CLIProxyAPI_8.0.62_fnOS_x86.fpk",
-              "sha256": "b5fec9e6ffa2bd324010360aa80b2abcbcece48d05befb105d3622444d71efc1",
-              "size": 25097536,
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.10/CLIProxyAPI_8.0.63_fnOS_x86.fpk",
+              "sha256": "1f63c02e6f74986cdeb6142f105b33169cb489ab6749c985bee23f8eb862511d",
+              "size": 25112132,
               "updated_at": "2026-11-09T23:24:37Z",
               "run_as": "package",
               "install_type": "",
@@ -348,16 +348,16 @@
       "is_docker": false,
       "service_port": "21678",
       "releases": {
-        "2.44.6": {
-          "changelog": "Sub-Store 2.44.6：官方前后端正式产物原生封装；默认 /path，依赖飞牛 Node.js 24，升级保留数据。尚未完成 fnOS 真机安装、升级回归。",
-          "updated_at": "2026-11-08T18:52:18Z",
+        "2.44.7": {
+          "changelog": "Sub-Store 2.44.7：官方前后端正式产物原生封装；默认 /path，依赖飞牛 Node.js 24，升级保留数据。尚未完成 fnOS 真机安装、升级回归。",
+          "updated_at": "2026-11-09T23:24:37Z",
           "service_port": "21678",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.09/Sub-Store-2.44.6-all.fpk",
-              "sha256": "73a827a1ec92082d959b65b3aca88a4db03454122348f4bf7e99644f45878ab3",
-              "size": 3533779,
-              "updated_at": "2026-11-08T18:52:18Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.10/Sub-Store-2.44.7-all.fpk",
+              "sha256": "8d6bd6d88562c972863123f541c950827a8723ac1c3bf588b5b17750f9a1b7b4",
+              "size": 3533932,
+              "updated_at": "2026-11-09T23:24:37Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
