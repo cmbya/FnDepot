@@ -68,16 +68,16 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "8.0.69": {
-          "changelog": "CLIProxyAPI 8.0.69 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
-          "updated_at": "2026-11-12T21:26:54Z",
+        "8.0.71": {
+          "changelog": "CLIProxyAPI 8.0.71 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
+          "updated_at": "2026-11-14T19:16:14Z",
           "service_port": "",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.13/CLIProxyAPI_8.0.69_fnOS_x86.fpk",
-              "sha256": "5e897f4426e92581c2b8082c91e48dee38ce8edad1fc634ef66b79e0a6d1cac3",
-              "size": 25393377,
-              "updated_at": "2026-11-12T21:26:54Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.15/CLIProxyAPI_8.0.71_fnOS_x86.fpk",
+              "sha256": "b920bd283b23fb9f4437df1782b8e9089d13db264eb7f8f7fa3701a2b585421b",
+              "size": 25560766,
+              "updated_at": "2026-11-14T19:16:14Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -108,16 +108,16 @@
       "is_docker": false,
       "service_port": "8770",
       "releases": {
-        "0.8.22": {
-          "changelog": "Ekko Studio 0.8.22：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。",
-          "updated_at": "2026-11-13T17:22:49Z",
+        "0.8.23": {
+          "changelog": "Ekko Studio 0.8.23：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。",
+          "updated_at": "2026-11-14T19:16:14Z",
           "service_port": "8770",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.14/Ekko-0.8.22-x86.fpk",
-              "sha256": "257862f538b8ec377f86144339f61854b23bc136f3e8cd8cf39ee01d8b360ada",
-              "size": 176551286,
-              "updated_at": "2026-11-13T17:22:49Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.15/Ekko-0.8.23-x86.fpk",
+              "sha256": "c89f8f2abc84c814608cd88babc10304464687c780f0de806694196e511485aa",
+              "size": 176601073,
+              "updated_at": "2026-11-14T19:16:14Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -348,16 +348,16 @@
       "is_docker": false,
       "service_port": "21678",
       "releases": {
-        "2.44.12": {
-          "changelog": "Sub-Store 2.44.12：官方前后端正式产物原生封装；默认 /path，依赖飞牛 Node.js 24，升级保留数据。尚未完成 fnOS 真机安装、升级回归。",
-          "updated_at": "2026-11-13T17:22:49Z",
+        "2.44.14": {
+          "changelog": "Sub-Store 2.44.14：官方前后端正式产物原生封装；默认 /path，依赖飞牛 Node.js 24，升级保留数据。尚未完成 fnOS 真机安装、升级回归。",
+          "updated_at": "2026-11-14T19:16:14Z",
           "service_port": "21678",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.14/Sub-Store-2.44.12-all.fpk",
-              "sha256": "f262a7aad2879e8b3b9727cb1271e9842f79019cb6af5fb960e8538c78de91ae",
-              "size": 3565298,
-              "updated_at": "2026-11-13T17:22:49Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.15/Sub-Store-2.44.14-all.fpk",
+              "sha256": "6682132cbb47766ae1561f0f347796f6094afbb328a68bef91f8efec8f45e83b",
+              "size": 3565376,
+              "updated_at": "2026-11-14T19:16:14Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
