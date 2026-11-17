@@ -68,16 +68,16 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "8.0.75": {
-          "changelog": "CLIProxyAPI 8.0.75 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
-          "updated_at": "2026-11-15T19:45:10Z",
+        "8.0.76": {
+          "changelog": "CLIProxyAPI 8.0.76 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
+          "updated_at": "2026-11-16T23:32:36Z",
           "service_port": "",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.16/CLIProxyAPI_8.0.75_fnOS_x86.fpk",
-              "sha256": "d3160938ef3cea53ed3fb50d8310054a4b2d82e40dccff7e9a65998dfdc88c1d",
-              "size": 25973048,
-              "updated_at": "2026-11-15T19:45:10Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.17/CLIProxyAPI_8.0.76_fnOS_x86.fpk",
+              "sha256": "a5cb6d6ba402fd5c611b5ad459196ef95a51f3601acf36d553c318c2586ca164",
+              "size": 26041455,
+              "updated_at": "2026-11-16T23:32:36Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -108,15 +108,15 @@
       "is_docker": false,
       "service_port": "8770",
       "releases": {
-        "0.8.25": {
-          "changelog": "Ekko Studio 0.8.25：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。",
+        "0.8.26": {
+          "changelog": "Ekko Studio 0.8.26：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。",
           "updated_at": "2026-11-16T23:32:36Z",
           "service_port": "8770",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.17/Ekko-0.8.25-x86.fpk",
-              "sha256": "4a66688c6231f539da758fedc60c547cc086954e315ca3b23bc488d6d2f6b42a",
-              "size": 177622739,
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.17/Ekko-0.8.26-x86.fpk",
+              "sha256": "451ee3be792473de648dc99e636be0e341f6ac3b7de0f737f66d028dd64e3725",
+              "size": 177617696,
               "updated_at": "2026-11-16T23:32:36Z",
               "run_as": "package",
               "install_type": "",
@@ -388,16 +388,16 @@
       "is_docker": false,
       "service_port": "8023",
       "releases": {
-        "0.4.0": {
-          "changelog": "TaoSync 0.4.0 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
-          "updated_at": "2026-10-21T03:25:55Z",
+        "0.5.0": {
+          "changelog": "TaoSync 0.5.0 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
+          "updated_at": "2026-11-16T23:32:36Z",
           "service_port": "8023",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/TaoSync_0.4.0_fnOS_x86.fpk",
-              "sha256": "852589277cbc6ecc5704acdc1e4fad9f4d9c60065d7b7599bb7d082d40f7520f",
-              "size": 14653190,
-              "updated_at": "2026-10-21T03:25:55Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.17/TaoSync_0.5.0_fnOS_x86.fpk",
+              "sha256": "4031947559594e0736f2459198eb33c2e701eefe4be87e75aa29c831fc981250",
+              "size": 22576336,
+              "updated_at": "2026-11-16T23:32:36Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,

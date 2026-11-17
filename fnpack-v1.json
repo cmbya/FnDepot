@@ -17,7 +17,7 @@
   "cliproxyapi": {
     "display_name": "CLIProxyAPI",
     "platform": "x86",
-    "version": "8.0.75",
+    "version": "8.0.76",
     "desc": "CLIProxyAPI 的 fnOS x86 原生版，提供 OpenAI/Gemini/Claude 等兼容 API 与浏览器管理界面。",
     "labels": "原生,系统工具,AI工具,API代理",
     "distributor": "cmbya",
@@ -26,13 +26,13 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "25 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.16/CLIProxyAPI_8.0.75_fnOS_x86.fpk",
-    "changelog": "CLIProxyAPI 8.0.75 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.17/CLIProxyAPI_8.0.76_fnOS_x86.fpk",
+    "changelog": "CLIProxyAPI 8.0.76 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
   },
   "Ekko": {
     "display_name": "Ekko Studio",
     "platform": "x86",
-    "version": "0.8.25",
+    "version": "0.8.26",
     "desc": "多智能体统一工作台的 fnOS x86 原生版，内置 Node 24；Agent 按需安装。仅非商业用途，商业使用须另获上游许可。",
     "labels": "原生,系统工具,AI工具",
     "distributor": "cmbya",
@@ -41,8 +41,8 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "169 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.17/Ekko-0.8.25-x86.fpk",
-    "changelog": "Ekko Studio 0.8.25：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.17/Ekko-0.8.26-x86.fpk",
+    "changelog": "Ekko Studio 0.8.26：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。"
   },
   "f2media": {
     "display_name": "F2Media",
@@ -137,7 +137,7 @@
   "taosync": {
     "display_name": "TaoSync",
     "platform": "x86",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "desc": "文件同步工具的 fnOS x86 原生版。",
     "labels": "原生,系统工具,同步",
     "distributor": "cmbya",
@@ -145,9 +145,9 @@
     "bug_report_url": "https://github.com/cmbya/FnDepot/issues",
     "install_type": "存储空间",
     "isdocker": "false",
-    "size": "14 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.10.21/TaoSync_0.4.0_fnOS_x86.fpk",
-    "changelog": "TaoSync 0.4.0 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
+    "size": "22 MB",
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.17/TaoSync_0.5.0_fnOS_x86.fpk",
+    "changelog": "TaoSync 0.5.0 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
   },
   "ZJJX": {
     "display_name": "ZJJX",
