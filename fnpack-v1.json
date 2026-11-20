@@ -2,7 +2,7 @@
   "bililivetools": {
     "display_name": "biliLive-tools",
     "platform": "x86",
-    "version": "4.1.0",
+    "version": "4.2.0",
     "desc": "直播录制、弹幕与视频处理工具的 fnOS x86 原生版。",
     "labels": "原生,影音娱乐,直播录制",
     "distributor": "cmbya",
@@ -11,13 +11,13 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "263 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.17/biliLive-tools_4.1.0_fnOS_x86.fpk",
-    "changelog": "biliLive-tools 4.1.0：正式 Release 固定 tag/SHA 源码构建，内置 Node、前后端及媒体工具；保留原数据、录像路径和严格北京时间监控窗口。尚未完成真机安装与真实录制回归。"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.21/biliLive-tools_4.2.0_fnOS_x86.fpk",
+    "changelog": "biliLive-tools 4.2.0：正式 Release 固定 tag/SHA 源码构建，内置 Node、前后端及媒体工具；保留原数据、录像路径和严格北京时间监控窗口。尚未完成真机安装与真实录制回归。"
   },
   "cliproxyapi": {
     "display_name": "CLIProxyAPI",
     "platform": "x86",
-    "version": "8.0.79",
+    "version": "8.0.80",
     "desc": "CLIProxyAPI 的 fnOS x86 原生版，提供 OpenAI/Gemini/Claude 等兼容 API 与浏览器管理界面。",
     "labels": "原生,系统工具,AI工具,API代理",
     "distributor": "cmbya",
@@ -26,8 +26,8 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "25 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.20/CLIProxyAPI_8.0.79_fnOS_x86.fpk",
-    "changelog": "CLIProxyAPI 8.0.79 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.21/CLIProxyAPI_8.0.80_fnOS_x86.fpk",
+    "changelog": "CLIProxyAPI 8.0.80 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
   },
   "Ekko": {
     "display_name": "Ekko Studio",
