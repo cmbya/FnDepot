@@ -17,7 +17,7 @@
   "cliproxyapi": {
     "display_name": "CLIProxyAPI",
     "platform": "x86",
-    "version": "8.0.80",
+    "version": "8.1.0",
     "desc": "CLIProxyAPI 的 fnOS x86 原生版，提供 OpenAI/Gemini/Claude 等兼容 API 与浏览器管理界面。",
     "labels": "原生,系统工具,AI工具,API代理",
     "distributor": "cmbya",
@@ -26,13 +26,13 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "25 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.21/CLIProxyAPI_8.0.80_fnOS_x86.fpk",
-    "changelog": "CLIProxyAPI 8.0.80 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.22/CLIProxyAPI_8.1.0_fnOS_x86.fpk",
+    "changelog": "CLIProxyAPI 8.1.0 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
   },
   "Ekko": {
     "display_name": "Ekko Studio",
     "platform": "x86",
-    "version": "0.8.29",
+    "version": "0.8.30",
     "desc": "多智能体统一工作台的 fnOS x86 原生版，内置 Node 24；Agent 按需安装。仅非商业用途，商业使用须另获上游许可。",
     "labels": "原生,系统工具,AI工具",
     "distributor": "cmbya",
@@ -41,8 +41,8 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "169 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.20/Ekko-0.8.29-x86.fpk",
-    "changelog": "Ekko Studio 0.8.29：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.22/Ekko-0.8.30-x86.fpk",
+    "changelog": "Ekko Studio 0.8.30：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。"
   },
   "f2media": {
     "display_name": "F2Media",
@@ -122,7 +122,7 @@
   "Sub-Store": {
     "display_name": "Sub-Store",
     "platform": "x86",
-    "version": "2.44.21",
+    "version": "2.44.23",
     "desc": "高级订阅管理器的 fnOS 原生版，依赖 Node.js 24，前后端内置；默认端口 21678，无额外登录层，仅建议可信网络使用。",
     "labels": "原生,生活服务,订阅管理",
     "distributor": "cmbya",
@@ -131,8 +131,8 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "3.4 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.21/Sub-Store-2.44.21-all.fpk",
-    "changelog": "Sub-Store 2.44.21：官方前后端正式产物原生封装；默认 /path，依赖飞牛 Node.js 24，升级保留数据。尚未完成 fnOS 真机安装、升级回归。"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.22/Sub-Store-2.44.23-all.fpk",
+    "changelog": "Sub-Store 2.44.23：官方前后端正式产物原生封装；默认 /path，依赖飞牛 Node.js 24，升级保留数据。尚未完成 fnOS 真机安装、升级回归。"
   },
   "taosync": {
     "display_name": "TaoSync",
