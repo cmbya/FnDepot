@@ -137,7 +137,7 @@
   "taosync": {
     "display_name": "TaoSync",
     "platform": "x86",
-    "version": "0.5.0",
+    "version": "0.5.1",
     "desc": "文件同步工具的 fnOS x86 原生版。",
     "labels": "原生,系统工具,同步",
     "distributor": "cmbya",
@@ -146,8 +146,8 @@
     "install_type": "存储空间",
     "isdocker": "false",
     "size": "22 MB",
-    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.17/TaoSync_0.5.0_fnOS_x86.fpk",
-    "changelog": "TaoSync 0.5.0 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
+    "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.22/TaoSync_0.5.1_fnOS_x86.fpk",
+    "changelog": "TaoSync 0.5.1 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。"
   },
   "ZJJX": {
     "display_name": "ZJJX",

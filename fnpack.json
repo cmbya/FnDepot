@@ -388,16 +388,16 @@
       "is_docker": false,
       "service_port": "8023",
       "releases": {
-        "0.5.0": {
-          "changelog": "TaoSync 0.5.0 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
-          "updated_at": "2026-11-16T23:32:36Z",
+        "0.5.1": {
+          "changelog": "TaoSync 0.5.1 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
+          "updated_at": "2026-11-21T20:38:40Z",
           "service_port": "8023",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.17/TaoSync_0.5.0_fnOS_x86.fpk",
-              "sha256": "4031947559594e0736f2459198eb33c2e701eefe4be87e75aa29c831fc981250",
-              "size": 22576336,
-              "updated_at": "2026-11-16T23:32:36Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.22/TaoSync_0.5.1_fnOS_x86.fpk",
+              "sha256": "56b1379dc9caff05a4c95949ef6e92a8264a8ed9197d79b35ac9b181c05a3e8e",
+              "size": 23420750,
+              "updated_at": "2026-11-21T20:38:40Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
