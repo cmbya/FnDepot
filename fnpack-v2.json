@@ -68,16 +68,16 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "8.1.0": {
-          "changelog": "CLIProxyAPI 8.1.0 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
-          "updated_at": "2026-11-21T20:38:40Z",
+        "8.1.1": {
+          "changelog": "CLIProxyAPI 8.1.1 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
+          "updated_at": "2026-11-22T20:44:16Z",
           "service_port": "",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.22/CLIProxyAPI_8.1.0_fnOS_x86.fpk",
-              "sha256": "c25bae3e95b0e1412cab42074b1d1b4a695f7515f0439871d2766548425854ae",
-              "size": 26612499,
-              "updated_at": "2026-11-21T20:38:40Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.23/CLIProxyAPI_8.1.1_fnOS_x86.fpk",
+              "sha256": "3d0f0408fc2eaee6efd509641985bb361f43998f947f041cbd835a96eb131de9",
+              "size": 26686351,
+              "updated_at": "2026-11-22T20:44:16Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -228,16 +228,16 @@
       "is_docker": false,
       "service_port": "8081",
       "releases": {
-        "2026.11.14": {
-          "changelog": "MeTube 2026.11.14：固定上游 tag/SHA 源码构建，内置 Python 3.14、WebUI、锁定依赖及媒体工具，离线安装升级；尚未完成真机和真实站点下载回归。",
-          "updated_at": "2026-11-14T19:16:14Z",
+        "2026.11.22": {
+          "changelog": "MeTube 2026.11.22：固定上游 tag/SHA 源码构建，内置 Python 3.14、WebUI、锁定依赖及媒体工具，离线安装升级；尚未完成真机和真实站点下载回归。",
+          "updated_at": "2026-11-22T20:44:16Z",
           "service_port": "8081",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.15/MeTube_2026.11.14_fnOS_x86.fpk",
-              "sha256": "fb93db68c64e567c961f552bded0e6c74c2bde0c6792d7fa737e3f7da3638729",
-              "size": 301873728,
-              "updated_at": "2026-11-14T19:16:14Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.23/MeTube_2026.11.22_fnOS_x86.fpk",
+              "sha256": "49d898590ed2387074adfbe8421cec09492b270ef415a8bad27bf560225b3699",
+              "size": 301885373,
+              "updated_at": "2026-11-22T20:44:16Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -348,16 +348,16 @@
       "is_docker": false,
       "service_port": "21678",
       "releases": {
-        "2.44.23": {
-          "changelog": "Sub-Store 2.44.23：官方前后端正式产物原生封装；默认 /path，依赖飞牛 Node.js 24，升级保留数据。尚未完成 fnOS 真机安装、升级回归。",
-          "updated_at": "2026-11-21T20:38:40Z",
+        "2.44.26": {
+          "changelog": "Sub-Store 2.44.26：官方前后端正式产物原生封装；默认 /path，依赖飞牛 Node.js 24，升级保留数据。尚未完成 fnOS 真机安装、升级回归。",
+          "updated_at": "2026-11-22T20:44:16Z",
           "service_port": "21678",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.22/Sub-Store-2.44.23-all.fpk",
-              "sha256": "3b05f3c2ee9ddca49bc14ede14f2ca9fbddae863055b26e5dfff1a89921c4e20",
-              "size": 3574908,
-              "updated_at": "2026-11-21T20:38:40Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.23/Sub-Store-2.44.26-all.fpk",
+              "sha256": "a373e38e86101eb33dade388170179253232ba6efc45144af567ca84633814de",
+              "size": 3564236,
+              "updated_at": "2026-11-22T20:44:16Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
