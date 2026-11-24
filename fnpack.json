@@ -348,16 +348,16 @@
       "is_docker": false,
       "service_port": "21678",
       "releases": {
-        "2.44.29": {
-          "changelog": "Sub-Store 2.44.29：官方前后端正式产物原生封装；默认 /path，依赖飞牛 Node.js 24，升级保留数据。尚未完成 fnOS 真机安装、升级回归。",
-          "updated_at": "2026-11-24T01:49:14Z",
+        "2.44.30": {
+          "changelog": "Sub-Store 2.44.30：官方前后端正式产物原生封装；默认 /path，依赖飞牛 Node.js 24，升级保留数据。尚未完成 fnOS 真机安装、升级回归。",
+          "updated_at": "2026-11-24T23:28:08Z",
           "service_port": "21678",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.24/Sub-Store-2.44.29-all.fpk",
-              "sha256": "8e48811f087c6ac2711a394e22eee7590cb880424e73eec2de4caf57ccc0fdfc",
-              "size": 3568881,
-              "updated_at": "2026-11-24T01:49:14Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.25/Sub-Store-2.44.30-all.fpk",
+              "sha256": "ba76412d7ecf0e77f9e85e55e6a6600d6f8ac25e5eaeaede3a18364b827f0f48",
+              "size": 3571365,
+              "updated_at": "2026-11-24T23:28:08Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
