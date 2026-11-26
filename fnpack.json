@@ -68,15 +68,15 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "8.1.4": {
-          "changelog": "CLIProxyAPI 8.1.4 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
+        "8.1.5": {
+          "changelog": "CLIProxyAPI 8.1.5 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
           "updated_at": "2026-11-25T23:03:50Z",
           "service_port": "",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.26/CLIProxyAPI_8.1.4_fnOS_x86.fpk",
-              "sha256": "4c4a75a962b99ca23c7f6ef71cdcb86b2d4642673a95879f12415ec52bde5654",
-              "size": 26867489,
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.26/CLIProxyAPI_8.1.5_fnOS_x86.fpk",
+              "sha256": "2d94392f6045e2273c572343401d0e7a462c603ab9d3bfdf469d0c1a4960ca2a",
+              "size": 26957775,
               "updated_at": "2026-11-25T23:03:50Z",
               "run_as": "package",
               "install_type": "",
@@ -108,16 +108,16 @@
       "is_docker": false,
       "service_port": "8770",
       "releases": {
-        "0.8.31": {
-          "changelog": "Ekko Studio 0.8.31：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。",
-          "updated_at": "2026-11-24T01:49:14Z",
+        "0.8.32": {
+          "changelog": "Ekko Studio 0.8.32：Actions 封装官方 npm 包，内置 Node 24，保留共享数据；尚未完成 fnOS 真机回归。",
+          "updated_at": "2026-11-25T23:03:50Z",
           "service_port": "8770",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.24/Ekko-0.8.31-x86.fpk",
-              "sha256": "aa9677f61e0b3d51d299d8d60ad6876eae706e584d7a6864fc3ac0332a8b207b",
-              "size": 177255523,
-              "updated_at": "2026-11-24T01:49:14Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.26/Ekko-0.8.32-x86.fpk",
+              "sha256": "ea589af32144e03bb0e8fe953643c08692d4ee43656c622878a11ed69a844c0a",
+              "size": 177298865,
+              "updated_at": "2026-11-25T23:03:50Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
