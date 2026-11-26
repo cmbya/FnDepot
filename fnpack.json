@@ -68,16 +68,16 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "8.1.5": {
-          "changelog": "CLIProxyAPI 8.1.5 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
-          "updated_at": "2026-11-25T23:03:50Z",
+        "8.1.7": {
+          "changelog": "CLIProxyAPI 8.1.7 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
+          "updated_at": "2026-11-26T22:56:46Z",
           "service_port": "",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.26/CLIProxyAPI_8.1.5_fnOS_x86.fpk",
-              "sha256": "2d94392f6045e2273c572343401d0e7a462c603ab9d3bfdf469d0c1a4960ca2a",
-              "size": 26957775,
-              "updated_at": "2026-11-25T23:03:50Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.27/CLIProxyAPI_8.1.7_fnOS_x86.fpk",
+              "sha256": "07ea982defa7b97f2c797b7423b6905b30392ebb141fc88b62266a98e45527f0",
+              "size": 26989968,
+              "updated_at": "2026-11-26T22:56:46Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
@@ -348,16 +348,16 @@
       "is_docker": false,
       "service_port": "21678",
       "releases": {
-        "2.44.30": {
-          "changelog": "Sub-Store 2.44.30：官方前后端正式产物原生封装；默认 /path，依赖飞牛 Node.js 24，升级保留数据。尚未完成 fnOS 真机安装、升级回归。",
-          "updated_at": "2026-11-24T23:28:08Z",
+        "2.44.31": {
+          "changelog": "Sub-Store 2.44.31：官方前后端正式产物原生封装；默认 /path，依赖飞牛 Node.js 24，升级保留数据。尚未完成 fnOS 真机安装、升级回归。",
+          "updated_at": "2026-11-26T22:56:46Z",
           "service_port": "21678",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.25/Sub-Store-2.44.30-all.fpk",
-              "sha256": "ba76412d7ecf0e77f9e85e55e6a6600d6f8ac25e5eaeaede3a18364b827f0f48",
-              "size": 3571365,
-              "updated_at": "2026-11-24T23:28:08Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.27/Sub-Store-2.44.31-all.fpk",
+              "sha256": "52ae9a688c17fde08b75fe53b6d827c1363525d5039499b5b5a02b174f175f1b",
+              "size": 3574325,
+              "updated_at": "2026-11-26T22:56:46Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
