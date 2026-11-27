@@ -68,16 +68,16 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
-        "8.1.7": {
-          "changelog": "CLIProxyAPI 8.1.7 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
-          "updated_at": "2026-11-26T22:56:46Z",
+        "8.1.8": {
+          "changelog": "CLIProxyAPI 8.1.8 fnOS x86_64 原生版，由 cmbya/fnos-buildbot 自动构建。",
+          "updated_at": "2026-11-27T22:39:42Z",
           "service_port": "",
           "packages": {
             "x86": {
-              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.27/CLIProxyAPI_8.1.7_fnOS_x86.fpk",
-              "sha256": "07ea982defa7b97f2c797b7423b6905b30392ebb141fc88b62266a98e45527f0",
-              "size": 26989968,
-              "updated_at": "2026-11-26T22:56:46Z",
+              "download_url": "https://github.com/cmbya/FnDepot/releases/download/2026.11.28/CLIProxyAPI_8.1.8_fnOS_x86.fpk",
+              "sha256": "e270a24551b95ad1d269b5d7b2211ed602333eba4043ec83851fce02ea1b753c",
+              "size": 27040707,
+              "updated_at": "2026-11-27T22:39:42Z",
               "run_as": "package",
               "install_type": "",
               "is_docker": false,
